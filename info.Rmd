@@ -1,0 +1,9 @@
+---
+title: "Infographics"
+
+output: html_document
+---
+
+<center>
+
+<img src="./images/info_1.PNG" style="width:55%">

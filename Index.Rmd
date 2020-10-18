@@ -14,9 +14,15 @@ Welcome!
 
 <img src="./images/Profile_1.PNG" style="width:100%">
 
+<left>
+
 ## About IAQ
 
-[Resume](resume.html)
+[General Overview](resume.html)
+
+## Infographics
+
+[IAQ Solutions](info.html)
 
 ## Plots 
 

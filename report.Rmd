@@ -1,0 +1,81 @@
+---
+title: "Project Report"
+author: "Bingkun Luo"
+output:
+    html_document:
+      code_folding: hide
+      toc: true
+      toc_float: true
+---
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+
+knitr::opts_chunk$set(
+	echo = TRUE,
+	warning = FALSE,
+  message = FALSE,
+	fig.width = 8, 
+  fig.height = 6,
+  out.width = "90%"
+)
+theme_set(theme_gray(base_size = 10) + theme(legend.position = "bottom"))
+```
+
+<br>
+
+## Motivation
+
+<br>
+
+Under the scenrio of global pandemic...
+
+<br>
+
+## Initial Research for Potential Markets
+
+<br>
+
+* Individual Hospital Rooms
+
+* Doctors Office, Dentist Office
+
+* College Dormitories, School Classrooms
+
+* Elderly Care Facilities,Day care centers
+
+<br>
+
+### Hospital Rooms
+
+<br> There are of total 6,146 US Hospital from the AHA hospital statistic published in 2020, where staffed beds could count up to 924,107. 
+
+<br>
+
+#### Airborne Infections Isolation (AII) Room
+
+AII room, also known as Negative pressure ward, has a [restrctive setting](https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html) guide by CDC. A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.
+
+<br>
+
+#### Single Patient Rooms versus Multiple Occupancy Rooms 
+
+<br>
+
+### Doctors Office, Dentist Office
+
+<br>
+
+#### Dentist Office
+
+<br>
+
+### College Dormitories,School Classrooms
+
+<br>
+
+#### Dentist Office
+
+<br>
+
+### Elderly Care Facilities,Day care centers

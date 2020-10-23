@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Bingkun Luo" />
 
 
-<title>Ventilation &amp; IAQ</title>
+<title>Project Report</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +20,11 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -257,7 +262,73 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
 
 
 
@@ -267,6 +338,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -314,32 +395,78 @@ $(document).ready(function () {
 
 <div class="fluid-row" id="header">
 
-
-
-<h1 class="title toc-ignore">Ventilation &amp; IAQ</h1>
-
-</div>
-
-
-<p>Welcome!</p>
-<center>
-<p><img src="images/Profile_1.PNG" style="width:100%"></p>
-<p><left></p>
-<div id="about-iaq" class="section level2">
-<h2>About IAQ</h2>
-<p><a href="resume.html">General Overview</a></p>
-</div>
-<div id="infographics" class="section level2">
-<h2>Infographics</h2>
-<p><a href="info.html">IAQ Solutions</a></p>
-</div>
-<div id="plots" class="section level2">
-<h2>Plots</h2>
-<p><a href="https://tuoeq.github.io/bl2789.github.io/dashboard.html">Dashboard</a></p>
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
 </div>
 
 
 
+<h1 class="title toc-ignore">Project Report</h1>
+<h4 class="author">Bingkun Luo</h4>
+
+</div>
+
+
+<p><br></p>
+<div id="motivation" class="section level2">
+<h2>Motivation</h2>
+<p><br></p>
+<p>Under the scenrio of global pandemic…</p>
+<p><br></p>
+</div>
+<div id="initial-research-for-potential-markets" class="section level2">
+<h2>Initial Research for Potential Markets</h2>
+<p><br></p>
+<ul>
+<li><p>Individual Hospital Rooms</p></li>
+<li><p>Doctors Office, Dentist Office</p></li>
+<li><p>College Dormitories, School Classrooms</p></li>
+<li><p>Elderly Care Facilities,Day care centers</p></li>
+</ul>
+<p><br></p>
+<div id="hospital-rooms" class="section level3">
+<h3>Hospital Rooms</h3>
+<p><br> There are of total 6,146 US Hospital from the AHA hospital statistic published in 2020, where staffed beds could count up to 924,107.</p>
+<p><br></p>
+<div id="airborne-infections-isolation-aii-room" class="section level4">
+<h4>Airborne Infections Isolation (AII) Room</h4>
+<p>AII room, also known as Negative pressure ward, has a <a href="https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html">restrctive setting</a> guide by CDC. A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.</p>
+<p><br></p>
+</div>
+<div id="single-patient-rooms-versus-multiple-occupancy-rooms" class="section level4">
+<h4>Single Patient Rooms versus Multiple Occupancy Rooms</h4>
+<p><br></p>
+</div>
+</div>
+<div id="doctors-office-dentist-office" class="section level3">
+<h3>Doctors Office, Dentist Office</h3>
+<p><br></p>
+<div id="dentist-office" class="section level4">
+<h4>Dentist Office</h4>
+<p><br></p>
+</div>
+</div>
+<div id="college-dormitoriesschool-classrooms" class="section level3">
+<h3>College Dormitories,School Classrooms</h3>
+<p><br></p>
+<div id="dentist-office-1" class="section level4">
+<h4>Dentist Office</h4>
+<p><br></p>
+</div>
+</div>
+<div id="elderly-care-facilitiesday-care-centers" class="section level3">
+<h3>Elderly Care Facilities,Day care centers</h3>
+</div>
+</div>
+
+
+
+</div>
+</div>
 
 </div>
 
@@ -371,7 +498,38 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

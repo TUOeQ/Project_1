@@ -14,4 +14,8 @@ navbar:
       href: http://github.com/TUOeQ/
      
 output:
-  rmdformats::material
+  html_document:
+    theme: paper
+    css: 'styles.css'
+    include:
+      after_body: 

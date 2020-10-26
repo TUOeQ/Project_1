@@ -48,17 +48,44 @@ Under the scenrio of global pandemic...
 
 ### Hospital Rooms
 
-<br> There are of total 6,146 US Hospital from the AHA hospital statistic published in 2020, where staffed beds could count up to 924,107. 
+<br> 
+US hospital system has four major divsions and includes following
+
+* U.S. Community hospital —— 84.60%
+
+
+* Federal Government Hospitals —— 3.40%
+
+
+* Nonfederal Psychiatric Hospitals —— 10.00%
+
+
+* Other Hospitals for nonfederal long term care hospitals and hospital units within an institution such as a prison hospital or school infirmary —— 2.00%
+
+There are of total 6,146 US hospital from the AHA hospital statistic published 2018 statistics, where staffed beds could count up to 924,107. 
+
+
+Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376% 
 
 <br>
 
-#### Airborne Infections Isolation (AII) Room
+#### Opportunity
 
-AII room, also known as Negative pressure ward, has a [restrctive setting](https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html) guide by CDC. A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.
 
+
+#### 1. Airborne Infections Isolation (AII) Room
+
+AII room, also known as Negative pressure ward, has a [restrctive setting](https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html) guide by CDC. 
+
+A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.
 <br>
 
-#### Single Patient Rooms versus Multiple Occupancy Rooms 
+#### 2. The Increment for Single Patient Rooms 
+
+["The Use of Single Patient Rooms versus Multiple Occupancy Rooms
+in Acute Care Environments"](https://www.healthdesign.org/sites/default/files/use_of_single_patient_rooms_v_multiple_occ._rooms-acute_care.pdf)strongly suggested that it is critical that infected patients or patients highly susceptible to infections need to be isolated in private rooms with proper ventilation. 
+
+What's more, preliminary findings at Bronson Methodist Hospital in Michigan demonstrate that private rooms, with well-design air-flow have resulted in a 10 to 11 percent decline in overall nosocomial infections rates 
 
 <br>
 

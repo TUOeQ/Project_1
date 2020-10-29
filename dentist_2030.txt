@@ -1,0 +1,8 @@
+type, percent
+3.general dentists, 0.09
+4.oral surgeons,0.07 
+5.endodontists,0.07
+2.periodontists, 0.11 
+1.other dentists,0.12
+6.pediatric dentists, 0.02
+7.orthodontists, -0.01

@@ -27,6 +27,13 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.9.2/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="site_libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -439,6 +446,7 @@ div.tocify {
 </ul>
 <p>There are of total 6,146 US hospital from the AHA hospital statistic published 2018 statistics, where staffed beds could count up to 924,107.</p>
 <p>Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376%</p>
+<p><a href="https://www.aha.org/statistics/2020-01-07-archived-fast-facts-us-hospitals-2019"><img src="images/AHA2018.PNG" title="Mapping for US Coummunity hospital" alt="Get more info" /></a></p>
 <p><br></p>
 <div id="opportunity" class="section level4">
 <h4>Opportunity</h4>
@@ -460,14 +468,21 @@ div.tocify {
 <p><br></p>
 <div id="dentist-office" class="section level4">
 <h4>Dentist Office</h4>
-<p><br></p>
+<p>The guidelines from <a href="https://bhw.hrsa.gov/sites/default/files/bhw/health-workforce-analysis/research/projections/oral-health-2017-2030.pdf">US Oral Health Workforce Projections, 2017-2030</a> showed that the national demand for dentists is projected to increase by 9 percent to 206,850 FTEs in 2030. Roughly similar growth rates are also predicted in the demand for general dentists (9 percent), oral surgeons (7 percent), endodontists (7 percent), periodontists (11 percent) and other dentists (12 percent), while the demand for pediatric dentists (2 percent) and orthodontists (-1 percent) is expected to grow slowly or not at all (Exhibit 1).</p>
+<pre class="r"><code>library(plotly)
+data1 = read_csv(file = &quot;dentist_2030.txt&quot;,col_names = TRUE)
+
+data1%&gt;%
+   plot_ly(x = ~type, y = ~percent, color = ~type, colors = &quot;Greens&quot;,type = &quot;bar&quot;)</code></pre>
+<div id="htmlwidget-645b5ebbee91689ac375" style="width:90%;height:576px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-645b5ebbee91689ac375">{"x":{"visdat":{"94c16b95ea8":["function () ","plotlyVisDat"]},"cur_data":"94c16b95ea8","attrs":{"94c16b95ea8":{"x":{},"y":{},"color":{},"colors":"Greens","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"type","type":"category","categoryorder":"array","categoryarray":["1.other dentists","2.periodontists","3.general dentists","4.oral surgeons","5.endodontists","6.pediatric dentists","7.orthodontists"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"percent"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["1.other dentists"],"y":[0.12],"type":"bar","name":"1.other dentists","marker":{"color":"rgba(247,252,245,1)","line":{"color":"rgba(247,252,245,1)"}},"textfont":{"color":"rgba(247,252,245,1)"},"error_y":{"color":"rgba(247,252,245,1)"},"error_x":{"color":"rgba(247,252,245,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2.periodontists"],"y":[0.11],"type":"bar","name":"2.periodontists","marker":{"color":"rgba(219,241,213,1)","line":{"color":"rgba(219,241,213,1)"}},"textfont":{"color":"rgba(219,241,213,1)"},"error_y":{"color":"rgba(219,241,213,1)"},"error_x":{"color":"rgba(219,241,213,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["3.general dentists"],"y":[0.09],"type":"bar","name":"3.general dentists","marker":{"color":"rgba(174,222,167,1)","line":{"color":"rgba(174,222,167,1)"}},"textfont":{"color":"rgba(174,222,167,1)"},"error_y":{"color":"rgba(174,222,167,1)"},"error_x":{"color":"rgba(174,222,167,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["4.oral surgeons"],"y":[0.07],"type":"bar","name":"4.oral surgeons","marker":{"color":"rgba(116,196,118,1)","line":{"color":"rgba(116,196,118,1)"}},"textfont":{"color":"rgba(116,196,118,1)"},"error_y":{"color":"rgba(116,196,118,1)"},"error_x":{"color":"rgba(116,196,118,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["5.endodontists"],"y":[0.07],"type":"bar","name":"5.endodontists","marker":{"color":"rgba(55,160,85,1)","line":{"color":"rgba(55,160,85,1)"}},"textfont":{"color":"rgba(55,160,85,1)"},"error_y":{"color":"rgba(55,160,85,1)"},"error_x":{"color":"rgba(55,160,85,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["6.pediatric dentists"],"y":[0.02],"type":"bar","name":"6.pediatric dentists","marker":{"color":"rgba(14,119,52,1)","line":{"color":"rgba(14,119,52,1)"}},"textfont":{"color":"rgba(14,119,52,1)"},"error_y":{"color":"rgba(14,119,52,1)"},"error_x":{"color":"rgba(14,119,52,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["7.orthodontists"],"y":[-0.01],"type":"bar","name":"7.orthodontists","marker":{"color":"rgba(0,68,27,1)","line":{"color":"rgba(0,68,27,1)"}},"textfont":{"color":"rgba(0,68,27,1)"},"error_y":{"color":"rgba(0,68,27,1)"},"error_x":{"color":"rgba(0,68,27,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="college-dormitoriesschool-classrooms" class="section level3">
 <h3>College Dormitories,School Classrooms</h3>
 <p><br></p>
-<div id="dentist-office-1" class="section level4">
-<h4>Dentist Office</h4>
+<div id="college-dormitories" class="section level4">
+<h4>College Dormitories</h4>
 <p><br></p>
 </div>
 </div>

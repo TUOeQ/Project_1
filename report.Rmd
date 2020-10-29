@@ -64,8 +64,9 @@ US hospital system has four major divsions and includes following
 
 There are of total 6,146 US hospital from the AHA hospital statistic published 2018 statistics, where staffed beds could count up to 924,107. 
 
-
 Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376% 
+
+[![Get more info](./images/AHA2018.PNG "Mapping for US Coummunity hospital ")](https://www.aha.org/statistics/2020-01-07-archived-fast-facts-us-hospitals-2019)
 
 <br>
 
@@ -93,15 +94,30 @@ What's more, preliminary findings at Bronson Methodist Hospital in Michigan demo
 
 <br>
 
+
+
 #### Dentist Office
 
-<br>
+The guidelines from [US Oral Health Workforce Projections, 2017-2030](https://bhw.hrsa.gov/sites/default/files/bhw/health-workforce-analysis/research/projections/oral-health-2017-2030.pdf)
+showed that the national demand for dentists is projected to increase by 9 percent to
+206,850 FTEs in 2030. Roughly similar growth rates are also predicted in the demand for general dentists (9
+percent), oral surgeons (7 percent), endodontists (7 percent), periodontists (11 percent) and other dentists
+(12 percent), while the demand for pediatric dentists (2 percent) and orthodontists (-1 percent) is expected
+to grow slowly or not at all (Exhibit 1).
+```{r}
+library(plotly)
+data1 = read_csv(file = "dentist_2030.txt",col_names = TRUE)
+
+data1%>%
+   plot_ly(x = ~type, y = ~percent, color = ~type, colors = "Greens",type = "bar")
+```
+
 
 ### College Dormitories,School Classrooms
 
 <br>
 
-#### Dentist Office
+#### College Dormitories
 
 <br>
 

@@ -448,9 +448,9 @@ div.tocify {
 <p>Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376%</p>
 <p><a href="https://www.aha.org/statistics/2020-01-07-archived-fast-facts-us-hospitals-2019"><img src="images/AHA2018.PNG" title="Mapping for US Coummunity hospital" alt="Get more info" /></a></p>
 <p><br></p>
-<div id="opportunity" class="section level4">
-<h4>Opportunity</h4>
 </div>
+<div id="opportunity" class="section level3">
+<h3>Opportunity</h3>
 <div id="airborne-infections-isolation-aii-room" class="section level4">
 <h4>1. Airborne Infections Isolation (AII) Room</h4>
 <p>AII room, also known as Negative pressure ward, has a <a href="https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html">restrctive setting</a> guide by CDC.</p>
@@ -460,18 +460,16 @@ div.tocify {
 <h4>2. The Increment for Single Patient Rooms</h4>
 <p><a href="https://www.healthdesign.org/sites/default/files/use_of_single_patient_rooms_v_multiple_occ._rooms-acute_care.pdf">“The Use of Single Patient Rooms versus Multiple Occupancy Rooms in Acute Care Environments”</a>strongly suggested that it is critical that infected patients or patients highly susceptible to infections need to be isolated in private rooms with proper ventilation.</p>
 <p>What’s more, preliminary findings at Bronson Methodist Hospital in Michigan demonstrate that private rooms, with well-design air-flow have resulted in a 10 to 11 percent decline in overall nosocomial infections rates</p>
-<p><br></p>
 </div>
 </div>
-<div id="doctors-office-em-visits-dentist-office" class="section level3">
-<h3>Doctors Office &amp; E/M Visits, Dentist Office</h3>
+<div id="outpatient-centers-em-visits-dentist-office" class="section level3 tabset">
+<h3>Outpatient Centers &amp; E/M Visits, Dentist Office</h3>
 <p><br></p>
-<div id="doctors-office-emergency-department-visits" class="section level4">
-<h4>Doctors Office &amp; Emergency Department Visits</h4>
-<p>Centers for Disease Control(CDC) has published statistics on the <a href="https://www.cdc.gov/nchs/products/databriefs/db331.htm">Office-based Physician Visits, 2016</a>, The 2016 sample consists of 3,699 physicians. Participating physicians provided 13,165 visit records, with an attrition rate up to 60%.</p>
-<p>In 2016, most Americans had a usual place to receive health care (86% of adults and 96% of children). The majority of children and adults listed a doctor’s office as the usual place they received care. Projection has been made that in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.</p>
+<div id="outpatient-centers-emergency-department-visits" class="section level4">
+<h4>Outpatient Centers &amp; Emergency Department Visits</h4>
+<p>Centers for Disease Control(CDC) has published statistics on the <a href="https://www.cdc.gov/nchs/products/databriefs/db331.htm">Office-based Physician Visits, 2016</a>, in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.</p>
 <div class="figure">
-<img src="images/CDC2016.png" title="Mapping for US Coummunity hospital" alt="Get more info" />
+<img src="images/OPTcenter.PNG" title="Mapping for US Coummunity hospital" alt="Get more info" />
 <p class="caption">Get more info</p>
 </div>
 <p>As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.</p>
@@ -486,8 +484,8 @@ data1 = read_csv(file = &quot;dentist_2030.txt&quot;,col_names = TRUE)
 
 data1%&gt;%
    plot_ly(x = ~type, y = ~percent, color = ~type, colors = &quot;Greens&quot;,type = &quot;bar&quot;)</code></pre>
-<div id="htmlwidget-784c82608b7d57cd6aeb" style="width:90%;height:576px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-784c82608b7d57cd6aeb">{"x":{"visdat":{"31c853348b3":["function () ","plotlyVisDat"]},"cur_data":"31c853348b3","attrs":{"31c853348b3":{"x":{},"y":{},"color":{},"colors":"Greens","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"type","type":"category","categoryorder":"array","categoryarray":["1.other dentists","2.periodontists","3.general dentists","4.oral surgeons","5.endodontists","6.pediatric dentists","7.orthodontists"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"percent"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["1.other dentists"],"y":[0.12],"type":"bar","name":"1.other dentists","marker":{"color":"rgba(247,252,245,1)","line":{"color":"rgba(247,252,245,1)"}},"textfont":{"color":"rgba(247,252,245,1)"},"error_y":{"color":"rgba(247,252,245,1)"},"error_x":{"color":"rgba(247,252,245,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2.periodontists"],"y":[0.11],"type":"bar","name":"2.periodontists","marker":{"color":"rgba(219,241,213,1)","line":{"color":"rgba(219,241,213,1)"}},"textfont":{"color":"rgba(219,241,213,1)"},"error_y":{"color":"rgba(219,241,213,1)"},"error_x":{"color":"rgba(219,241,213,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["3.general dentists"],"y":[0.09],"type":"bar","name":"3.general dentists","marker":{"color":"rgba(174,222,167,1)","line":{"color":"rgba(174,222,167,1)"}},"textfont":{"color":"rgba(174,222,167,1)"},"error_y":{"color":"rgba(174,222,167,1)"},"error_x":{"color":"rgba(174,222,167,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["4.oral surgeons"],"y":[0.07],"type":"bar","name":"4.oral surgeons","marker":{"color":"rgba(116,196,118,1)","line":{"color":"rgba(116,196,118,1)"}},"textfont":{"color":"rgba(116,196,118,1)"},"error_y":{"color":"rgba(116,196,118,1)"},"error_x":{"color":"rgba(116,196,118,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["5.endodontists"],"y":[0.07],"type":"bar","name":"5.endodontists","marker":{"color":"rgba(55,160,85,1)","line":{"color":"rgba(55,160,85,1)"}},"textfont":{"color":"rgba(55,160,85,1)"},"error_y":{"color":"rgba(55,160,85,1)"},"error_x":{"color":"rgba(55,160,85,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["6.pediatric dentists"],"y":[0.02],"type":"bar","name":"6.pediatric dentists","marker":{"color":"rgba(14,119,52,1)","line":{"color":"rgba(14,119,52,1)"}},"textfont":{"color":"rgba(14,119,52,1)"},"error_y":{"color":"rgba(14,119,52,1)"},"error_x":{"color":"rgba(14,119,52,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["7.orthodontists"],"y":[-0.01],"type":"bar","name":"7.orthodontists","marker":{"color":"rgba(0,68,27,1)","line":{"color":"rgba(0,68,27,1)"}},"textfont":{"color":"rgba(0,68,27,1)"},"error_y":{"color":"rgba(0,68,27,1)"},"error_x":{"color":"rgba(0,68,27,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cb2f5f7b0b3de561a0d4" style="width:90%;height:576px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cb2f5f7b0b3de561a0d4">{"x":{"visdat":{"c5442a834e4":["function () ","plotlyVisDat"]},"cur_data":"c5442a834e4","attrs":{"c5442a834e4":{"x":{},"y":{},"color":{},"colors":"Greens","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"type","type":"category","categoryorder":"array","categoryarray":["1.other dentists","2.periodontists","3.general dentists","4.oral surgeons","5.endodontists","6.pediatric dentists","7.orthodontists"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"percent"},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["1.other dentists"],"y":[0.12],"type":"bar","name":"1.other dentists","marker":{"color":"rgba(247,252,245,1)","line":{"color":"rgba(247,252,245,1)"}},"textfont":{"color":"rgba(247,252,245,1)"},"error_y":{"color":"rgba(247,252,245,1)"},"error_x":{"color":"rgba(247,252,245,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2.periodontists"],"y":[0.11],"type":"bar","name":"2.periodontists","marker":{"color":"rgba(219,241,213,1)","line":{"color":"rgba(219,241,213,1)"}},"textfont":{"color":"rgba(219,241,213,1)"},"error_y":{"color":"rgba(219,241,213,1)"},"error_x":{"color":"rgba(219,241,213,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["3.general dentists"],"y":[0.09],"type":"bar","name":"3.general dentists","marker":{"color":"rgba(174,222,167,1)","line":{"color":"rgba(174,222,167,1)"}},"textfont":{"color":"rgba(174,222,167,1)"},"error_y":{"color":"rgba(174,222,167,1)"},"error_x":{"color":"rgba(174,222,167,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["4.oral surgeons"],"y":[0.07],"type":"bar","name":"4.oral surgeons","marker":{"color":"rgba(116,196,118,1)","line":{"color":"rgba(116,196,118,1)"}},"textfont":{"color":"rgba(116,196,118,1)"},"error_y":{"color":"rgba(116,196,118,1)"},"error_x":{"color":"rgba(116,196,118,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["5.endodontists"],"y":[0.07],"type":"bar","name":"5.endodontists","marker":{"color":"rgba(55,160,85,1)","line":{"color":"rgba(55,160,85,1)"}},"textfont":{"color":"rgba(55,160,85,1)"},"error_y":{"color":"rgba(55,160,85,1)"},"error_x":{"color":"rgba(55,160,85,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["6.pediatric dentists"],"y":[0.02],"type":"bar","name":"6.pediatric dentists","marker":{"color":"rgba(14,119,52,1)","line":{"color":"rgba(14,119,52,1)"}},"textfont":{"color":"rgba(14,119,52,1)"},"error_y":{"color":"rgba(14,119,52,1)"},"error_x":{"color":"rgba(14,119,52,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["7.orthodontists"],"y":[-0.01],"type":"bar","name":"7.orthodontists","marker":{"color":"rgba(0,68,27,1)","line":{"color":"rgba(0,68,27,1)"}},"textfont":{"color":"rgba(0,68,27,1)"},"error_y":{"color":"rgba(0,68,27,1)"},"error_x":{"color":"rgba(0,68,27,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p><strong>The projection of the overall dentists’office in 2030 in the US would be 1,344,525</strong></p>
 <p>Adjusting for the number of offuce in practical, <a href="https://blog.hjtdesign.com/how-many-dental-operatories">Current standards</a> suggest that five to eight operatories may be the perfect and the number for any office with a single dentist and the working environment should include following features:</p>
 <ul>
@@ -498,7 +496,29 @@ data1%&gt;%
 <p><br></p>
 </div>
 </div>
-<div id="college-dormitoriesschool-classrooms" class="section level3">
+<div id="opportunity-1" class="section level3">
+<h3>Opportunity</h3>
+<div id="sepical-designs-to-tackle-patient-flow-issues" class="section level4">
+<h4>1. Sepical designs to tackle patient flow issues</h4>
+<p>Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.</p>
+<p><img src="images/waiting.PNG" style="width:55%"></p>
+<ul>
+<li>The waiting area for general outpatients (including most medical specialties, surgery and psychiatry) is located in the large hall shown in the photograph.</li>
+<li>The consulting rooms lead off from both sides of this waiting hall.</li>
+</ul>
+</div>
+<div id="prevent-cross-infection-between-doctors-and-patients" class="section level4">
+<h4>2. Prevent cross-infection between doctors and patients</h4>
+<p><a href="http://www.zjkcsj.cn/newsshow.php?cid=5&amp;id=295"><img src="images/office1.PNG" title="design" alt="Get more info" style="width:95.0%" /></a></p>
+<ul>
+<li><p>Hospitals should set up mechanical ventilation systems in different zones. (clean areas, contaminated areas, buffer rooms)</p></li>
+<li><p>Admission inspection in contaminated areas (negative pressure) and the mechanical ventilation system of the discharge disinfection treatment area (positive pressure) should be set up independently, and should not be used in combination with the ward.</p></li>
+<li><p>Adopt positive pressure buffer isolation method, that is, set the air supply not less than 30 times/h in <strong>passage area</strong>. The compartment is equipped with a short D300 ventilation pipe, and the airflow flows from the clean area to the isolation area.</p></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="college-dormitoriesschool-classrooms" class="section level3 tabset">
 <h3>College Dormitories,School Classrooms</h3>
 <p><br></p>
 <div id="college-dormitories" class="section level4">
@@ -530,22 +550,22 @@ yaxis &lt;- list(title = &quot;Number in thousands&quot;,
 
 fig = data2_1%&gt;% 
   plot_ly(x = ~year)%&gt;% 
-  add_trace(y = ~y, type = &#39;scatter&#39;, mode = &#39;lines&#39;, line = list(color = &#39;rgba(67,130,160,1)&#39;, width = 2)) %&gt;% 
+  add_trace(y = ~y, type = &#39;bar&#39;) %&gt;% 
   layout(title = &quot;Student Housing Beds Delivered in U.S 2011 to 2018&quot;, xaxis = xaxis, yaxis = yaxis, margin = margin,autosize = TRUE,showlegend = FALSE) %&gt;%
-  add_trace(x = ~c(year[1], year[8]), y = ~c(y[1], y[8]), type = &#39;scatter&#39;, mode = &#39;markers&#39;, marker = list(color = &#39;rgba(49,130,189, 1)&#39;, size = 10))
+  add_trace(x = ~c(year[1], year[8]), y = ~c(y[1], y[8]), type = &#39;scatter&#39;, mode = &#39;markers&#39;, marker = list(color = &#39;rgba(49,130,189, 1)&#39;, size = 1))
 fig%&gt;%
   add_trace(x = ~year, y = ~y, data = data2_2,type = &#39;bar&#39;, name = &#39;Student housing supply&#39;,
             marker = list(color = &#39;#C9EFF9&#39;),
             hoverinfo = &quot;text&quot;,
             text = ~paste(y, &#39;#&#39;))</code></pre>
-<div id="htmlwidget-5aeb26a5980140f3726d" style="width:90%;height:576px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5aeb26a5980140f3726d">{"x":{"visdat":{"31c86ed63e2f":["function () ","plotlyVisDat"],"31c8192cfbc":["function () ","data"]},"cur_data":"31c8192cfbc","attrs":{"31c86ed63e2f":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"lines","line":{"color":"rgba(67,130,160,1)","width":2},"inherit":true},"31c86ed63e2f.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"markers","marker":{"color":"rgba(49,130,189, 1)","size":10},"inherit":true},"31c8192cfbc":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","name":"Student housing supply","marker":{"color":"#C9EFF9"},"hoverinfo":"text","text":{},"inherit":true}},"layout":{"margin":["function (t = 0, r = 0, b = 0, l = 0, unit = \"pt\") ","{","    u <- unit(c(t, r, b, l), unit)","    class(u) <- c(\"margin\", class(u))","    u","}"],"title":"Student Housing Beds Delivered in U.S 2011 to 2018","xaxis":{"domain":[0,1],"automargin":true,"title":"Years","showline":true,"showgrid":false,"showticklabels":true,"linecolor":"rgb(204, 204, 204)","linewidth":2,"autotick":false,"ticks":"outside","tickcolor":"rgb(204, 204, 204)","tickwidth":2,"ticklen":5,"tickfont":{"family":"Arial","size":12,"color":"rgb(82, 82, 82)"},"type":"category","categoryorder":"array","categoryarray":["2010","2011","2012","2013","2014","2015","2016","2017*","2018**","2019*","2020*","2021*"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number in thousands","showgrid":false,"zeroline":false,"showline":false,"showticklabels":false},"autosize":true,"showlegend":false,"hovermode":"closest"},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["2011","2012","2013","2014","2015","2016","2017*","2018**"],"y":[25,43.5,62.5,62,47,48.5,45.5,45.5],"type":"scatter","mode":"lines","line":{"color":"rgba(67,130,160,1)","width":2},"marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2011","2018**"],"y":[25,45.5],"type":"scatter","mode":"markers","marker":{"color":"rgba(49,130,189, 1)","size":10,"line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017*","2018**","2019*","2020*","2021*"],"y":[1030,1100,1210,1380,1610,1850,2110,2380,2660,2730,2810,2840],"type":"bar","name":"Student housing supply","marker":{"color":"#C9EFF9","line":{"color":"rgba(44,160,44,1)"}},"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text"],"text":["1030 #","1100 #","1210 #","1380 #","1610 #","1850 #","2110 #","2380 #","2660 #","2730 #","2810 #","2840 #"],"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5e2d601363e236b6173f" style="width:90%;height:576px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5e2d601363e236b6173f">{"x":{"visdat":{"c545c0a3c99":["function () ","plotlyVisDat"],"c5476777b66":["function () ","data"]},"cur_data":"c5476777b66","attrs":{"c545c0a3c99":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","inherit":true},"c545c0a3c99.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"scatter","mode":"markers","marker":{"color":"rgba(49,130,189, 1)","size":1},"inherit":true},"c5476777b66":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"type":"bar","name":"Student housing supply","marker":{"color":"#C9EFF9"},"hoverinfo":"text","text":{},"inherit":true}},"layout":{"margin":["function (t = 0, r = 0, b = 0, l = 0, unit = \"pt\") ","{","    u <- unit(c(t, r, b, l), unit)","    class(u) <- c(\"margin\", class(u))","    u","}"],"title":"Student Housing Beds Delivered in U.S 2011 to 2018","xaxis":{"domain":[0,1],"automargin":true,"title":"Years","showline":true,"showgrid":false,"showticklabels":true,"linecolor":"rgb(204, 204, 204)","linewidth":2,"autotick":false,"ticks":"outside","tickcolor":"rgb(204, 204, 204)","tickwidth":2,"ticklen":5,"tickfont":{"family":"Arial","size":12,"color":"rgb(82, 82, 82)"},"type":"category","categoryorder":"array","categoryarray":["2010","2011","2012","2013","2014","2015","2016","2017*","2018**","2019*","2020*","2021*"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number in thousands","showgrid":false,"zeroline":false,"showline":false,"showticklabels":false},"autosize":true,"showlegend":false,"hovermode":"closest"},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["2011","2012","2013","2014","2015","2016","2017*","2018**"],"y":[25,43.5,62.5,62,47,48.5,45.5,45.5],"type":"bar","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2011","2018**"],"y":[25,45.5],"type":"scatter","mode":"markers","marker":{"color":"rgba(49,130,189, 1)","size":1,"line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["2010","2011","2012","2013","2014","2015","2016","2017*","2018**","2019*","2020*","2021*"],"y":[1030,1100,1210,1380,1610,1850,2110,2380,2660,2730,2810,2840],"type":"bar","name":"Student housing supply","marker":{"color":"#C9EFF9","line":{"color":"rgba(44,160,44,1)"}},"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text"],"text":["1030 #","1100 #","1210 #","1380 #","1610 #","1850 #","2110 #","2380 #","2660 #","2730 #","2810 #","2840 #"],"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p>*As of August 2017. Until that time approximately 35,500 beds have been delivered and 8,000 beds were awaiting completion.</p>
 <p>**Forecast: beds under construction and planned.</p>
 </div>
 <div id="classrooms-for-pk12-education" class="section level4">
 <h4>Classrooms for PK–12 Education</h4>
-<p>One perspective would be projection on the number of educational institutions including special education, alternative, and other schools not classified by grade span.</p>
+<p>One perspective would be projection on the number of <a href="https://nces.ed.gov/fastfacts/display.asp?id=372#PK12_enrollment">educational institutions</a> including special education, alternative, and other schools not classified by grade span.</p>
 <pre class="r"><code>library(plotly)
 
 data3 = data.frame(
@@ -554,30 +574,32 @@ data3 = data.frame(
     &quot;Combined&quot;, &quot;Public schools - Other&quot;,&quot;Private schools - All&quot;
   ),
   labels = c(
-    &quot;Public schools&quot;, &quot;Private schools&quot;, &quot;Elementary&quot;, &quot;Secondary&quot;, &quot;Combined&quot;,
+    &quot;Public schools-98,277&quot;, &quot;Private schools-34,576&quot;, &quot;Elementary&quot;, &quot;Secondary&quot;, &quot;Combined&quot;,
     &quot;Other&quot;,&quot;All&quot;),
   parents = c(
     &quot;&quot;, &quot;&quot;,  &quot;Public schools&quot;, &quot;Public schools&quot;, &quot;Public schools&quot;, &quot;Public schools&quot;,
     &quot;Private schools&quot;
  ),
-    v = c(98158,34576,66837,23814,6783,724,34576),
+    v = c(0,0,66758,24040,6788,691,34576),
   stringsAsFactors = FALSE
 )
 
 plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents,values = ~v, type = &#39;sunburst&#39;,  domain=list(column=1),
-  maxdepth=3,
-  insidetextorientation=&#39;radial&#39;)%&gt;%
+  maxdepth=3)%&gt;%
   layout(
     #xaxis = list(title = &quot;&quot;),
     #yaxis = list(title = &quot;&quot;, zeroline = F),
     title=&quot;Number of educational institutions,2015–16&quot;,
     colorway = c(&#39;#f0c7e0&#39;,&#39;rgba(49,130,189, 1)&#39;)
   )</code></pre>
-<div id="htmlwidget-6ed1a6d7ded13b5d9bc5" style="width:90%;height:576px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-6ed1a6d7ded13b5d9bc5">{"x":{"visdat":{"31c8593b2af7":["function () ","plotlyVisDat"]},"cur_data":"31c8593b2af7","attrs":{"31c8593b2af7":{"ids":{},"labels":{},"parents":{},"values":{},"domain":{"column":1},"maxdepth":3,"insidetextorientation":"radial","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"sunburst"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Number of educational institutions,2015–16","colorway":["#f0c7e0","rgba(49,130,189, 1)"],"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"ids":["Public schools","Private schools","Public schools - Elementary","Secondary","Combined","Public schools - Other","Private schools - All"],"labels":["Public schools","Private schools","Elementary","Secondary","Combined","Other","All"],"parents":["","","Public schools","Public schools","Public schools","Public schools","Private schools"],"values":[98158,34576,66837,23814,6783,724,34576],"domain":{"column":1},"maxdepth":3,"insidetextorientation":"radial","type":"sunburst","marker":{"color":"rgba(240,199,224,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
-<pre class="r"><code>plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents, type = &#39;sunburst&#39;)</code></pre>
-<div id="htmlwidget-f6cbc664796183325388" style="width:90%;height:576px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f6cbc664796183325388">{"x":{"visdat":{"31c822c2934":["function () ","plotlyVisDat"]},"cur_data":"31c822c2934","attrs":{"31c822c2934":{"ids":{},"labels":{},"parents":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"sunburst"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"ids":["Public schools","Private schools","Public schools - Elementary","Secondary","Combined","Public schools - Other","Private schools - All"],"labels":["Public schools","Private schools","Elementary","Secondary","Combined","Other","All"],"parents":["","","Public schools","Public schools","Public schools","Public schools","Private schools"],"type":"sunburst","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1076923ac88536f03f55" style="width:90%;height:576px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1076923ac88536f03f55">{"x":{"visdat":{"c54227654f9":["function () ","plotlyVisDat"]},"cur_data":"c54227654f9","attrs":{"c54227654f9":{"ids":{},"labels":{},"parents":{},"values":{},"domain":{"column":1},"maxdepth":3,"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"sunburst"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Number of educational institutions,2015–16","colorway":["#f0c7e0","rgba(49,130,189, 1)"],"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"ids":["Public schools","Private schools","Public schools - Elementary","Secondary","Combined","Public schools - Other","Private schools - All"],"labels":["Public schools-98,277","Private schools-34,576","Elementary","Secondary","Combined","Other","All"],"parents":["","","Public schools","Public schools","Public schools","Public schools","Private schools"],"values":[0,0,66758,24040,6788,691,34576],"domain":{"column":1},"maxdepth":3,"type":"sunburst","marker":{"color":"rgba(240,199,224,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div id="opportunity-2" class="section level3">
+<h3>Opportunity</h3>
+<div id="sepical-designs-to-tackle-patient-flow-issues-1" class="section level4">
+<h4>1. Sepical designs to tackle patient flow issues</h4>
 <p><br></p>
 </div>
 </div>

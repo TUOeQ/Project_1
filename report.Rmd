@@ -70,8 +70,7 @@ Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376
 
 <br>
 
-#### Opportunity
-
+### Opportunity
 
 
 #### 1. Airborne Infections Isolation (AII) Room
@@ -88,19 +87,17 @@ in Acute Care Environments"](https://www.healthdesign.org/sites/default/files/us
 
 What's more, preliminary findings at Bronson Methodist Hospital in Michigan demonstrate that private rooms, with well-design air-flow have resulted in a 10 to 11 percent decline in overall nosocomial infections rates 
 
+
+
+### Outpatient Centers & E/M Visits, Dentist Office {.tabset}
+
 <br>
 
-### Doctors Office & E/M Visits, Dentist Office
+#### Outpatient Centers & Emergency Department Visits
 
-<br>
+Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
 
-#### Doctors Office & Emergency Department Visits
-
-Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), The 2016 sample consists of 3,699 physicians. Participating physicians provided 13,165 visit records, with an attrition rate up to 60%.
-
-In 2016, most Americans had a usual place to receive health care (86% of adults and 96% of children). The majority of children and adults listed a doctor’s office as the usual place they received care. Projection has been made that in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
-
-![Get more info](./images/CDC2016.PNG "Mapping for US Coummunity hospital ")
+![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital ")
 
 As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.
 
@@ -131,7 +128,36 @@ Adjusting for the number of offuce in practical, [Current standards](https://blo
 
 <br>
 
-### College Dormitories,School Classrooms
+
+### Opportunity
+
+#### 1. Sepical designs to tackle patient flow issues
+
+Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.
+
+<img src="./images/waiting.PNG" style="width:55%">
+
+
+* The waiting area for general outpatients (including most medical specialties, surgery and
+psychiatry) is located in the large hall shown in the photograph. 
+* The consulting rooms lead
+off from both sides of this waiting hall. 
+
+#### 2. Prevent cross-infection between doctors and patients
+
+[![Get more info](./images/office1.PNG "design"){width=95%}](http://www.zjkcsj.cn/newsshow.php?cid=5&id=295)
+
+* Hospitals should set up mechanical ventilation systems in different zones. (clean areas, contaminated areas, buffer rooms)
+
+* Admission inspection in contaminated areas (negative pressure) and the mechanical ventilation system of the discharge disinfection treatment area (positive pressure) should be set up independently, and should not be used in combination with the ward.
+
+* Adopt positive pressure buffer isolation method, that is, set the air supply not less than 30 times/h in **passage area**.
+The compartment is equipped with a short D300 ventilation pipe, and the airflow flows from the clean area to the isolation area. 
+
+<br>
+
+
+### College Dormitories,School Classrooms{.tabset}
 
 <br>
 
@@ -168,9 +194,9 @@ yaxis <- list(title = "Number in thousands",
 
 fig = data2_1%>% 
   plot_ly(x = ~year)%>% 
-  add_trace(y = ~y, type = 'scatter', mode = 'lines', line = list(color = 'rgba(67,130,160,1)', width = 2)) %>% 
+  add_trace(y = ~y, type = 'bar') %>% 
   layout(title = "Student Housing Beds Delivered in U.S 2011 to 2018", xaxis = xaxis, yaxis = yaxis, margin = margin,autosize = TRUE,showlegend = FALSE) %>%
-  add_trace(x = ~c(year[1], year[8]), y = ~c(y[1], y[8]), type = 'scatter', mode = 'markers', marker = list(color = 'rgba(49,130,189, 1)', size = 10))
+  add_trace(x = ~c(year[1], year[8]), y = ~c(y[1], y[8]), type = 'scatter', mode = 'markers', marker = list(color = 'rgba(49,130,189, 1)', size = 1))
 fig%>%
   add_trace(x = ~year, y = ~y, data = data2_2,type = 'bar', name = 'Student housing supply',
             marker = list(color = '#C9EFF9'),
@@ -184,7 +210,7 @@ fig%>%
 
 #### Classrooms for PK–12 Education
 
-One perspective would be projection on the number of educational institutions including special education, alternative, and other schools not classified by grade span.
+One perspective would be projection on the number of [educational institutions](https://nces.ed.gov/fastfacts/display.asp?id=372#PK12_enrollment) including special education, alternative, and other schools not classified by grade span.
 
 
 ```{r}
@@ -196,19 +222,18 @@ data3 = data.frame(
     "Combined", "Public schools - Other","Private schools - All"
   ),
   labels = c(
-    "Public schools", "Private schools", "Elementary", "Secondary", "Combined",
+    "Public schools-98,277", "Private schools-34,576", "Elementary", "Secondary", "Combined",
     "Other","All"),
   parents = c(
     "", "",  "Public schools", "Public schools", "Public schools", "Public schools",
     "Private schools"
  ),
-    v = c(98158,34576,66837,23814,6783,724,34576),
+    v = c(0,0,66758,24040,6788,691,34576),
   stringsAsFactors = FALSE
 )
 
 plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents,values = ~v, type = 'sunburst',  domain=list(column=1),
-  maxdepth=3,
-  insidetextorientation='radial')%>%
+  maxdepth=3)%>%
   layout(
     #xaxis = list(title = ""),
     #yaxis = list(title = "", zeroline = F),
@@ -217,9 +242,12 @@ plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents,values = ~v, typ
   )
 
 
-plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents, type = 'sunburst')
+
 ```
 
+### Opportunity
+
+#### 1. Sepical designs to tackle patient flow issues
 
 <br>
 

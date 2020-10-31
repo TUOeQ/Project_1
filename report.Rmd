@@ -36,13 +36,13 @@ Under the scenrio of global pandemic...
 
 <br>
 
-* Individual Hospital Rooms
+* Hospital Rooms
 
-* Doctors Office, Dentist Office
+* Outpatient Clinic, Dentist Clinic
 
 * College Dormitories, School Classrooms
 
-* Elderly Care Facilities,Day care centers
+* Elderly Care Facilities, Day Care Centers
 
 <br>
 
@@ -89,11 +89,11 @@ What's more, preliminary findings at Bronson Methodist Hospital in Michigan demo
 
 
 
-### Outpatient Centers & E/M Visits, Dentist Office {.tabset}
+### Outpatient Clinic & E/M Visits, Dentist Clinic {.tabset .tabset-pills}
 
 <br>
 
-#### Outpatient Centers & Emergency Department Visits
+#### Outpatient Clinic & Emergency Department Visits
 
 Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
 
@@ -105,7 +105,7 @@ However, the prediction for doctor offices would also be affect by the numbers o
 
 <br>
 
-#### Dentist Office
+#### Dentist Clinic
 
 The guidelines from [US Oral Health Workforce Projections, 2017-2030](https://bhw.hrsa.gov/sites/default/files/bhw/health-workforce-analysis/research/projections/oral-health-2017-2030.pdf) showed that the national demand for dentists is projected to increase by 9 percent acrossing the industry to 206,850 FTEs in 2030, while the demand for pediatric dentists (2 percent) and orthodontists (-1 percent) is expected to grow slowly or not at all (Exhibit 1).
 ```{r}
@@ -157,7 +157,7 @@ The compartment is equipped with a short D300 ventilation pipe, and the airflow 
 <br>
 
 
-### College Dormitories,School Classrooms{.tabset}
+### College Dormitories,School Classrooms{.tabset .tabset-pills}
 
 <br>
 
@@ -257,7 +257,7 @@ Some major problem would be fresh air vents were blocked with insulation, zone v
 
 
 #### 2. Prioritizes and renovate the system with existing standards
-Since many states are still cooperate with limited opening,
+Since many states are still cooperating with limited opening,
 following the instruction that only distance learning for K-12, Higher education institutions opened, with the extended implementation period, the ventilation system can be improved.
 
 - Installing portable High Efficiency Particulate Air (HEPA) filters in rooms.
@@ -268,4 +268,18 @@ following the instruction that only distance learning for K-12, Higher education
 
 <br>
 
-### Elderly Care Facilities,Day care centers
+### Elderly Care Facilities, Day care centers{.tabset .tabset-pills}
+
+<br>
+
+#### Elderly Care Facilities
+
+There are multiple [independent researchers](https://www.ahcancal.org/News-and-Communications/Fact-Sheets/FactSheets/Analysis-COVID-Outbreaks-in-Nursing-Homes.pdf) indicates that community spread is linked to outbreaks in nursing homes. In early March, the alarming outbreak in senior living complex, Seattle, shows the vulnerability of long-term care facilities.
+
+[![Get more info](./images/SC.PNG "STATS for Nursing Home ")](https://www.ahcancal.org/Data-and-Research/Pages/default.aspx)
+
+#### Day Care Centers
+
+Routines
+You'll also want to make sure the center has a plan for keeping your child safe during daily routines. This includes:
+

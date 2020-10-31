@@ -97,7 +97,7 @@ What's more, preliminary findings at Bronson Methodist Hospital in Michigan demo
 
 Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
 
-![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital ")
+[![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital ")](https://www.modernhealthcare.com/article/20181220/NEWS/181229992/number-of-outpatient-facilities-surges-as-industry-values-more-convenient-affordable-care#:~:text=Number%20of%20outpatient%20centers%20in,2005%20to%2040%2C600%20in%202016)
 
 As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.
 
@@ -245,9 +245,26 @@ plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents,values = ~v, typ
 
 ```
 
+<br>
+
 ### Opportunity
 
-#### 1. Sepical designs to tackle patient flow issues
+#### 1. Poor ventilation inside schools, especially in older buildings
+
+In fact, the U.S. Government Accountability Office said in a [report](https://www.nea.org/advocating-for-change/new-from-nea/school-ventilation-must-be-addressed-reopening-plans) in June that to prevent the spread of the coronavirus among schooling students, more than 41% of school districts need to update or replace their heating, ventilation, and air conditioning systems in at least half of their buildings.
+
+Some major problem would be fresh air vents were blocked with insulation, zone valves were removed or defective, and fresh air dampers that allow outside air in to circulate had been disconnected or were defective.
+
+
+#### 2. Prioritizes and renovate the system with existing standards
+Since many states are still cooperate with limited opening,
+following the instruction that only distance learning for K-12, Higher education institutions opened, with the extended implementation period, the ventilation system can be improved.
+
+- Installing portable High Efficiency Particulate Air (HEPA) filters in rooms.
+
+- Flushing air two hours before and after occupation.
+
+- Upgrading MERV-8 to MERV-13 filters where appropriate.
 
 <br>
 

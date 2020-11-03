@@ -96,7 +96,7 @@ What's more, preliminary findings at Bronson Methodist Hospital in Michigan demo
 
 Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
 
-[![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital ")](https://www.modernhealthcare.com/article/20181220/NEWS/181229992/number-of-outpatient-facilities-surges-as-industry-values-more-convenient-affordable-care#:~:text=Number%20of%20outpatient%20centers%20in,2005%20to%2040%2C600%20in%202016)
+[![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital "){width=95%}](https://www.modernhealthcare.com/article/20181220/NEWS/181229992/number-of-outpatient-facilities-surges-as-industry-values-more-convenient-affordable-care#:~:text=Number%20of%20outpatient%20centers%20in,2005%20to%2040%2C600%20in%202016)
 
 As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.
 
@@ -164,8 +164,9 @@ The compartment is equipped with a short D300 ventilation pipe, and the airflow 
 
 This statistic shows the volume of student housing units in the United States from 2010 to 2021. In 2018, there were 2.66 million student beds in the United States, which is set to increase to 2.84 million by 2021 with the annual growth approximately 45,000 bed per year.
 
+[![Get more info](./images/housing1.PNG "dorm beds number and the projection"){width=95%}]
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 
 data2_1 = read_csv(file = "housing.txt",col_names = TRUE)
 data2_2 = read_csv(file = "housing2.txt",col_names = TRUE)
@@ -203,9 +204,7 @@ fig%>%
             text = ~paste(y, '#'))
 ```
 
-*As of August 2017. Until that time approximately 35,500 beds have been delivered and 8,000 beds were awaiting completion.
-
-**Forecast: beds under construction and planned.
+*Forecast: beds under construction and planned.
 
 #### Classrooms for PK–12 Education
 
@@ -314,4 +313,4 @@ Nevertheless, the potential child day care market may increase as in the later p
 This indoor air quality article actually suggested day care center for kids would need some more sophistically designed ventilation system. The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
 
 
-[![Get more info](./images/daycare2.PNG "Study for day care center ")](https://pubmed.ncbi.nlm.nih.gov/17661928/)
+[![Get more info](./images/daycare2.PNG "Study for day care center "){width=95%}](https://pubmed.ncbi.nlm.nih.gov/17661928/)

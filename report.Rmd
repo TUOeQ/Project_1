@@ -48,7 +48,6 @@ Under the scenrio of global pandemic...
 
 ### Hospital Rooms
 
-<br> 
 US hospital system has four major divsions and includes following
 
 * U.S. Community hospital —— 84.60%
@@ -280,6 +279,39 @@ There are multiple [independent researchers](https://www.ahcancal.org/News-and-C
 
 #### Day Care Centers
 
-Routines
-You'll also want to make sure the center has a plan for keeping your child safe during daily routines. This includes:
+In year 2020, there are 643,538 existing Day Care centers in US with a total of 1,519,664 industry employment. Through year 2015-2020 the industry has a stable growth of 2.4% in revenue annually.
 
+Although some day care centers are required to stay open,these facilities are expected to experience increased purchase costs as they must increase spending on sanitizing facilities(Toys) and personal protective equipment for employees, thus leading to an expected 8.1% decline in 2020 alone.
+
+```{r echo=FALSE}
+#library("htmltools")
+#library("vembedr")
+#embed_url("https://www.youtube.com/watch?v=7tEiZqX-DDY")
+```
+
+[US Day Care](https://www.ibisworld.com/united-states/market-research-reports/day-care-industry/) has four major divsions and includes following:
+
+* In-home day care
+
+* Center-based day care
+
+* Pre-primary grade instructional programs
+
+* Other services and programs
+
+
+
+
+### Opportunity
+
+#### 1. Provide support for essential workers 
+During this pandemic, the healthcare worker strived with a huge burden and  according to studies, about a quarter of the health care and first responder workforce would require child care.
+
+Nevertheless, the potential child day care market may increase as in the later period of reopening, 34 to 43 percent of the total U.S. workforce hold jobs in industries that the Department of Homeland Security designates as critical infrastructure.
+
+#### 2. Building sepcial-designed ventalation for children
+
+This indoor air quality article actually suggested day care center for kids would need some more sophistically designed ventilation system. The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
+
+
+[![Get more info](./images/daycare2.PNG "Study for day care center ")](https://pubmed.ncbi.nlm.nih.gov/17661928/)

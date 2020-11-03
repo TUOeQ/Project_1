@@ -28,7 +28,11 @@ theme_set(theme_gray(base_size = 10) + theme(legend.position = "bottom"))
 
 <br>
 
-Under the scenrio of global pandemic...
+Under the scenario of the global pandemic, the importance of indoor air quality rises as more people concerning for the spread of disease in working and public environment.
+
+Therefore, it is urgent to explore the potential model Panasonic IAQ division could supply to discourage drug use and prevent death. 
+
+In this project, we are going to explore some potential markets in United States and intend to discover some critical opportunities for Panasonic ventilation production .
 
 <br>
 

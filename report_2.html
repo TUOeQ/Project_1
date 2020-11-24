@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Bingkun Luo" />
 
 
-<title>Panasonic</title>
+<title>Market Applications</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +20,11 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -257,7 +262,73 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
 
 
 
@@ -267,6 +338,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -314,81 +395,42 @@ $(document).ready(function () {
 
 <div class="fluid-row" id="header">
 
-
-
-<h1 class="title toc-ignore">Panasonic</h1>
-
-</div>
-
-
-<p><br></p>
-<div id="research-new-market-sales-opportunities-like-healthcare-nursing-homes-dentist-office-etc" class="section level2">
-<h2>Research new market &amp; sales opportunities (like healthcare, nursing homes, dentist office, etc)</h2>
-<p><br></p>
-<p><strong>As the World is identifying the Health risks associated with viruses like COVID, there is a big opportunity to bring existing Panasonic products to the North America Market. The NanoX and Ziano technologies have substantial market opportunities in the following markets - Elderly Care Facilities, Doctors Offices, Dentist Offices, Individual Hospital Rooms, College Dormatories, School Classrooms, etc. These are areas outside our current range of expertise and we need to gather a lot of information to assess the market opportunities.</strong></p>
-<p><strong>The Goal of the project will be to establish sales opportunities in these areas and understand the willingness to pay for the technologies.</strong></p>
-<p><img src="images/Profile_1.PNG" style="width:100%"></p>
-<p><left></p>
-</div>
-<div id="website-overview" class="section level2">
-<h2>Website overview</h2>
-<p><i><strong>Project Report</strong></i>: Contains a detailed report for market analysis led by IAQ .</p>
-<ul>
-<li><ol style="list-style-type: decimal">
-<li><a href="report_1.html">Potential Markets</a></li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li><a href="report_2.html">Market Applications</a></li>
-</ol>
-<ul>
-<li>2.a <a href="report_2a.html">Market Competitors</a></li>
-<li>2.b <a href="report_2b.html">Panasonic Solutions</a></li>
-</ul></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li></li>
-</ol></li>
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
 </ul>
-<p><i><strong>Interactive Map</strong></i>: Contains an interactive map showing demographic information.</p>
-<p><i><strong>Github repo &amp; Data source</strong></i>: Click the icons at the right top corner to see the data source and our github repo.</p>
-<p></br></p>
-<p></br></p>
 </div>
-<div id="motivations" class="section level2">
-<h2>Motivations</h2>
-<p>According to <a href="https://www.epa.gov/coronavirus/ventilation-and-coronavirus-covid-19">EPA</a>, an important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors.</p>
-<p>The ventilation rate should be based on the number of people that occupy an indoor space (and a few other factors), people should give special consideration to increased ventilation when occupancy increases and for areas with high-traffic. Improving ventilation also benefits indoor air quality by reducing exposure to products used for cleaning and disinfecting potentially contaminated surfaces.</p>
-<p>When used along with other best practices recommended by CDC and others, increasing ventilation can be part of a plan to protect people indoors.</p>
-<p></br></p>
-<div id="data" class="section level3">
-<h3>Data</h3>
-<p>xxxxx</p>
-<p><strong>Link to the data source</strong>: <a href="https://catalog.data.gov/dataset/accidental-drug-related-deaths-january-2012-sept-2015">data</a></p>
-<p></br></p>
+
+
+
+<h1 class="title toc-ignore">Market Applications</h1>
+<h4 class="author">Bingkun Luo</h4>
+
 </div>
-</div>
-<div id="initial-questions" class="section level2">
-<h2>Initial questions</h2>
+
+
+<div id="ventilation-and-coronavirus-covid-19" class="section level2">
+<h2>Ventilation and Coronavirus (COVID-19)</h2>
+<p><strong>An important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors. </strong></p>
+<p><strong>The ventilation rate should be based on the number of people that occupy an indoor space (and a few other factors), people should give special consideration to increased ventilation when occupancy increases and for areas with high-traffic.</strong></p>
+<p><strong>Improving ventilation also benefits indoor air quality by reducing exposure to products used for cleaning and disinfecting potentially contaminated surfaces.</strong></p>
+<p><strong>When used along with other best practices recommended by CDC and others, increasing ventilation can be part of a plan to protect people indoors.</strong></p>
 <ul>
-<li>What was the potential market ?</li>
-<li>Has the patterns of the existing market for ventilation changed over recent years?</li>
+<li><p>Elderly Care Facilities, Day Care Centers</p></li>
+<li><p>Hotel Rooms</p></li>
+<li><p>College Dormitories, School Classrooms</p></li>
+<li><p>Apartment Building</p></li>
+<li><p>Doctor Office, Dentist Clinic</p></li>
+<li><p>Hospital Rooms</p></li>
 </ul>
-<p></br></p>
-</div>
-<div id="main-findings-and-conclusions" class="section level2">
-<h2>Main findings and conclusions</h2>
-<p></br></p>
-</div>
-<div id="discussion" class="section level2">
-<h2>Discussion</h2>
-<p><br></p>
-</div>
-<div id="infographics" class="section level2">
-<h2>Infographics</h2>
-<p><a href="info.html">IAQ Solutions</a></p>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -420,7 +462,38 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

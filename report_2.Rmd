@@ -1,0 +1,33 @@
+---
+title: "Market Applications"
+author: "Bingkun Luo"
+output:
+    html_document:
+      code_folding: hide
+      toc: true
+      toc_float: true
+---
+
+## Ventilation and Coronavirus (COVID-19)
+
+**An important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors. **
+
+**The ventilation rate should be based on the number of people that occupy an indoor space (and a few other factors), people should give special consideration to increased ventilation when occupancy increases and for areas with high-traffic.**
+
+**Improving ventilation also benefits indoor air quality by reducing exposure to products used for cleaning and disinfecting potentially contaminated surfaces.**
+
+**When used along with other best practices recommended by CDC and others, increasing ventilation can be part of a plan to protect people indoors.**
+
+
+
+* Elderly Care Facilities, Day Care Centers
+
+* Hotel Rooms
+
+* College Dormitories, School Classrooms
+
+* Apartment Building
+
+* Doctor Office, Dentist Clinic
+
+* Hospital Rooms

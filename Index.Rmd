@@ -26,10 +26,10 @@ html_document:
 
 <i>**Project Report**</i>: Contains a detailed report for market analysis led by IAQ .
 
-* 1. [Potential Markets](report.html)
-* 2. [Market Application](main_1.html)
-  * 2.a:[Market Competitor](report_2a.html)
-  * 2.b:[Panasonic Solution](report_2b.html)
+* 1. [Potential Markets](report_1.html)
+* 2. [Market Applications](report_2.html)
+  * 2.a  [Market Competitors](report_2a.html)
+  * 2.b  [Panasonic Solutions](report_2b.html)
 * 3.
 
 <i>**Interactive Map**</i>: Contains an interactive map showing demographic information.
@@ -51,7 +51,12 @@ html_document:
 
 ## Motivations
 
-According to [a study](https://www.cdc.gov/nchs/data/databriefs/db329-h.pdf), 
+
+  According to [EPA](https://www.epa.gov/coronavirus/ventilation-and-coronavirus-covid-19), an important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors. 
+
+The ventilation rate should be based on the number of people that occupy an indoor space (and a few other factors), people should give special consideration to increased ventilation when occupancy increases and for areas with high-traffic. Improving ventilation also benefits indoor air quality by reducing exposure to products used for cleaning and disinfecting potentially contaminated surfaces.
+
+When used along with other best practices recommended by CDC and others, increasing ventilation can be part of a plan to protect people indoors.
 
 </br>
 

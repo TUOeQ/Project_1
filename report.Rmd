@@ -70,6 +70,8 @@ There are multiple [independent researchers](https://www.ahcancal.org/News-and-C
 [![Get more info](./images/SC.PNG "STATS for Nursing Home ")](https://www.ahcancal.org/Data-and-Research/Pages/default.aspx)
 
 
+<br>
+
 
 #### Day Care Centers
 
@@ -94,6 +96,7 @@ Although some day care centers are required to stay open,these facilities are ex
 * Other services and programs
 
 
+<br>
 
 
 #### Opportunity
@@ -115,6 +118,14 @@ This indoor air quality article actually suggested day care center for kids woul
 ### Hotel Rooms{.tabset .tabset-pills}
 
 <br>
+
+#### Hotel Rooms
+
+There are 54,200+ hotel properties in the United States, filling over 5 million guestrooms. There are more than 1.1 billion guests nights annually in the United States, highlighting a constant growing industry trends and increasing investments in guest experiences with spurs community growth. 
+
+[![Get more info](./images/hotel.PNG "Hotel trends "){width=95%}](https://www.ahla.com/dreams)
+
+#### Opportunity
 
 ### College Dormitories,School Classrooms{.tabset .tabset-pills}
 
@@ -277,13 +288,9 @@ Adjusting for the number of offuce in practical, [Current standards](https://blo
 
 Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.
 
-<img src="./images/waiting.PNG" style="width:55%">
+* The waiting area for general outpatients (including most medical specialties, surgery and psychiatry) is located in the large hall shown in the photograph. 
 
-
-* The waiting area for general outpatients (including most medical specialties, surgery and
-psychiatry) is located in the large hall shown in the photograph. 
-* The consulting rooms lead
-off from both sides of this waiting hall. 
+* The consulting rooms lead off from both sides of this waiting hall. 
 
 ##### 2. Prevent cross-infection between doctors and patients
 
@@ -300,9 +307,11 @@ The compartment is equipped with a short D300 ventilation pipe, and the airflow 
 
 <br>
 
-### Hospital Rooms
+### Hospital Rooms {.tabset .tabset-pills}
 
-<br>
+<img src="./images/waiting.PNG" style="width:80%">
+
+#### Hospital Rooms
 
 US hospital system has four major divsions and includes following
 

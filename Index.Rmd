@@ -21,18 +21,15 @@ html_document:
 
 <left>
 
-## Infographics
-
-[IAQ Solutions](info.html)
-
-</br>
 
 ## Website overview
 
 <i>**Project Report**</i>: Contains a detailed report for market analysis led by IAQ .
 
 * 1. [Potential Markets](report.html)
-* 2.
+* 2. [Market Application](main_1.html)
+  * 2.a:[Market Competitor](report_2a.html)
+  * 2.b:[Panasonic Solution](report_2b.html)
 * 3.
 
 <i>**Interactive Map**</i>: Contains an interactive map showing demographic information.
@@ -81,3 +78,10 @@ xxxxx
 </br>
 
 ## Discussion
+
+
+<br>
+
+## Infographics
+
+[IAQ Solutions](info.html)

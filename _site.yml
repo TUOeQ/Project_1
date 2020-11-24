@@ -2,8 +2,8 @@ name: "Yay internet!"
 output_dir: "."
 navbar:
   right:
-    - text: "Project 1"
-      href: Index.html
+    - text: "Project"
+      href: https://tuoeq.github.io/Project_1/Index.html
     - text: "Panasonic Indoor Air Qualityuality(IAQ) Divison"
       href: https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/
     - text: "Plots"

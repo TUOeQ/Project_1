@@ -51,7 +51,7 @@ Therefore, it is urgent to explore the potential model that Panasonic IAQ divisi
 
 * College Dormitories, School Classrooms
 
-* Apartment Building
+* Multifamily Housing
 
 * Doctor Office, Dentist Clinic
 
@@ -121,7 +121,7 @@ This indoor air quality article actually suggested day care center for kids woul
 
 #### Hotel Rooms
 
-There are 54,200+ hotel properties in the United States, filling over 5 million guestrooms. There are more than 1.1 billion guests nights annually in the United States, highlighting a constant growing industry trends and increasing investments in guest experiences with spurs community growth. 
+There are 54,200+ hotel properties in the United States, filling over 5 million guestrooms. There are more than 1.1 billion guests nights annually in the United States, highlighting a constant growing industry trends and increasing investments in guest experiences with spurs community growth.The most recent market growth can be viewed at [AHLA](https://www.ahla.com/sites/default/files/State%20Hotel%20Closures%20chart.pdf)
 
 [![Get more info](./images/hotel.PNG "Hotel trends "){width=95%}](https://www.ahla.com/dreams)
 
@@ -129,11 +129,26 @@ There are 54,200+ hotel properties in the United States, filling over 5 million 
 
 #### Opportunity
 
-Opportunity is hardly seen so far in the hotel industry, the data are listed as following:
+##### 1. Improve air quality in the public space for high risk worker
 
-[![Get more info](./images/hotel2.PNG "Statistics for hotel on demand "){width=95%}](https://www.ahla.com/sites/default/files/State%20Hotel%20Closures%20chart.pdf)
+[WHO](https://www.who.int/news-room/q-a-detail/coronavirus-disease-covid-19-ventilation-and-air-conditioning-in-public-spaces-and-buildings) would recommend on enhance the current ventilation standards for tourist accommodation and hotel workers who are considered as individuals at a medium or high risk of exposure to COVID-19. It is important to keep the air recirculation according to HVAC professional's standards.
 
-[![Get more info](./images/hotel1.PNG "Statistics for hotel on demand "){width=95%}](https://www.ahla.com/sites/default/files/State%20Hotel%20Closures%20chart.pdf)
+* Generate clean-to-less-clean air movements by re-evaluating the positioning of supply and exhaust air diffusers and/or dampers and adjusting zone supply and exhaust flow rates to establish measurable pressure differentials.
+
+* Increase central air filtration to as high as possible without diminishing design airflow. Regular inspection for  filters is required for housing and racks to ensure appropriate filter fit and check for ways to minimize filter bypass
+
+* Ensure exhaust fans in restroom facilities are functional and operating at full capacity when the building is occupied.
+
+##### 2. Consider seprated ventilation between hotel rooms
+
+[Washington Post](https://www.washingtonpost.com/travel/tips/hotel-ac-ventilation-covid/) interviewed with several epidemiologists and lised their suggestions,
+
+* Opening the window to increasing the exchanging airflow
+
+* Holding a room vacant between guests and spacing out for air circulating
+
+* Bringing a personal air filter could help mitigate the risk.
+
 
 <br>
 
@@ -248,7 +263,22 @@ following the instruction that only distance learning for K-12, Higher education
 
 <br>
 
-### Apartment Buildings {.tabset .tabset-pills}
+### Multifamily Housing {.tabset .tabset-pills}
+
+<br>
+
+#### Multifamily Housing
+
+For the multifamily housing market in 2020, CBRE Research predicted that permits and starts likely will fall, but not deliveries. Thus the completion amount still remain substantia. In 2020, multifamily completions will total 280,000 units, on par with 2019’s estimated 281,000 units.
+
+Permits, starts and completions were all at or near this cycle’s highest levels in 2019.Development will continue in both urban and suburban locations next year and no doubt, multifamily developers will remain very active in 2020. 
+
+[![Get more info](./images/apartment.PNG "CBRE research ")](https://www.cbre.us/research-and-reports/2020-US-Real-Estate-Market-Outlook-Multifamily)
+
+<br>
+
+#### Opportunity
+
 
 <br>
 
@@ -362,4 +392,5 @@ in Acute Care Environments"](https://www.healthdesign.org/sites/default/files/us
 What's more, preliminary findings at Bronson Methodist Hospital in Michigan demonstrate that private rooms, with well-design air-flow have resulted in a 10 to 11 percent decline in overall nosocomial infections rates 
 
 
-[Back to front page](https://tuoeq.github.io/Project_1/Index.html)   
+
+

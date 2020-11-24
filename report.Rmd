@@ -125,7 +125,17 @@ There are 54,200+ hotel properties in the United States, filling over 5 million 
 
 [![Get more info](./images/hotel.PNG "Hotel trends "){width=95%}](https://www.ahla.com/dreams)
 
+<br>
+
 #### Opportunity
+
+Opportunity is hardly seen so far in the hotel industry, the data are listed as following:
+
+[![Get more info](./images/hotel2.PNG "Statistics for hotel on demand "){width=95%}](https://www.ahla.com/sites/default/files/State%20Hotel%20Closures%20chart.pdf)
+
+[![Get more info](./images/hotel1.PNG "Statistics for hotel on demand "){width=95%}](https://www.ahla.com/sites/default/files/State%20Hotel%20Closures%20chart.pdf)
+
+<br>
 
 ### College Dormitories,School Classrooms{.tabset .tabset-pills}
 

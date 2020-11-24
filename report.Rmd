@@ -21,20 +21,23 @@ knitr::opts_chunk$set(
 )
 theme_set(theme_gray(base_size = 10) + theme(legend.position = "bottom"))
 ```
+                                                                                
+
+**In this project, we are going to explore some potential markets in United States and intend to discover some critical opportunities for Panasonic ventilation production **
 
 <br>
 
 ## Motivation
 
+    
 <br>
 
 Under the scenario of the global pandemic, the importance of indoor air quality rises as more people concerning for the spread of disease in working and public environment.
 
-![Get more info](./images/interaction.PNG "daily routine"){width=95%}
+![](./images/interaction.PNG "daily routine"){width=95%}
 
 Therefore, it is urgent to explore the potential model that Panasonic IAQ division could supply to public institution with some improvements in the quality of air. 
 
-In this project, we are going to explore some potential markets in United States and intend to discover some critical opportunities for Panasonic ventilation production .
 
 <br>
 
@@ -42,125 +45,76 @@ In this project, we are going to explore some potential markets in United States
 
 <br>
 
-* Hospital Rooms
+* Elderly Care Facilities, Day Care Centers
 
-* Outpatient Clinic, Dentist Clinic
+* Hotel Rooms
 
 * College Dormitories, School Classrooms
 
-* Elderly Care Facilities, Day Care Centers
+* Apartment Building
+
+* Doctor Office, Dentist Clinic
+
+* Hospital Rooms
 
 <br>
 
-### Hospital Rooms
-
-US hospital system has four major divsions and includes following
-
-* U.S. Community hospital —— 84.60%
-
-
-* Federal Government Hospitals —— 3.40%
-
-
-* Nonfederal Psychiatric Hospitals —— 10.00%
-
-
-* Other Hospitals for nonfederal long term care hospitals and hospital units within an institution such as a prison hospital or school infirmary —— 2.00%
-
-There are of total 6,146 US hospital from the AHA hospital statistic published 2018 statistics, where staffed beds could count up to 924,107. 
-
-Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376%
-
-[![Get more info](./images/AHA2018.PNG "Mapping for US Coummunity hospital ")](https://www.aha.org/statistics/2020-01-07-archived-fast-facts-us-hospitals-2019)
+### Elderly Care Facilities, Day care centers{.tabset .tabset-pills}
 
 <br>
 
-### Opportunity
+#### Elderly Care Facilities
 
+There are multiple [independent researchers](https://www.ahcancal.org/News-and-Communications/Fact-Sheets/FactSheets/Analysis-COVID-Outbreaks-in-Nursing-Homes.pdf) indicates that community spread is linked to outbreaks in nursing homes. In early March, the alarming outbreak in senior living complex, Seattle, shows the vulnerability of long-term care facilities.
 
-#### 1. Airborne Infections Isolation (AII) Room
-
-AII room, also known as Negative pressure ward, has a [restrctive setting](https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html) guide by CDC. 
-
-A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.
-<br>
-
-#### 2. The Increment for Single Patient Rooms 
-
-["The Use of Single Patient Rooms versus Multiple Occupancy Rooms
-in Acute Care Environments"](https://www.healthdesign.org/sites/default/files/use_of_single_patient_rooms_v_multiple_occ._rooms-acute_care.pdf)strongly suggested that it is critical that infected patients or patients highly susceptible to infections need to be isolated in private rooms with proper ventilation. 
-
-What's more, preliminary findings at Bronson Methodist Hospital in Michigan demonstrate that private rooms, with well-design air-flow have resulted in a 10 to 11 percent decline in overall nosocomial infections rates 
+[![Get more info](./images/SC.PNG "STATS for Nursing Home ")](https://www.ahcancal.org/Data-and-Research/Pages/default.aspx)
 
 
 
-### Outpatient Clinic & E/M Visits, Dentist Clinic {.tabset .tabset-pills}
+#### Day Care Centers
 
-<br>
+In year 2020, there are 643,538 existing Day Care centers in US with a total of 1,519,664 industry employment. Through year 2015-2020 the industry has a stable growth of 2.4% in revenue annually.
 
-#### Outpatient Clinic & Emergency Department Visits
+Although some day care centers are required to stay open,these facilities are expected to experience increased purchase costs as they must increase spending on sanitizing facilities(Toys) and personal protective equipment for employees, thus leading to an expected 8.1% decline in 2020 alone.
 
-Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
-
-[![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital "){width=95%}](https://www.modernhealthcare.com/article/20181220/NEWS/181229992/number-of-outpatient-facilities-surges-as-industry-values-more-convenient-affordable-care#:~:text=Number%20of%20outpatient%20centers%20in,2005%20to%2040%2C600%20in%202016)
-
-As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.
-
-However, the prediction for doctor offices would also be affect by the numbers of hospital, the budget and growth of full time equivalent for doctors.
-
-<br>
-
-#### Dentist Clinic
-
-The guidelines from [US Oral Health Workforce Projections, 2017-2030](https://bhw.hrsa.gov/sites/default/files/bhw/health-workforce-analysis/research/projections/oral-health-2017-2030.pdf) showed that the national demand for dentists is projected to increase by 9 percent acrossing the industry to 206,850 FTEs in 2030, while the demand for pediatric dentists (2 percent) and orthodontists (-1 percent) is expected to grow slowly or not at all (Exhibit 1).
-```{r}
-library(plotly)
-data1 = read_csv(file = "dentist_2030.txt",col_names = TRUE)
-
-data1%>%
-   plot_ly(x = ~type, y = ~percent, color = ~type, colors = "Greens",type = "bar")
+```{r echo=FALSE}
+#library("htmltools")
+#library("vembedr")
+#embed_url("https://www.youtube.com/watch?v=7tEiZqX-DDY")
 ```
 
-**The projection of the overall dentists'office in 2030 in the US would be 1,344,525**
+[US Day Care](https://www.ibisworld.com/united-states/market-research-reports/day-care-industry/) has four major divsions and includes following:
 
-Adjusting for the number of offuce in practical, [Current standards](https://blog.hjtdesign.com/how-many-dental-operatories) suggest that five to eight operatories may be the perfect and the number for any office with a single dentist and the working environment should include following features:
+* In-home day care
 
-* 3 operation room per dentist at least
+* Center-based day care
 
-* 2 full-time hygienists’ operating room
+* Pre-primary grade instructional programs
 
-* 1 optional common office managing the flow of traffic
-
-<br>
+* Other services and programs
 
 
-### Opportunity
-
-#### 1. Sepical designs to tackle patient flow issues
-
-Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.
-
-<img src="./images/waiting.PNG" style="width:55%">
 
 
-* The waiting area for general outpatients (including most medical specialties, surgery and
-psychiatry) is located in the large hall shown in the photograph. 
-* The consulting rooms lead
-off from both sides of this waiting hall. 
+#### Opportunity
 
-#### 2. Prevent cross-infection between doctors and patients
+##### 1. Provide support for essential workers 
+During this pandemic, the healthcare worker strived with a huge burden and  according to studies, about a quarter of the health care and first responder workforce would require child care.
 
-[![Get more info](./images/office1.PNG "design"){width=95%}](http://www.zjkcsj.cn/newsshow.php?cid=5&id=295)
+Nevertheless, the potential child day care market may increase as in the later period of reopening, 34 to 43 percent of the total U.S. workforce hold jobs in industries that the Department of Homeland Security designates as critical infrastructure.
 
-* Hospitals should set up mechanical ventilation systems in different zones. (clean areas, contaminated areas, buffer rooms)
+##### 2. Building sepcial-designed ventalation for children
 
-* Admission inspection in contaminated areas (negative pressure) and the mechanical ventilation system of the discharge disinfection treatment area (positive pressure) should be set up independently, and should not be used in combination with the ward.
+This indoor air quality article actually suggested day care center for kids would need some more sophistically designed ventilation system. The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
 
-* Adopt positive pressure buffer isolation method, that is, set the air supply not less than 30 times/h in **passage area**.
-The compartment is equipped with a short D300 ventilation pipe, and the airflow flows from the clean area to the isolation area. 
+
+[![Get more info](./images/daycare2.PNG "Study for day care center "){width=95%}](https://pubmed.ncbi.nlm.nih.gov/17661928/)
 
 <br>
 
+### Hotel Rooms{.tabset .tabset-pills}
+
+<br>
 
 ### College Dormitories,School Classrooms{.tabset .tabset-pills}
 
@@ -251,16 +205,16 @@ plot_ly(data3, ids = ~ids, labels = ~labels, parents = ~parents,values = ~v, typ
 
 <br>
 
-### Opportunity
+#### Opportunity
 
-#### 1. Poor ventilation inside schools, especially in older buildings
+##### 1. Poor ventilation inside schools, especially in older buildings
 
 In fact, the U.S. Government Accountability Office said in a [report](https://www.nea.org/advocating-for-change/new-from-nea/school-ventilation-must-be-addressed-reopening-plans) in June that to prevent the spread of the coronavirus among schooling students, more than 41% of school districts need to update or replace their heating, ventilation, and air conditioning systems in at least half of their buildings.
 
 Some major problem would be fresh air vents were blocked with insulation, zone valves were removed or defective, and fresh air dampers that allow outside air in to circulate had been disconnected or were defective.
 
 
-#### 2. Prioritizes and renovate the system with existing standards
+##### 2. Prioritizes and renovate the system with existing standards
 Since many states are still cooperating with limited opening,
 following the instruction that only distance learning for K-12, Higher education institutions opened, with the extended implementation period, the ventilation system can be improved.
 
@@ -270,53 +224,123 @@ following the instruction that only distance learning for K-12, Higher education
 
 - Upgrading MERV-8 to MERV-13 filters where appropriate.
 
-<br>
-
-### Elderly Care Facilities, Day care centers{.tabset .tabset-pills}
 
 <br>
 
-#### Elderly Care Facilities
+### Apartment Buildings {.tabset .tabset-pills}
 
-There are multiple [independent researchers](https://www.ahcancal.org/News-and-Communications/Fact-Sheets/FactSheets/Analysis-COVID-Outbreaks-in-Nursing-Homes.pdf) indicates that community spread is linked to outbreaks in nursing homes. In early March, the alarming outbreak in senior living complex, Seattle, shows the vulnerability of long-term care facilities.
+<br>
 
-[![Get more info](./images/SC.PNG "STATS for Nursing Home ")](https://www.ahcancal.org/Data-and-Research/Pages/default.aspx)
+### Doctors' Office, Dentist Clinic {.tabset .tabset-pills}
 
-#### Day Care Centers
+<br>
 
-In year 2020, there are 643,538 existing Day Care centers in US with a total of 1,519,664 industry employment. Through year 2015-2020 the industry has a stable growth of 2.4% in revenue annually.
+#### Doctors' Office & Outpatient Clinic
 
-Although some day care centers are required to stay open,these facilities are expected to experience increased purchase costs as they must increase spending on sanitizing facilities(Toys) and personal protective equipment for employees, thus leading to an expected 8.1% decline in 2020 alone.
+Centers for Disease Control(CDC) has published statistics on the [Office-based Physician Visits, 2016](https://www.cdc.gov/nchs/products/databriefs/db331.htm), in 2016, there were an estimated 883.7 million office-based physician visits in the United States and there were an estimated 278 office-based physician visits per 100 persons.
 
-```{r echo=FALSE}
-#library("htmltools")
-#library("vembedr")
-#embed_url("https://www.youtube.com/watch?v=7tEiZqX-DDY")
+[![Get more info](./images/OPTcenter.PNG "Mapping for US Coummunity hospital "){width=95%}](https://www.modernhealthcare.com/article/20181220/NEWS/181229992/number-of-outpatient-facilities-surges-as-industry-values-more-convenient-affordable-care#:~:text=Number%20of%20outpatient%20centers%20in,2005%20to%2040%2C600%20in%202016)
+
+As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.
+
+However, the prediction for doctor offices would also be affect by the numbers of hospital, the budget and growth of full time equivalent for doctors.
+
+<br>
+
+#### Dentist Clinic
+
+The guidelines from [US Oral Health Workforce Projections, 2017-2030](https://bhw.hrsa.gov/sites/default/files/bhw/health-workforce-analysis/research/projections/oral-health-2017-2030.pdf) showed that the national demand for dentists is projected to increase by 9 percent acrossing the industry to 206,850 FTEs in 2030, while the demand for pediatric dentists (2 percent) and orthodontists (-1 percent) is expected to grow slowly or not at all (Exhibit 1).
+```{r}
+library(plotly)
+data1 = read_csv(file = "dentist_2030.txt",col_names = TRUE)
+
+data1%>%
+   plot_ly(x = ~type, y = ~percent, color = ~type, colors = "Greens",type = "bar")
 ```
 
-[US Day Care](https://www.ibisworld.com/united-states/market-research-reports/day-care-industry/) has four major divsions and includes following:
+**The projection of the overall dentists'office in 2030 in the US would be 1,344,525**
 
-* In-home day care
+Adjusting for the number of offuce in practical, [Current standards](https://blog.hjtdesign.com/how-many-dental-operatories) suggest that five to eight operatories may be the perfect and the number for any office with a single dentist and the working environment should include following features:
 
-* Center-based day care
+* 3 operation room per dentist at least
 
-* Pre-primary grade instructional programs
+* 2 full-time hygienists’ operating room
 
-* Other services and programs
+* 1 optional common office managing the flow of traffic
 
-
-
-
-### Opportunity
-
-#### 1. Provide support for essential workers 
-During this pandemic, the healthcare worker strived with a huge burden and  according to studies, about a quarter of the health care and first responder workforce would require child care.
-
-Nevertheless, the potential child day care market may increase as in the later period of reopening, 34 to 43 percent of the total U.S. workforce hold jobs in industries that the Department of Homeland Security designates as critical infrastructure.
-
-#### 2. Building sepcial-designed ventalation for children
-
-This indoor air quality article actually suggested day care center for kids would need some more sophistically designed ventilation system. The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
+<br>
 
 
-[![Get more info](./images/daycare2.PNG "Study for day care center "){width=95%}](https://pubmed.ncbi.nlm.nih.gov/17661928/)
+#### Opportunity
+
+##### 1. Sepical designs to tackle patient flow issues
+
+Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.
+
+<img src="./images/waiting.PNG" style="width:55%">
+
+
+* The waiting area for general outpatients (including most medical specialties, surgery and
+psychiatry) is located in the large hall shown in the photograph. 
+* The consulting rooms lead
+off from both sides of this waiting hall. 
+
+##### 2. Prevent cross-infection between doctors and patients
+
+[![Get more info](./images/office1.PNG "design"){width=95%}](http://www.zjkcsj.cn/newsshow.php?cid=5&id=295)
+
+* Hospitals should set up mechanical ventilation systems in different zones. (clean areas, contaminated areas, buffer rooms)
+
+* Admission inspection in contaminated areas (negative pressure) and the mechanical ventilation system of the discharge disinfection treatment area (positive pressure) should be set up independently, and should not be used in combination with the ward.
+
+* Adopt positive pressure buffer isolation method, that is, set the air supply not less than 30 times/h in **passage area**.
+The compartment is equipped with a short D300 ventilation pipe, and the airflow flows from the clean area to the isolation area. 
+
+
+
+<br>
+
+### Hospital Rooms
+
+<br>
+
+US hospital system has four major divsions and includes following
+
+* U.S. Community hospital —— 84.60%
+
+
+* Federal Government Hospitals —— 3.40%
+
+
+* Nonfederal Psychiatric Hospitals —— 10.00%
+
+
+* Other Hospitals for nonfederal long term care hospitals and hospital units within an institution such as a prison hospital or school infirmary —— 2.00%
+
+There are of total 6,146 US hospital from the AHA hospital statistic published 2018 statistics, where staffed beds could count up to 924,107. 
+
+Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376%
+
+[![Get more info](./images/AHA2018.PNG "Mapping for US Coummunity hospital ")](https://www.aha.org/statistics/2020-01-07-archived-fast-facts-us-hospitals-2019)
+
+<br>
+
+#### Opportunity
+
+
+##### 1. Airborne Infections Isolation (AII) Room
+
+AII room, also known as Negative pressure ward, has a [restrctive setting](https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html) guide by CDC. 
+
+A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.
+<br>
+
+##### 2. The Increment for Single Patient Rooms 
+
+["The Use of Single Patient Rooms versus Multiple Occupancy Rooms
+in Acute Care Environments"](https://www.healthdesign.org/sites/default/files/use_of_single_patient_rooms_v_multiple_occ._rooms-acute_care.pdf)strongly suggested that it is critical that infected patients or patients highly susceptible to infections need to be isolated in private rooms with proper ventilation. 
+
+What's more, preliminary findings at Bronson Methodist Hospital in Michigan demonstrate that private rooms, with well-design air-flow have resulted in a 10 to 11 percent decline in overall nosocomial infections rates 
+
+
+[Back to front page](https://tuoeq.github.io/Project_1/Index.html)   

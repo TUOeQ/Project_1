@@ -72,6 +72,9 @@ There are multiple [independent researchers](https://www.ahcancal.org/News-and-C
 
 <br>
 
+#### Opportunity
+
+<br>
 
 #### Day Care Centers
 
@@ -202,6 +205,10 @@ fig%>%
 
 *Forecast: beds under construction and planned.
 
+#### Opportunity
+
+<br>
+
 #### Classrooms for PK–12 Education
 
 One perspective would be projection on the number of [educational institutions](https://nces.ed.gov/fastfacts/display.asp?id=372#PK12_enrollment) including special education, alternative, and other schools not classified by grade span.
@@ -291,7 +298,8 @@ With displacement ventilation, air is introduced at low velocity into a room at 
 
 For now, displacement ventilation is used mostly in Europe, and rarely in residential applications.
 
-<img src="./images/apartment2.png" style="width:95%">
+[![Get more info](./images/apartment2.PNG "Displacement Ventilation ")](https://www.me.psu.edu/cimbala/me405/Lectures/Dilution_vs_Displacement_Ventilation.pdf)
+
 
 <br>
 
@@ -324,6 +332,10 @@ Centers for Disease Control(CDC) has published statistics on the [Office-based P
 As one doctor would treat approximately 4 patients who would visit 3 times annually, the doctor offices in United States would be at least 73,641,666 in 2016.
 
 However, the prediction for doctor offices would also be affect by the numbers of hospital, the budget and growth of full time equivalent for doctors.
+
+<br>
+
+#### Opportunity
 
 <br>
 

@@ -298,7 +298,7 @@ With displacement ventilation, air is introduced at low velocity into a room at 
 
 For now, displacement ventilation is used mostly in Europe, and rarely in residential applications.
 
-[![Get more info](./images/apartment2.PNG "Displacement Ventilation ")](https://www.me.psu.edu/cimbala/me405/Lectures/Dilution_vs_Displacement_Ventilation.pdf)
+[![Get more info](./images/apart2.PNG "Displacement Ventilation ")](https://www.me.psu.edu/cimbala/me405/Lectures/Dilution_vs_Displacement_Ventilation.pdf)
 
 
 <br>

@@ -160,7 +160,7 @@ There are 54,200+ hotel properties in the United States, filling over 5 million 
 
 This statistic shows the volume of student housing units in the United States from 2010 to 2021. In 2018, there were 2.66 million student beds in the United States, which is set to increase to 2.84 million by 2021 with the annual growth approximately 45,000 bed per year.
 
-[![Get more info](./images/housing1.PNG "dorm beds number and the projection"){width=95%}]
+![](./images/housing1.PNG "dorm beds number and the projection"){width=95%}
 
 ```{r eval=FALSE, include=FALSE}
 
@@ -279,6 +279,35 @@ Permits, starts and completions were all at or near this cycle’s highest level
 
 #### Opportunity
 
+
+<br>
+
+##### 1.Dilution Ventilation vs. Displacement Ventilation
+
+
+Displacement ventilation leads to cleaner air comparing to the mixing ventilation, as contaminants are removed from the occupied zone in a room towards the ceiling, as well as minimizing drafts.
+
+With displacement ventilation, air is introduced at low velocity into a room at a low level and is exhausted at the ceiling. The flow of air is maintained by convective forces, which also have the effect of the concentration of pollutants rising from floor to ceiling. 
+
+For now, displacement ventilation is used mostly in Europe, and rarely in residential applications.
+
+<img src="./images/apartment2.PNG" style="width:95%">
+
+<br>
+
+##### 2.Ensure adequate ventilation
+
+According to [CDC](https://www.cdc.gov/coronavirus/2019-ncov/community/multifamily-housing.html#GuidingPrinciples)'s latest guideline, multifamily housing need to be aware of following standards and more:
+
+* Disable demand-controlled ventilation (DCV) controls that reduce air supply based on occupancy or temperature during occupied hours.
+
+* Use portable high-efficiency particulate air (HEPA) fan/filtration systems to help enhance air cleaning, especially in higher risk areas such as common spaces.
+
+* Generate clean-to-less-clean air movement by re-evaluating the positioning of supply and exhaust air diffusers or dampers, especially in higher-risk areas such as common spaces.
+
+* Consider using ultraviolet germicidal irradiationpdf iconexternal icon (UVGI) as a supplement to help inactivate SARS-CoV-2, especially if options for increasing room ventilation are limited.
+
+* Consider running the HVAC system at maximum outside airflow for 2 hours before and after the space is occupied.
 
 <br>
 

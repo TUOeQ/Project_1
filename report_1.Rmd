@@ -76,6 +76,24 @@ There are multiple [independent researchers](https://www.ahcancal.org/News-and-C
 
 <br>
 
+##### 1. Pragmatic steps for long-term care facilities 
+
+Acoording to the [recent publication](https://www.jamda.com/article/S1525-8610(20)30320-0/pdf) by The Society for Post-Acute and Long-Term Care Medicine(AMDA), the Ventilation should follow these standards,
+
+* Control of airflow essential, for instance, A 2400 cubic feet room should receiving approximately 80 cubic feet per minute (cfm) of outdoor air.
+
+* Install supplemental exhaust ventilation through dedicated exhaust portals, for example, a 250-cfm booster fan would increase the air exchange rate by approximately 6.5 ACH.
+
+* Increase efficiency of filtration, All rooms are typically equipped with MERV (minimum efficiency reporting value) 7 prefilters and MERV 14 final filters, which remove up to 98% of airborne particles as small as 0.3 to 1.0 mm in diameter (typical diameter of respiratory droplets)
+
+* Keep doors to hallways closed and follow infectious disease prevention guidelines(CDC)
+
+#####  2. ANI/ASHRAE/ASHE Standard 170-2017
+
+Following is the most up to date standard for senior-caring facilities and has a strong focus on the filtration requirements, which could be utilized under pandemic scenario.
+
+![](./images/senior.PNG ""){width=95%}
+
 #### Day Care Centers
 
 In year 2020, there are 643,538 existing Day Care centers in US with a total of 1,519,664 industry employment. Through year 2015-2020 the industry has a stable growth of 2.4% in revenue annually.
@@ -104,17 +122,19 @@ Although some day care centers are required to stay open,these facilities are ex
 
 #### Opportunity
 
-##### 1. Provide support for essential workers 
-During this pandemic, the healthcare worker strived with a huge burden and  according to studies, about a quarter of the health care and first responder workforce would require child care.
+#####  1. Provide support for essential workers 
+
+On the child care market report of [Federal Reserve Bank of Minneapolis](https://www.minneapolisfed.org/article/2020/covid-19-challenges-the-child-care-market), majority of the healthcare workers strived with a huge burden, about a quarter of the health care and first responder workforce would require child care.
 
 Nevertheless, the potential child day care market may increase as in the later period of reopening, 34 to 43 percent of the total U.S. workforce hold jobs in industries that the Department of Homeland Security designates as critical infrastructure.
 
 ##### 2. Building sepcial-designed ventalation for children
 
-This indoor air quality article actually suggested day care center for kids would need some more sophistically designed ventilation system. The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
+This [indoor air quality study](https://pubmed.ncbi.nlm.nih.gov/17661928/) actually suggested day care center for kids would need some more sophistically designed ventilation system. 
+
+The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
 
 
-[![Get more info](./images/daycare2.PNG "Study for day care center "){width=95%}](https://pubmed.ncbi.nlm.nih.gov/17661928/)
 
 <br>
 
@@ -207,6 +227,20 @@ fig%>%
 
 #### Opportunity
 
+##### 1. Dilute potential contaminants in campus buildings
+
+[CDC](https://www.cdc.gov/coronavirus/2019-ncov/community/colleges-universities/considerations.html) has certified an detail guidelines for the operation of univeristy buildings from ASHRAE.
+
+* Increase total airflow supply to occupied spaces, when possible.
+
+* Disable demand-controlled ventilation controls that reduce air supply based on occupancy or temperature during occupied hours.
+
+* Further open minimum outdoor air dampers to reduce or eliminate HVAC air recirculation.
+
+* Use portable high-efficiency particulate air fan/filtration systems 
+
+**[Additional notes by ASHRAE](https://www.ashrae.org/file%20library/technical%20resources/ashrae%20journal/2020journaldocuments/72-74_ieq_schoen.pdf)** 
+
 <br>
 
 #### Classrooms for PK–12 Education
@@ -258,8 +292,8 @@ Some major problem would be fresh air vents were blocked with insulation, zone v
 
 
 ##### 2. Prioritizes and renovate the system with existing standards
-Since many states are still cooperating with limited opening,
-following the instruction that only distance learning for K-12, Higher education institutions opened, with the extended implementation period, the ventilation system can be improved.
+
+[ASHRAE EPIDEMIC TASK FORCE](https://www.ashrae.org/file%20library/technical%20resources/covid-19/ashrae-reopening-schools-and-universities-c19-guidance.pdf) suggested following the instruction for renovation for K-12, Higher education institutions opened, with the extended implementation period and the ventilation system can be improved by
 
 - Installing portable High Efficiency Particulate Air (HEPA) filters in rooms.
 
@@ -333,9 +367,33 @@ As one doctor would treat approximately 4 patients who would visit 3 times annua
 
 However, the prediction for doctor offices would also be affect by the numbers of hospital, the budget and growth of full time equivalent for doctors.
 
-<br>
 
 #### Opportunity
+
+##### 1. Sepical designs to tackle patient flow issues
+
+According to [WHO](https://www.who.int/water_sanitation_health/publications/natural_ventilation.pdf)'s Natural Ventilation for Infection Control in Health-Care Settings
+
+Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.
+
+* The waiting area for general outpatients (including most medical specialties, surgery and psychiatry) is located in the large hall shown in the photograph. 
+
+* The consulting rooms lead off from both sides of this waiting hall.
+
+<img src="./images/waiting.PNG" style="width:80%">
+
+<br>
+
+##### 2. Prevent cross-infection between doctors and patients
+
+[![Get more info](./images/office1.PNG "design"){width=95%}](http://www.zjkcsj.cn/newsshow.php?cid=5&id=295)
+
+* Hospitals should set up mechanical ventilation systems in different zones. (clean areas, contaminated areas, buffer rooms)
+
+* Admission inspection in contaminated areas (negative pressure) and the mechanical ventilation system of the discharge disinfection treatment area (positive pressure) should be set up independently, and should not be used in combination with the ward.
+
+* Adopt positive pressure buffer isolation method, that is, set the air supply not less than 30 times/h in **passage area**.
+The compartment is equipped with a short D300 ventilation pipe, and the airflow flows from the clean area to the isolation area.
 
 <br>
 
@@ -365,24 +423,22 @@ Adjusting for the number of offuce in practical, [Current standards](https://blo
 
 #### Opportunity
 
-##### 1. Sepical designs to tackle patient flow issues
 
-Usually, there will be up to 300 patients share this room during consulting hours in the mornings and afternoons. The current outbreak of Covid-19 has already burden the medical system, which remarks the importance of a frequently ventilated and disinfected public areas. The ventilation rate should increase from a mean of 6.5 ACH to 15 ACH with the new design in the general outpatient waiting room.
+##### 1. Guidance for Dental Settings, adding HEPA filtration
 
-* The waiting area for general outpatients (including most medical specialties, surgery and psychiatry) is located in the large hall shown in the photograph. 
+[CDC and American Dental Association](https://www.cdc.gov/coronavirus/2019-ncov/hcp/dental-settings.html) have updated some of the dental setting in the recent article,
 
-* The consulting rooms lead off from both sides of this waiting hall. 
+* Air movement must move in from adjacent areas.
 
-##### 2. Prevent cross-infection between doctors and patients
+* Minimum air changes of outdoor air per hour is two.
 
-[![Get more info](./images/office1.PNG "design"){width=95%}](http://www.zjkcsj.cn/newsshow.php?cid=5&id=295)
+* Air may not be recirculated by means of room units.
 
-* Hospitals should set up mechanical ventilation systems in different zones. (clean areas, contaminated areas, buffer rooms)
+Rather than just relying on the building’s HVAC system capacity, use a HEPA air filtration unit to reduce aerosol concentrations in the room and increase the effectiveness of the turnover time.
 
-* Admission inspection in contaminated areas (negative pressure) and the mechanical ventilation system of the discharge disinfection treatment area (positive pressure) should be set up independently, and should not be used in combination with the ward.
+Place the HEPA unit near the patient’s chair, but not behind the DHCP. Ensure the DHCP are not positioned between the unit and the patient’s mouth. Position the unit to ensure that it does not pull air into or past the breathing zone of the DHCP.
 
-* Adopt positive pressure buffer isolation method, that is, set the air supply not less than 30 times/h in **passage area**.
-The compartment is equipped with a short D300 ventilation pipe, and the airflow flows from the clean area to the isolation area. 
+Moreover, considering dental offices have patients with different health histories and they may be more susceptible to infections from bioaerosols, it would be better to avoid aerosol generating procedures
 
 
 
@@ -390,7 +446,6 @@ The compartment is equipped with a short D300 ventilation pipe, and the airflow 
 
 ### Hospital Rooms {.tabset .tabset-pills}
 
-<img src="./images/waiting.PNG" style="width:80%">
 
 #### Hospital Rooms
 

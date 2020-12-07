@@ -92,7 +92,7 @@ Acoording to the [recent publication](https://www.jamda.com/article/S1525-8610(2
 
 Following is the most up to date standard for senior-caring facilities and has a strong focus on the filtration requirements, which could be utilized under pandemic scenario.
 
-![](./images/senior.PNG ""){width=95%}
+[![](./images/senior.PNG ""){width=95%}](https://www.nafahq.org/wp-content/uploads/Moeller.pdf)
 
 #### Day Care Centers
 

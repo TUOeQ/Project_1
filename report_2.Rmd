@@ -7,24 +7,8 @@ output:
       toc: true
       toc_float: true
 ---
-```{r}
-
-library(leafpop)
-colorize <- function(x, color) {
-  if (knitr::is_latex_output()) {
-    sprintf("\\textcolor{%s}{%s}", color, x)
-  } else if (knitr::is_html_output()) {
-    sprintf("<span style='color: %s;'>%s</span>", color, 
-      x)
-  } else x
-}
-```
 
 ## Ventilation and Coronavirus (COVID-19)
-
-
-`r colorize("2020", "lightblue")`
-
 
 
 **An important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors. **
@@ -113,13 +97,13 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
 ## **Panasonic Solutions**
 
 
-### Heating, Ventilation and Air Conditioning (HVAC) {.tabset}
+### Heating, Ventilation and Air Conditioning (HVAC) {.tabset .tabset-pills}
 
 <br>
 
 
 
-### High Efficiency Particulate Air (HEPA) {.tabset}
+### High Efficiency Particulate Air (HEPA) {.tabset .tabset-pills}
 
 <br>
 

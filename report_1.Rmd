@@ -478,6 +478,7 @@ Comapring to the total of 5,534 US hospital in 2016, the CAGR accounts for 5.376
 AII room, also known as Negative pressure ward, has a [restrctive setting](https://www.cdc.gov/tb/webcourses/course/chapter7/7_infection_control_7_infection_control_program_airborne_infection_isolation_aii_room.html) guide by CDC. 
 
 A special high efficiency air (HEPA) filter that removes most (99.97%) of the droplet nuclei before it is returned to the general circulation has to be implemented.
+
 <br>
 
 ##### 2. The Increment for Single Patient Rooms 

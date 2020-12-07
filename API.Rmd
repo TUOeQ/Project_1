@@ -66,6 +66,9 @@ library(httr)
 # Make a GET request to http://httpbin.org/get
 get_result <- GET(url = "http://httpbin.org/get")
 
+get_result <- GET(url = "https://data.cityofnewyork.us/resource/43nn-pn8j.json")
+
+
 # Print it to inspect it
 get_result
 

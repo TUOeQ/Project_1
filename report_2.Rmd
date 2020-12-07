@@ -114,13 +114,13 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
 ## **Panasonic Solutions**
 
 
-### Heating, Ventilation and Air Conditioning (HVAC) {.tabset .tabset-pills}
+### Heating, Ventilation and Air Conditioning (HVAC) {.tabset}
 
 <br>
 
 
 
-### High Efficiency Particulate Air (HEPA) {.tabset .tabset-pills}
+### High Efficiency Particulate Air (HEPA) {.tabset}
 
 <br>
 

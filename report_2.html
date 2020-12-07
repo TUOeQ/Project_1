@@ -411,6 +411,16 @@ div.tocify {
 </div>
 
 
+<pre class="r"><code>library(leafpop)</code></pre>
+<pre><code>## Warning: package &#39;leafpop&#39; was built under R version 3.6.3</code></pre>
+<pre class="r"><code>colorize &lt;- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf(&quot;\\textcolor{%s}{%s}&quot;, color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf(&quot;&lt;span style=&#39;color: %s;&#39;&gt;%s&lt;/span&gt;&quot;, color, 
+      x)
+  } else x
+}</code></pre>
 <div id="ventilation-and-coronavirus-covid-19" class="section level2">
 <h2>Ventilation and Coronavirus (COVID-19)</h2>
 <p><span style="color: lightblue;">2020</span></p>

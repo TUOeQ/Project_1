@@ -8,7 +8,25 @@ output:
       toc_float: true
 ---
 
+```{r include=FALSE}
+
+library(leafpop)
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+```
+
 ## Ventilation and Coronavirus (COVID-19)
+
+
+`r colorize("2020", "lightblue")`
+
+
 
 **An important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors. **
 
@@ -48,6 +66,14 @@ https://www.nafahq.org/wp-content/uploads/Moeller.pdf
 
 daycare
 https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2FASHRAE,Environmental%20Conditions%20for%20Human%20Occupancy.
+
+```{r}
+#popupGraph
+#popupGraph(
+ # './images/hotel.PNG',
+  #width = 300,
+  #height = 300)
+```
 
 
 
@@ -92,17 +118,84 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
 
 <br>
 
-####
+
 
 ### High Efficiency Particulate Air (HEPA) {.tabset .tabset-pills}
 
 <br>
 
-#### Asia
+#### Asia {.tabset}
 
-#### Malaysia
+Including products from Great China, Japan, Malaysia
+
+<br>
+
+##### Air Purifiers
+
+1. [F-PDS90C](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds90c.specs.html)
+
+* 4-fold gradient purification, multi-directional filtration of air
+* AUK professional certification to reduce 7 major allergens
+* Equipped with dust sensor and air pollution indicator display
+
+2. [F-VJL55C2](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-vjl55c2.specs.html)
+ 
+* ASEPTIC FEELING-clean bacteria technology
+* High-efficiency composite filter, filter out 10 kinds of bacteria, reduce 7 major allergens 
+* Fog-free humidification technology to prevent bacterial growth
+
+[![Alt text](./images/F-PDS90C.png "F-PDS90C,￥3,999"){width=29.6%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds90c.html)  [![Alt text](./images/F-VJL55C2.png "F-VJL55C2,￥4,499"){width=30%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-vjl55c2.html)  [![Alt text](./images/F-PDS130C.png "F-PDS130C,￥6,999"){width=35%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds130c.html)
+
+3.[F-PDS130C](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds130c.specs.html)
+
+* 710$m^{3}/h$ Clean Air Delivery Rate(CADR)
+* 3 airflow modes, precise purification
+* 99.99% space sterilization rate, nearly 100% peace of mind
+
+
+
+##### HEPA Composite Filter
+
+1.F-ZXSL40C
+
+* Recommended renewal frequency: 2 years
+* Compatible with F-VXL40C
+
+2.F-ZXJP90C
+
+* Recommended renewal frequency: 10 years
+* Compatible with [F-VXJ90C](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-vxj90c.html)
+
+[![Alt text](./images/HEPA-F-1.png "F-ZXSL40C"){width=35%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html)  [![Alt text](./images/HEPA-F-2.png "F-ZXJP90C"){width=35%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html)  
+
+3.F-ZXKP55C
+
+* Recommended renewal frequency: 5 years
+* Compatible with F-655FCV,F-5F5FCV,F-VK655C,F-VK5F5C
+
+
+4.F-ZXKP40C
+
+* Recommended renewal frequency: 5 years
+* Compatible with F-41C4VX,F-VXK40C
+
+
+[![Alt text](./images/HEPA-F-3.png "F-ZXKP55C"){width=35%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html)  [![Alt text](./images/HEPA-F-4.png "F-ZXKP40C"){width=35%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html)
+
+
+
+
+
+
 
 https://www.panasonic.com/my/consumer/air-solutions/air-purifier.html
+
+
+
+
+#### Europe
+
+https://www.aircon.panasonic.eu/GB_en/ranges/domestic/
 
 #### Middle East
 

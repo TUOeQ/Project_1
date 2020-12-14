@@ -158,8 +158,9 @@ Including products from Great China, Japan, Malaysia
 
 
  [![Alt text](./images/F-VXT90.PNG "F-VXT90"){width=35%}](https://panasonic.jp/airrich/products/f_vxt90.html)
-    [![Alt text](./images/F-VJL75C.PNG "F-VJL75C"){width=29%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-113c8vx.html)  [![Alt text](./images/F-PXP155C.png "F-PXP155C"){width=29.6%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pxp155c.html)
+    [![Alt text](./images/F-VJL75C.PNG "F-VJL75C"){width=29%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-113c8vx.html)  [![Alt text](./images/F-PXP155C.png "F-PXP155C"){width=30%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pxp155c.html)
 
+<br>
 
 ##### Nanoe™ Technology- Portable Air Purifier
 
@@ -174,6 +175,9 @@ library("htmltools")
 library("vembedr")
 embed_url("https://www.youtube.com/watch?v=RJ59o3YLxBg&ab_channel=NancyTonAI")
 ```
+
+
+<br>
 
 
 ##### HEPA Composite Filter
@@ -206,6 +210,8 @@ embed_url("https://www.youtube.com/watch?v=RJ59o3YLxBg&ab_channel=NancyTonAI")
 
 
 
+<br>
+
 
 ##### Air Purifiers
 
@@ -223,6 +229,11 @@ https://www.aircon.panasonic.eu/GB_en/ranges/domestic/
 https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html
 
 
+
+
+
+
+<br>
 
 
 ### Nanoe™ Technology

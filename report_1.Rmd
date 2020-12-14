@@ -134,7 +134,15 @@ This [indoor air quality study](https://pubmed.ncbi.nlm.nih.gov/17661928/) actua
 
 The study demonstrate that the higher prevalence rates of allergic and respiratory symptoms among young children, whose immune system is still under-developed, suggest that ventilation and plausible growth and propagation mechanisms of allergens and infectious agents be further investigated.
 
+In Oregon, such implementation has already taken in place according to **Goddard Childcare**, a nationwide childcare provider. The Organization released "Operational Blueprint for School Rentry [saftey guidelines](https://www.oregon.gov/ode/students-and-family/healthsafety/Documents/thegoddardschoolbethany.pdf)
 
+* Schools with HVAC systems should evaluate the system to minimize indoor air recirculation (thus maximizing fresh outdoor air) to the extent possible.
+
+* Consider running ventilation systems continuously and changing the filters more frequently. **Do not use fans** if they pose a safety or health risk, such as increasing exposure to pollen/allergies or exacerbating asthma symptoms. Fans should not be used in rooms with closed windows and doors, as this does not allow for fresh air to circulate.
+
+* Consider the need for increased ventilation in areas where
+students with special health care needs receive medication or
+treatments
 
 <br>
 

@@ -177,6 +177,16 @@ embed_url("https://www.youtube.com/watch?v=RJ59o3YLxBg&ab_channel=NancyTonAI")
 ```
 
 
+[F-GPT01AKM](https://www.panasonic.com/my/consumer/air-solutions/air-purifier/f-gpt01akm.html)
+
+* Panasonic Unique nanoe™X Technology
+* Inhibit Virus and Bacteria
+* Deodorize Environment
+* Hydrate Skin and Hair
+* Portable & Lightweight
+
+[![Get more info](./images/port2.PNG "mal"){width=95%}]
+
 <br>
 
 

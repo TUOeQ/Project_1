@@ -135,6 +135,45 @@ Including products from Great China, Japan, Malaysia
 * 3 airflow modes, precise purification
 * 99.99% space sterilization rate, nearly 100% peace of mind
 
+##### Nanoe™ Technology-Air Purifiers
+
+1. [F-VXT90](https://panasonic.jp/airrich/products/f_vxt90.html)
+
+* Uing the "Mill Air" phone app to check the level of dust (pollen, house dust, PM2.5, peculiar smell)
+* Function as humidifier as well
+* Unique air flow and ion technology"
+
+
+
+2. [F-VJL75C](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-vjl75c.specs.html)
+
+* High efficiency nanofiber HEPA filter can filter 0.02μm particles
+* Air disinfection technology
+
+3. [F-PXP155C](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pxp155c.specs.html)
+
+* The particulate matter is as high as CADR $800m³/h$
+* Equipped with 3 sets of filters, all-round three-dimensional purification
+* Certified by the British Allergy Association to effectively reduce 7 allergens
+
+
+ [![Alt text](./images/F-VXT90.PNG "F-VXT90"){width=35%}](https://panasonic.jp/airrich/products/f_vxt90.html)
+    [![Alt text](./images/F-VJL75C.PNG "F-VJL75C"){width=29%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-113c8vx.html)  [![Alt text](./images/F-PXP155C.png "F-PXP155C"){width=29.6%}](https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pxp155c.html)
+
+
+##### Nanoe™ Technology- Portable Air Purifier
+
+[F-GMK01](https://panasonic.jp/nanoe_h/products/f_gmk01.html)
+
+* Equipped with "8 hours automatic shutdown timer" 
+
+* Record the air volume when the car engine is stopped, and when the engine is restarted, the same air volume is generated again with "nanoe". 
+
+```{r echo=FALSE}
+library("htmltools")
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=RJ59o3YLxBg&ab_channel=NancyTonAI")
+```
 
 
 ##### HEPA Composite Filter
@@ -168,8 +207,7 @@ Including products from Great China, Japan, Malaysia
 
 
 
-
-
+##### Air Purifiers
 
 https://www.panasonic.com/my/consumer/air-solutions/air-purifier.html
 
@@ -189,3 +227,10 @@ https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.htm
 
 ### Nanoe™ Technology
 
+Please see a brief overview of the most recent Nanoe™ Technology
+
+```{r echo=FALSE}
+library("htmltools")
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=MO7arSRgvuI&ab_channel=PanasonicAsia")
+```

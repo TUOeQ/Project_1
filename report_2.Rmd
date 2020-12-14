@@ -213,21 +213,48 @@ embed_url("https://www.youtube.com/watch?v=RJ59o3YLxBg&ab_channel=NancyTonAI")
 <br>
 
 
-##### Air Purifiers
-
-https://www.panasonic.com/my/consumer/air-solutions/air-purifier.html
 
 
-
-
-#### Europe
-
-https://www.aircon.panasonic.eu/GB_en/ranges/domestic/
 
 #### Middle East
 
 https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html
 
+
+##### Air Purifiers
+
+1. [F-VXK90M](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxk90m.specs.html)
+ 
+* Extra filter Protects against sandstorms
+* Applicable Area $66 m² (710 ft²)$
+* Humidifying Capacity $830 mL/h$
+
+[![Get more info](./images/ME1.PNG "human detection "){width=95%}]
+
+
+
+2. [F-PXL45M](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-pxl45m.specs.html)
+
+* Allows multi-installation to save space
+  * Can be mounted on wall
+  * Can be placed on the table or floor
+* House Dust Catcher:Purifies with powerful suction near the floor where children play around
+* Applicable Area $33 m2 (355 ft²)$
+
+3. [F-VXL95M](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxl95m.specs.html)
+
+* Applicable Area: $71 m²$
+* Sandstorm Mode
+* Anti-virus/Bacteria 99.9% H1N1,H5N1,MRSA
+
+ [![Alt text](./images/F-VXK90M.PNG "F-VXK90M"){width=30%}](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxk90m.html)
+    [![Alt text](./images/F-PXL45M.PNG "F-PXL45M"){width=37%}](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-pxl45m.html)  [![Alt text](./images/F-VXL95M.PNG "F-VXL95M"){width=30%}](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxl95m.html)
+
+#### Europe
+
+https://www.aircon.panasonic.eu/GB_en/ranges/domestic/
+
+##### Air Purifiers
 
 
 

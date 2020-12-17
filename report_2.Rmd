@@ -81,12 +81,11 @@ https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/
 
 <br>
 
-Senior living
-https://www.nafahq.org/wp-content/uploads/Moeller.pdf
+According to [U.S. General Services Administration](https://www.wbdg.org/FFC/GSA/chilcare.pdf), the day care center's ventilation design should follow following instructions:
+
+Design ventilation systems to allow zero exposure of non-smokers to environmental tobacco smoke (ETS) even if smoking is limited to outdoor areas, as described in LEED Version 2.0. Design ventilation systems to achieve an air-change effectiveness of minimum 0.9 per ASHRAE 129- 1997 and as described in LEED Version 2.0. Locate air return over diaper and toilet areas
 
 
-daycare
-https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2FASHRAE,Environmental%20Conditions%20for%20Human%20Occupancy.
 
 ```{r}
 #popupGraph
@@ -94,6 +93,14 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
  # './images/hotel.PNG',
   #width = 300,
   #height = 300)
+
+
+#Senior living
+#https://www.nafahq.org/wp-content/uploads/Moeller.pdf
+
+
+#daycare
+#https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2FASHRAE,Environmental%20Conditions%20for%20Human%20Occupancy.
 ```
 
 

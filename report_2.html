@@ -27,6 +27,8 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -426,10 +428,435 @@ div.tocify {
 <li><p>Hospital Rooms</p></li>
 </ul>
 <p><br></p>
-<pre class="r"><code>#knitr::kable(iris2, caption = &quot;An example table caption.&quot;)</code></pre>
 </div>
 <div id="current-ventilation-principles" class="section level2">
 <h2><strong>Current Ventilation Principles</strong></h2>
+<pre class="r"><code>library(tidyverse)
+library(kableExtra)
+PRC = readxl::read_excel(&quot;PRC.xlsx&quot;)
+knitr::kable(PRC[1:14,], caption = &quot;An example table caption.&quot;)%&gt;%
+  kable_material(c(&quot;striped&quot;, &quot;hover&quot;),full_width = FALSE)%&gt;%
+  kable_styling(font_size = 12)%&gt;%
+  row_spec(10, bold = T,background = &quot;White&quot;)%&gt;%
+  row_spec(11:14, bold = F, background = &quot;lightskyblue&quot;)%&gt;%
+  row_spec(1:3, bold = F, background = &quot;lightyellow&quot;)%&gt;%
+  row_spec(5:6, bold = F, background = &quot;lightpink&quot;)%&gt;%
+  row_spec(8:9, bold = F, background = &quot;lightgreen&quot;)%&gt;%
+  scroll_box(width = &quot;900px&quot;)</code></pre>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:900px; ">
+<table class=" lightable-material lightable-striped lightable-hover table" style='font-family: "Source Sans Pro", helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; font-size: 12px; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+An example table caption.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Function of Space
+</th>
+<th style="text-align:left;">
+Minimum total ach
+</th>
+<th style="text-align:left;">
+Minimum outdoor ach
+</th>
+<th style="text-align:left;">
+Pressure Relationship to Adjacent Areas
+</th>
+<th style="text-align:left;">
+Temperature control F/C
+</th>
+<th style="text-align:left;">
+Moisture control(k),%
+</th>
+<th style="text-align:left;">
+Minimum Filter Efficiency(ab)
+</th>
+<th style="text-align:left;">
+Unoccupied Turndown
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;background-color: lightyellow !important;">
+Elderly Care Facilities
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+7/NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightyellow !important;">
+Nursing Unit
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+12
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+Negative/NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+70-75/21-24
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+MAX 60/NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+13/NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightyellow !important;">
+Day Care Centers
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hotel Rooms
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+1-2
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightpink !important;">
+College Dormitories
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+1-2
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightpink !important;">
+School Classrooms
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+5-6
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apartment Building
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+0.35-1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightgreen !important;">
+Doctor Office
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightgreen !important;">
+Dentist Clinic
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+4
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+70-75/21-24
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+MAX 60
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+7/14
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+Hospital Rooms
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_________________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Patient room
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+4
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+70-75/21-24
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/14
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Patient toilet room
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+10
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Negative
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Newborn nursery
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+6
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+72-78/22-26
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/14
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Continued care nursery
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+6
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/14
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Yes
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre class="r"><code>  #kbl() %&gt;%
+  #kable_paper(full_width = F) %&gt;%
+  #column_spec(2, color = spec_color(mtcars$mpg[1:8]),
+  #            link = &quot;https://haozhu233.github.io/kableExtra/&quot;) %&gt;%
+  #column_spec(6, color = &quot;white&quot;,
+   #           background = spec_color(mtcars$drat[1:8], end = 0.7),
+    #          popover = paste(&quot;am:&quot;, mtcars$am[1:8]))
+
+#devtools::install_github(&quot;haozhu233/kableExtra&quot;)</code></pre>
+<p><a href="https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20guidelines/standards%20addenda/170-2017/170_2017_p_20200302.pdf" class="uri">https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20guidelines/standards%20addenda/170-2017/170_2017_p_20200302.pdf</a></p>
+<p><a href="http://sspc170.ashraepcs.org/pdf/170-2008(with_a,b,d,e,f,g)_edits.2.pdf" class="uri">http://sspc170.ashraepcs.org/pdf/170-2008(with_a,b,d,e,f,g)_edits.2.pdf</a></p>
+<p><a href="https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/" class="uri">https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/</a></p>
+<p><em>Note: NR = no requirement</em></p>
 <p><br></p>
 <div id="elderly-care-facilities" class="section level3">
 <h3>Elderly Care Facilities</h3>

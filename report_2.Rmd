@@ -35,11 +35,19 @@ output:
 
 <br>
 
+```{r}
+#knitr::kable(iris2, caption = "An example table caption.")
+```
+
+
 ## **Current Ventilation Principles**
 
 <br>
 
-### Elderly Care Facilities, Day Care Centers
+### Elderly Care Facilities
+
+
+### Day Care Centers
 
 <br>
 
@@ -65,7 +73,11 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
 <br>
 
 
-### College Dormitories, School Classrooms
+### College Dormitories
+
+<br>
+
+###School Classrooms
 
 
 <br>
@@ -77,7 +89,12 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
 <br>
 
 
-### Doctor Office, Dentist Clinic
+### Doctor Office
+
+
+<br>
+
+### Dentist Clinic
 
 
 <br>
@@ -100,6 +117,33 @@ https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2
 ### Heating, Ventilation and Air Conditioning (HVAC) {.tabset .tabset-pills}
 
 <br>
+
+#### Asia {.tabset}
+
+Including products from Great China, Japan, Malaysia
+
+<br>
+
+##### Ventilation
+
+1.[FV-50NCD1C / FV-50NC1C](https://iaq.panasonic.cn/productdetail/75)
+
+**Product Label**:
+
+Intelligent control, IAQ visual, Nano X Sterilization, DC motor
+
+![](https://media.giphy.com/media/W2vLQxClrW26MMmKUQ/giphy.gif){width=50%}![](https://media.giphy.com/media/fcXMTULNzsgKu1l1Fz/giphy.gif){width=50%}
+
+* $500m^{3}/h$ Clean Air Delivery Rate(CADR)
+* Smart control is simpler
+* Rapid dehumidification and large air volume
+
+#### Middle East
+
+https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html
+
+
+#### Euro
 
 
 

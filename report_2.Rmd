@@ -185,6 +185,15 @@ One thing that College dorms differ from hotel would be schools during summer va
 
 ### School Classrooms
 
+Ventilation system in classrooms such that air from the science rooms is not recirculated into non-science areas.
+
+In chemical storage rooms, the ventilation system shall exhaust the air to the outside, and shall not be recirculated back into the space. There is no minimum ventilation rate called out.
+
+An exhaust fan controlled by the Instructor shall be provided in all rooms where hazardous or vaporous chemicals are to be used or stored. The exhaust fan shall be of sufficient size to exhaust the total volume of the room within 15 minutes.
+
+Refering back to the minimum ventilation rate given by ANSI/ASHRAE 62.1.
+
+[![](./images/class-p.jpg)](https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62.1-2016/62_1_2016_s_20190726.pdf)
 
 <br>
 

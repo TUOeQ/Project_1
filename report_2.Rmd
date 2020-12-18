@@ -253,6 +253,21 @@ Intelligent control, IAQ visual, Nano X Sterilization, DC motor
 
 ##### Supply Air
 
+* Most of the devices are direct current motor, with high performance 'Twin Flow Fan' employed for powerful Airflow and high static pressure
+
+* Slim and compact design allow installation at narrow ceiling space
+
+* Newly designed casing with taper scroll minimizes turbulence inside the casing
+
+* Noise absorption material adopted for low noise operation
+
+* Able to install upside down for different location of inspection opening
+
+[![](./images/airs-1.png)](https://www.plshk.panasonic.hk/category/Cabinet-Fan)
+[![](./images/airs-2.png)](https://www.plshk.panasonic.hk/category/Cabinet-Fan)
+[![](./images/airs-3.png)](https://www.plshk.panasonic.hk/category/Cabinet-Fan)
+
+
 <br>
 
 ##### Air Condition

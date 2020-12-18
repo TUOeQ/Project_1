@@ -27,13 +27,54 @@ output:
 
 * College Dormitories, School Classrooms
 
-* Apartment Building
+* Multifamily Housing
 
 * Doctor Office, Dentist Clinic
 
 * Hospital Rooms
 
 <br>
+
+## *What is ASHRAE?*
+
+[ASHRAE](https://www.ashrae.org/) stands for the American Society of Heating, Refrigerating and Air-Conditioning Engineers, which is the technical body that develops and maintains ventilation standards for the United States. Ventilation codes and energy efficiency programs throughout the U.S. are based on ASHRAE standards.
+
+Since most of our discussion would be based on the ASHRAE standards, here is a brief overview for two of the most popular subsegment principle in ASHRAE.
+
+<br>
+
+### What is ASHRAE Standard 62.2?
+
+Formed in 1996, the ASHRAE 62.2 committee developed and maintains a residential ventilation standard for buildings three stories and less which is titled Ventilation and Acceptable Indoor Air Quality in Low-Rise Residential Buildings. It is reviewed and revised every three years. The first version of Standard 62.2 was published in 2003, the second in 2007, and the most current version is ANSI/ASHRAE Standard 62.2-2010. (ANSI stands for the American National Standards Institute. ANSI certification of a standard means that a specific consensus process was used to develop and maintain the standard and is required for adoption of a standard into codes.) 
+
+ASHRAE Standard 62.2 is the ventilation standard that applies to low-rise residential buildings of three stories or less in the U.S. ASHRAE Standard 62.1 applies to all other buildings.
+
+<br>
+
+
+### What is ASHRAE Standard 170?
+
+Developed in partnership with Facility Guidelines Institute (FGI) and American Society of Health Care Engineering (ASHE), ASHRAE Standard-170 has been providing key guidance on ventilation requirements for health care industry facilities since 2008. Use Standard 170-2017 alongside HVAC Design Manual for Hospitals and Clinics for comprehensive design guidance on hospitals, nursing and outpatient facilities. 
+
+
+<br>
+
+### When ASHRAE Standard is Not Enough
+Is ASHRAE Standard 62.2/170 current best practice for ventilation? 
+
+In a word, no. The standard that national experts could agree upon that sets a minimum standard for ventilation — not best practice, which would further customize ventilation rates based on factors such as number of occupants in a dwelling and strength of pollutant sources.
+
+Meeting the ventilation requirements for ASHRAE Standard 62.2 will not always provide enough ventilation for a home. In these circumstances, ventilation rates need to be increased beyond the Standard.
+
+* The Standard does not address high-polluting events such as painting, cleaning, smoking or construction projects.
+* The Standard does not address the use of unvented combustion space heaters such as unvented decorative gas appliances and kerosene heaters, which are not allowed in California.
+* The Standard assumes one person per bedroom, with two people in the master bedroom. Higher numbers of occupants will increase ventilation needs.
+* Occupants with health issues such as asthma and allergies may benefit from increased ventilation and/or filtration.
+
+
+
+<br>
+
 
 ## **Current Ventilation Principles**
 
@@ -64,7 +105,6 @@ https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20gu
 
 http://sspc170.ashraepcs.org/pdf/170-2008(with_a,b,d,e,f,g)_edits.2.pdf
 
-
 https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/
 
 
@@ -76,6 +116,24 @@ https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/
 
 ### Elderly Care Facilities
 
+[The nursing home](https://app.leg.wa.gov/wac/default.aspx?cite=388-97-4040&pdf=true) must ensure following:
+
+* Ventilation of all rooms is designed to prevent objectionable odors, condensation, and direct drafts on the residents;
+
+* All habitable space is mechanically ventilated including:
+
+  * Air supply and air exhaust systems;
+  * Installation of air-handling duct systems according to the requirements of the International Mechanical Code and chapter 51-52 WAC;
+  * Installation of supply registers and return air grilles at least three inches above the floor;
+  * Installation of exhaust grilles on or near the ceiling
+  * Outdoor air intakes located a minimum of twenty-five feet from the exhaust from any ventilating system
+
+The nursing home must locate the bottom of outdoor air intakes serving central systems a minimum of three feet above adjoining grade level or, if installed through the roof, three feet above the highest adjoining roof level.
+
+
+![](./images/elder-p.png)
+
+<br>
 
 ### Day Care Centers
 
@@ -107,20 +165,30 @@ Design ventilation systems to allow zero exposure of non-smokers to environmenta
 
 ### Hotel Rooms
 
+
+![](./images/hotel-p.png)
+
 <br>
+
 
 
 ### College Dormitories
 
 <br>
 
-###School Classrooms
+### School Classrooms
 
 
 <br>
 
 
-### Apartment Building
+### Multifamily Housing
+
+Research has shown that [multifamily units](https://homes.lbl.gov/ventilate-right/upgrading-multifamily-buildings) have less infiltration of outside air but mostly the air leakage through common walls and ceilings brings in air from the neighbors. Thus to provide adequate whole-building ventilation, multifamily units often need higher levels of mechanical ventilation to compensate for less infiltration.
+
+Section 8 in Addendum j to ASHRAE 62.2-2010 covers multifamily units, which includes higher required airflows for whole-building ventilation, plus airsealing requirements between units in multifamily buildings.
+
+![](./images/apart-p.png)
 
 
 <br>
@@ -133,11 +201,16 @@ Design ventilation systems to allow zero exposure of non-smokers to environmenta
 
 ### Dentist Clinic
 
+https://www.health.ny.gov/facilities/cons/docs/3-14-0.pdf
+
+![](./images/dental-p.png)
 
 <br>
 
 
 ### Hospital Rooms
+
+![](./images/hospital-p.png)
 
 
 <br>
@@ -161,7 +234,7 @@ Including products from Great China, Japan, Malaysia
 
 <br>
 
-##### Ventilation
+##### Dehumidification
 
 1.[FV-50NCD1C / FV-50NC1C](https://iaq.panasonic.cn/productdetail/75)
 
@@ -169,19 +242,38 @@ Including products from Great China, Japan, Malaysia
 
 Intelligent control, IAQ visual, Nano X Sterilization, DC motor
 
-![](https://media.giphy.com/media/W2vLQxClrW26MMmKUQ/giphy.gif){width=50%}![](https://media.giphy.com/media/fcXMTULNzsgKu1l1Fz/giphy.gif){width=50%}
-
 * $500m^{3}/h$ Clean Air Delivery Rate(CADR)
 * Smart control is simpler
 * Rapid dehumidification and large air volume
+
+![](https://media.giphy.com/media/W2vLQxClrW26MMmKUQ/giphy.gif){width=50%}![](https://media.giphy.com/media/fcXMTULNzsgKu1l1Fz/giphy.gif){width=50%}
+
+
+<br>
+
+##### Supply Air
+
+<br>
+
+##### Air Condition
+
+<br>
 
 #### Middle East
 
 https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html
 
+##### Dehumidification
 
-#### Euro
+<br>
 
+##### Supply Air
+
+<br>
+
+##### Air Condition
+
+<br>
 
 
 ### High Efficiency Particulate Air (HEPA) {.tabset .tabset-pills}

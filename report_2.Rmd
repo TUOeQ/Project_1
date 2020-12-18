@@ -174,6 +174,10 @@ Design ventilation systems to allow zero exposure of non-smokers to environmenta
 
 ### College Dormitories
 
+One thing that College dorms differ from hotel would be schools during summer vacations that are intermittently occupied during summer months. It is important to consider hot or humid climates and mechanically cooled the college dormitories and military barracks that are unoccupied for long periods.
+
+[![](./images/dorm-p.png){width=70%}](https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62.1-2016/62_1_2016_s_20190726.pdf)
+
 <br>
 
 ### School Classrooms
@@ -201,16 +205,20 @@ Section 8 in Addendum j to ASHRAE 62.2-2010 covers multifamily units, which incl
 
 ### Dentist Clinic
 
-https://www.health.ny.gov/facilities/cons/docs/3-14-0.pdf
 
-![](./images/dental-p.png)
+Ventilation in the dental office can include placing a high-speed extraoral evacuation system close to the source of contaminants (patient’s mouth) and additionally increasing air flows in mechanical ventilation systems (e.g. hoods, HVAC systems).
+
+Air conditioning of a building or a room controls the purity, humidity and temperature of the indoor air, and it is essential in those buildings with clean zones and clean rooms. 
+
+
+[![](./images/dental-p.png)](https://www.health.ny.gov/facilities/cons/docs/3-14-0.pdf)
 
 <br>
 
 
 ### Hospital Rooms
 
-![](./images/hospital-p.png)
+![](./images/hospital-p.PNG)
 
 
 <br>

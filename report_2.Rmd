@@ -137,13 +137,13 @@ The nursing home must locate the bottom of outdoor air intakes serving central s
 
 ### Day Care Centers
 
-<br>
-
 According to [U.S. General Services Administration](https://www.wbdg.org/FFC/GSA/chilcare.pdf), the day care center's ventilation design should follow following instructions:
 
 Design ventilation systems to allow zero exposure of non-smokers to environmental tobacco smoke (ETS) even if smoking is limited to outdoor areas, as described in LEED Version 2.0. Design ventilation systems to achieve an air-change effectiveness of minimum 0.9 per ASHRAE 129- 1997 and as described in LEED Version 2.0. Locate air return over diaper and toilet areas
 
+[![](./images/day-p.PNG)](https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62.1-2016/62_1_2016_s_20190726.pdf)
 
+<br>
 
 ```{r}
 #popupGraph
@@ -211,6 +211,8 @@ Section 8 in Addendum j to ASHRAE 62.2-2010 covers multifamily units, which incl
 
 
 ### Doctor Office
+
+There yet not clear ventilation stanards listedout for doctor's office but itcould be referred from some of the hospital settings
 
 
 <br>

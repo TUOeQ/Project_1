@@ -38,11 +38,14 @@ The ventilation rate should be based on the number of people that occupy an indo
 
 When used along with other best practices recommended by CDC and others, increasing ventilation can be part of a plan to protect people indoors.
 
-Under the scenario of the global pandemic, the importance of indoor air quality rises as more people concerning for the spread of disease in working and public environment.
 
-![](./images/interaction.PNG "daily routine"){width=95%}
+```{r}
+#Under the scenario of the global pandemic, the importance of indoor air quality rises as more people concerning for the spread of disease in working and public environment.
 
-Therefore, it is urgent to explore the potential model that Panasonic IAQ division could supply to public institution with some improvements in the quality of air. 
+##![](./images/interaction.PNG "daily routine"){width=95%}
+#Therefore, it is urgent to explore the potential model that Panasonic IAQ division could supply to public institution with some improvements in the quality of air. 
+```
+
 
 
 <br>
@@ -71,9 +74,9 @@ Therefore, it is urgent to explore the potential model that Panasonic IAQ divisi
 
 #### Elderly Care Facilities
 
-There are multiple [independent researchers](https://www.ahcancal.org/News-and-Communications/Fact-Sheets/FactSheets/Analysis-COVID-Outbreaks-in-Nursing-Homes.pdf) indicates that community spread is linked to outbreaks in nursing homes. In early March, the alarming outbreak in senior living complex, Seattle, shows the vulnerability of long-term care facilities.
+This market has had steady growth while year over year varies. While the segment may not have significant growth trajectory, one key component to note is the attention ventilation will receive due to virus transmission.
 
-[![Get more info](./images/SC.PNG "STATS for Nursing Home ")](https://www.ahcancal.org/Data-and-Research/Pages/default.aspx)
+[![Get more info](./images/SC1.PNG "STATS for Nursing Home "){width=95%}](https://www.cbre.us/-/media/cbre/countryunitedstates/media/files/services/senior-housing/senior-housing-market-insight-q1-2020.pdf)
 
 
 <br>
@@ -99,6 +102,11 @@ Acoording to the [recent publication](https://www.jamda.com/article/S1525-8610(2
 Following is the most up to date standard for senior-caring facilities and has a strong focus on the filtration requirements, which could be utilized under pandemic scenario.
 
 [![](./images/senior.PNG ""){width=95%}](https://www.nafahq.org/wp-content/uploads/Moeller.pdf)
+
+##### 3.
+
+There are multiple [independent researchers](https://www.ahcancal.org/News-and-Communications/Fact-Sheets/FactSheets/Analysis-COVID-Outbreaks-in-Nursing-Homes.pdf) indicates that community spread is linked to outbreaks in nursing homes. In early March, the alarming outbreak in senior living complex, Seattle, shows the vulnerability of long-term care facilities.
+
 
 #### Day Care Centers
 

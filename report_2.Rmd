@@ -85,6 +85,9 @@ PRC = readxl::read_excel("PRC.xlsx")
 knitr::kable(PRC[1:14,], caption = "An example table caption.")%>%
   kable_material(c("striped", "hover"),full_width = FALSE)%>%
   kable_styling(font_size = 12)%>%
+  column_spec(1, bold = T, border_right = T) %>%
+  column_spec(3, width = "1cm")%>%
+  column_spec(4, width = 1)%>%
   row_spec(10, bold = T,background = "White")%>%
   row_spec(11:14, bold = F, background = "lightskyblue")%>%
   row_spec(1:3, bold = F, background = "lightyellow")%>%
@@ -312,17 +315,11 @@ Hybrid type,Dehumidifying capacity = 12L/day
 
 <br>
 
-##### Air Condition
-
-<br>
 
 #### Middle East
 
 https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html
 
-##### Dehumidification
-
-<br>
 
 ##### Supply Air
 
@@ -489,14 +486,6 @@ https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.htm
 
  [![Alt text](./images/F-VXK90M.PNG "F-VXK90M"){width=30%}](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxk90m.html)
     [![Alt text](./images/F-PXL45M.PNG "F-PXL45M"){width=37%}](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-pxl45m.html)  [![Alt text](./images/F-VXL95M.PNG "F-VXL95M"){width=30%}](https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxl95m.html)
-
-#### Europe
-
-https://www.aircon.panasonic.eu/GB_en/ranges/domestic/
-
-##### Air Purifiers
-
-
 
 
 

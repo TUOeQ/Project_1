@@ -4,7 +4,7 @@ navbar:
   right:
     - text: "Project"
       href: https://tuoeq.github.io/Project_1/Index.html
-    - text: "Panasonic Indoor Air Qualityuality(IAQ) Divison"
+    - text: "Panasonic Indoor Air Quality(IAQ) Divison"
       href: https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/
     - text: "Plots"
       href: https://tuoeq.github.io/bl2789.github.io/dashboard.html

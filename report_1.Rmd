@@ -366,7 +366,18 @@ According to [CDC](https://www.cdc.gov/coronavirus/2019-ncov/community/multifami
 
 <br>
 
-##### 2.Dilution Ventilation vs. Displacement Ventilation
+##### 2.Multihousing settings in common arear
+
+ASHRAE Standard 62.2-2016 requires a continuous ventilation rate of 45 cfm for a onebedroom enclosure of 1,000 ft2 floor area. ASHRAE Standard 62.2-2016 only allows credit for infiltration in horizontally attached (i.e., low-rise) multifamily units
+
+However, the current standards may be improved with accommodation with corridors, elevator shafts, and trash chutes
+
+* Individual corridor supply fans should be replaced by a central rooftop system that supplies ventilation air to each corridor
+* Elevator shafts should be equipped with an exhaust flow fan which is controlled by a constant airflow regulator to compensate for seasonal stack-effect variation.
+* Trash chute should be maintained at a negative pressure
+
+
+##### 3.Dilution Ventilation vs. Displacement Ventilation
 
 
 Displacement ventilation leads to cleaner air comparing to the mixing ventilation, as contaminants are removed from the occupied zone in a room towards the ceiling, as well as minimizing drafts.

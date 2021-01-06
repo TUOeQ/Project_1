@@ -345,21 +345,8 @@ Permits, starts and completions were all at or near this cycle’s highest level
 
 <br>
 
-##### 1.Dilution Ventilation vs. Displacement Ventilation
 
-
-Displacement ventilation leads to cleaner air comparing to the mixing ventilation, as contaminants are removed from the occupied zone in a room towards the ceiling, as well as minimizing drafts.
-
-With displacement ventilation, air is introduced at low velocity into a room at a low level and is exhausted at the ceiling. The flow of air is maintained by convective forces, which also have the effect of the concentration of pollutants rising from floor to ceiling. 
-
-For now, displacement ventilation is used mostly in Europe, and rarely in residential applications.
-
-[![Get more info](./images/apart2.PNG "Displacement Ventilation ")](https://www.me.psu.edu/cimbala/me405/Lectures/Dilution_vs_Displacement_Ventilation.pdf)
-
-
-<br>
-
-##### 2.Ensure adequate ventilation
+##### 1.Ensure adequate ventilation
 
 According to [CDC](https://www.cdc.gov/coronavirus/2019-ncov/community/multifamily-housing.html#GuidingPrinciples)'s latest guideline, multifamily housing need to be aware of following standards and more:
 
@@ -372,6 +359,22 @@ According to [CDC](https://www.cdc.gov/coronavirus/2019-ncov/community/multifami
 * Consider using ultraviolet germicidal irradiationpdf iconexternal icon (UVGI) as a supplement to help inactivate SARS-CoV-2, especially if options for increasing room ventilation are limited.
 
 * Consider running the HVAC system at maximum outside airflow for 2 hours before and after the space is occupied.
+
+<br>
+
+##### 2.Dilution Ventilation vs. Displacement Ventilation
+
+
+Displacement ventilation leads to cleaner air comparing to the mixing ventilation, as contaminants are removed from the occupied zone in a room towards the ceiling, as well as minimizing drafts.
+
+With displacement ventilation, air is introduced at low velocity into a room at a low level and is exhausted at the ceiling. The flow of air is maintained by convective forces, which also have the effect of the concentration of pollutants rising from floor to ceiling. 
+
+For now, displacement ventilation is used mostly in Europe, and rarely in residential applications.
+
+[![Get more info](./images/MF.PNG "Displacement Ventilation ")](https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/67581.pdf)
+
+
+
 
 <br>
 

@@ -210,6 +210,8 @@ Section 8 in Addendum j to ASHRAE 62.2-2010 covers multifamily units, which incl
 
 ![](./images/apart-p.png)
 
+What's more the choice of supplemental dehumidification is made by climate location according to [US department of energy](https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/67581.pdf). It is the only viable option in hot-humid and mixed-humid climates. No air conditioning systems currently exist that have sufficient dehumidification capability for multifamily units ventilated at
+ASHRAE Standard 62.2-2016 rates. Separate systems are required.
 
 <br>
 
@@ -270,6 +272,9 @@ Including products from Great China, Japan, Malaysia
 
 1.[FV-50NCD1C / FV-50NC1C](https://iaq.panasonic.cn/productdetail/75)
 
+
+![](./images/AD.png){width=30%}
+
 **Product Label**:
 
 Intelligent control, IAQ visual, Nano X Sterilization, DC motor
@@ -282,6 +287,8 @@ Intelligent control, IAQ visual, Nano X Sterilization, DC motor
 
 2.[F-YHC12X](https://www.plshk.panasonic.hk/product/f-yhc12x)
 
+![](./images/AD2.png){width=20%}
+
 **Product Label**:
 
 Hybrid type,Dehumidifying capacity = 12L/day
@@ -292,7 +299,6 @@ Hybrid type,Dehumidifying capacity = 12L/day
 * 3D louver enhances clothes drying efficiency
 * Anti-bacteria and super alleru-buster filter inhitbit bacteria and allergens effectively
 
-![](./images/deh2.png)
 
 <br>
 

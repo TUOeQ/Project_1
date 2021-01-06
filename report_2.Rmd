@@ -324,17 +324,18 @@ Hybrid type,Dehumidifying capacity = 12L/day
 
 #### Middle East
 
-https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html
+[![](./images/MEair.png)](https://www.panasonic.com/middleeast/en/consumer/air-solutions/residential-air-conditioners-learn/features-explanation/unique-air-purifying-system--nanoe-g.html)
 
 
-##### Supply Air
+##### Air Condition(air curtains)
 
+nanoe-G will even deactivate bacteria and viruses that are trapped in the filter and remove up to 99% of PM2.5. It automatically operates as an air supply when the air conditioner is turned off. 
+
+[![](./images/aircurtain.png)](https://www.panasonic.com/middleeast/en/consumer/air-solutions/residential-air-conditioners.html)
 <br>
 
-##### Air Condition
 
 <br>
-
 
 ### High Efficiency Particulate Air (HEPA) {.tabset .tabset-pills}
 

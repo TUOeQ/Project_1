@@ -210,8 +210,9 @@ Section 8 in Addendum j to ASHRAE 62.2-2010 covers multifamily units, which incl
 
 ![](./images/apart-p.png)
 
-What's more the choice of supplemental dehumidification is made by climate location according to [US department of energy](https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/67581.pdf). It is the only viable option in hot-humid and mixed-humid climates. No air conditioning systems currently exist that have sufficient dehumidification capability for multifamily units ventilated at
-ASHRAE Standard 62.2-2016 rates. Separate systems are required.
+Additionally, in recent ASHRAE Standard 62.2-2016 requires a vented kitchen range hood with a minimum intermittent exhaust flow of 100 cfm or local kitchen area intermittent ventilation of 5 ach. Bathroom exhaust is also required at a minimum intermittent rate of 50 cfm or a continuous rate of 20 cfm.
+
+What's more the choice of supplemental dehumidification is made by climate location according to [US department of energy](https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/67581.pdf). It is the only viable option in hot-humid and mixed-humid climates. No air conditioning systems currently exist that have sufficient dehumidification capability for multifamily units ventilated at ASHRAE Standard 62.2-2016 rates. Separate systems are required.
 
 <br>
 

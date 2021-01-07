@@ -370,19 +370,10 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://tuoeq.github.io/Project_1/Index.html">Project</a>
+  <a href="https://tuoeq.github.io/Project_1/Index.html">Expanded Market Research</a>
 </li>
 <li>
   <a href="https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/">Panasonic Indoor Air Quality(IAQ) Divison</a>
-</li>
-<li>
-  <a href="https://tuoeq.github.io/bl2789.github.io/dashboard.html">Plots</a>
-</li>
-<li>
-  <a href="mailto:&lt;bl2789@cumc.columbia.edu&gt;">
-    <span class="fa fa-envelope fa-lg"></span>
-     
-  </a>
 </li>
 <li>
   <a href="http://github.com/TUOeQ/">
@@ -458,28 +449,44 @@ div.tocify {
 </ul>
 <p><br></p>
 </div>
+<div id="residential-energy-code" class="section level3">
+<h3>Residential Energy Code</h3>
+<pre class="r"><code>colorize &lt;- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf(&quot;\\textcolor{%s}{%s}&quot;, color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf(&quot;&lt;span style=&#39;color: %s;&#39;&gt;%s&lt;/span&gt;&quot;, color, 
+      x)
+  } else x
+}</code></pre>
+<p><a href="https://www.wbdg.org/resources/energy-codes-and-standards"><img src="images/REC.jpg" alt="Alt text" style="width:95.0%" /></a></p>
+<ul>
+<li><strong><span style="color: lightblue;">Meets or Exceeds 2018 (2 states)</span></strong></li>
+<li><strong><span style="color: black;">Meets or Exceeds 2015 (17 states)</span></strong></li>
+<li><strong><span style="color: darkblue;">Meets or Exceeds 2012 (8 states)</span></strong></li>
+<li><strong><span style="color: blue;">Meets or Exceeds 2009 (16 states)</span></strong></li>
+<li><strong><span style="color: grey;">No states code or Procedes 2006 (12 states)</span></strong></li>
+<li><strong><span style="color: grey;">AZ/CO:Home rule states with significant adoption (2 out of 12 states)</span></strong></li>
+</ul>
+<p><br></p>
+</div>
 </div>
 <div id="current-ventilation-principles" class="section level2">
 <h2><strong>Current Ventilation Principles</strong></h2>
 <pre class="r"><code>library(tidyverse)
 library(kableExtra)
 PRC = readxl::read_excel(&quot;PRC.xlsx&quot;)
-knitr::kable(PRC[1:14,], caption = &quot;An example table caption.&quot;)%&gt;%
+knitr::kable(PRC[1:14,], caption = &quot;Ventilation Principles&quot;)%&gt;%
+  kable_styling(bootstrap_options = &quot;striped&quot;, full_width = F,font_size = 12)%&gt;%
   kable_material(c(&quot;striped&quot;, &quot;hover&quot;),full_width = FALSE)%&gt;%
-  kable_styling(font_size = 12)%&gt;%
-  column_spec(1, bold = T, border_right = T) %&gt;%
-  column_spec(3, width = &quot;1cm&quot;)%&gt;%
-  column_spec(4, width = 1)%&gt;%
   row_spec(10, bold = T,background = &quot;White&quot;)%&gt;%
   row_spec(11:14, bold = F, background = &quot;lightskyblue&quot;)%&gt;%
   row_spec(1:3, bold = F, background = &quot;lightyellow&quot;)%&gt;%
   row_spec(5:6, bold = F, background = &quot;lightpink&quot;)%&gt;%
-  row_spec(8:9, bold = F, background = &quot;lightgreen&quot;)%&gt;%
-  scroll_box(width = &quot;900px&quot;)</code></pre>
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:900px; ">
-<table class=" lightable-material lightable-striped lightable-hover table" style='font-family: "Source Sans Pro", helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto; font-size: 12px; margin-left: auto; margin-right: auto;'>
+  row_spec(8:9, bold = F, background = &quot;lightgreen&quot;)</code></pre>
+<table class="table table-striped lightable-material lightable-striped lightable-hover" style='font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto; font-family: "Source Sans Pro", helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-An example table caption.
+Ventilation Principles
 </caption>
 <thead>
 <tr>
@@ -487,40 +494,31 @@ An example table caption.
 Function of Space
 </th>
 <th style="text-align:left;">
-Minimum total ach
+Min total ach
 </th>
 <th style="text-align:left;">
-Minimum outdoor ach
+Min outdoor ach
 </th>
 <th style="text-align:left;">
-Pressure Relationship to Adjacent Areas
-</th>
-<th style="text-align:left;">
-Temperature control F/C
+Temp control F/C
 </th>
 <th style="text-align:left;">
 Moisture control(k),%
 </th>
 <th style="text-align:left;">
-Minimum Filter Efficiency(ab)
-</th>
-<th style="text-align:left;">
-Unoccupied Turndown
+Min Filter Efficiency(ab)
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightyellow !important;">
+<td style="text-align:left;background-color: lightyellow !important;">
 Elderly Care Facilities
 </td>
 <td style="text-align:left;background-color: lightyellow !important;">
 NR
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightyellow !important;">
-NR
-</td>
-<td style="text-align:left;width: 1; background-color: lightyellow !important;">
+<td style="text-align:left;background-color: lightyellow !important;">
 NR
 </td>
 <td style="text-align:left;background-color: lightyellow !important;">
@@ -532,22 +530,16 @@ NR
 <td style="text-align:left;background-color: lightyellow !important;">
 7/NR
 </td>
-<td style="text-align:left;background-color: lightyellow !important;">
-—
-</td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightyellow !important;">
+<td style="text-align:left;background-color: lightyellow !important;">
 Nursing Unit
 </td>
 <td style="text-align:left;background-color: lightyellow !important;">
 12
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightyellow !important;">
+<td style="text-align:left;background-color: lightyellow !important;">
 2
-</td>
-<td style="text-align:left;width: 1; background-color: lightyellow !important;">
-Negative/NR
 </td>
 <td style="text-align:left;background-color: lightyellow !important;">
 70-75/21-24
@@ -558,25 +550,16 @@ MAX 60/NR
 <td style="text-align:left;background-color: lightyellow !important;">
 13/NR
 </td>
-<td style="text-align:left;background-color: lightyellow !important;">
-—
-</td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightyellow !important;">
+<td style="text-align:left;background-color: lightyellow !important;">
 Day Care Centers
 </td>
 <td style="text-align:left;background-color: lightyellow !important;">
 4
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightyellow !important;">
-2
-</td>
-<td style="text-align:left;width: 1; background-color: lightyellow !important;">
-—
-</td>
 <td style="text-align:left;background-color: lightyellow !important;">
-—
+2
 </td>
 <td style="text-align:left;background-color: lightyellow !important;">
 —
@@ -589,20 +572,14 @@ Day Care Centers
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+<td style="text-align:left;">
 Hotel Rooms
 </td>
 <td style="text-align:left;">
 —
 </td>
-<td style="text-align:left;width: 1cm; ">
-1-2
-</td>
-<td style="text-align:left;width: 1; ">
-—
-</td>
 <td style="text-align:left;">
-—
+1-2
 </td>
 <td style="text-align:left;">
 —
@@ -615,20 +592,14 @@ Hotel Rooms
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightpink !important;">
+<td style="text-align:left;background-color: lightpink !important;">
 College Dormitories
 </td>
 <td style="text-align:left;background-color: lightpink !important;">
 —
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightpink !important;">
-1-2
-</td>
-<td style="text-align:left;width: 1; background-color: lightpink !important;">
-—
-</td>
 <td style="text-align:left;background-color: lightpink !important;">
-—
+1-2
 </td>
 <td style="text-align:left;background-color: lightpink !important;">
 —
@@ -641,20 +612,14 @@ College Dormitories
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightpink !important;">
+<td style="text-align:left;background-color: lightpink !important;">
 School Classrooms
 </td>
 <td style="text-align:left;background-color: lightpink !important;">
 —
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightpink !important;">
-5-6
-</td>
-<td style="text-align:left;width: 1; background-color: lightpink !important;">
-—
-</td>
 <td style="text-align:left;background-color: lightpink !important;">
-—
+5-6
 </td>
 <td style="text-align:left;background-color: lightpink !important;">
 —
@@ -667,20 +632,14 @@ School Classrooms
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;">
+<td style="text-align:left;">
 Multifamily Housing
 </td>
 <td style="text-align:left;">
 —
 </td>
-<td style="text-align:left;width: 1cm; ">
-0.35-1
-</td>
-<td style="text-align:left;width: 1; ">
-—
-</td>
 <td style="text-align:left;">
-—
+0.35-1
 </td>
 <td style="text-align:left;">
 —
@@ -693,20 +652,14 @@ Multifamily Housing
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightgreen !important;">
+<td style="text-align:left;background-color: lightgreen !important;">
 Doctor Office
 </td>
 <td style="text-align:left;background-color: lightgreen !important;">
 12
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightgreen !important;">
-2
-</td>
-<td style="text-align:left;width: 1; background-color: lightgreen !important;">
-—
-</td>
 <td style="text-align:left;background-color: lightgreen !important;">
-—
+2
 </td>
 <td style="text-align:left;background-color: lightgreen !important;">
 —
@@ -719,17 +672,14 @@ Doctor Office
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightgreen !important;">
+<td style="text-align:left;background-color: lightgreen !important;">
 Dentist Clinic
 </td>
 <td style="text-align:left;background-color: lightgreen !important;">
 6
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightgreen !important;">
+<td style="text-align:left;background-color: lightgreen !important;">
 2
-</td>
-<td style="text-align:left;width: 1; background-color: lightgreen !important;">
-NR
 </td>
 <td style="text-align:left;background-color: lightgreen !important;">
 70-75/21-24
@@ -740,23 +690,14 @@ MAX 60
 <td style="text-align:left;background-color: lightgreen !important;">
 7/14
 </td>
-<td style="text-align:left;background-color: lightgreen !important;">
-—
-</td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;font-weight: bold;background-color: White !important;">
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
 Hospital Rooms
 </td>
 <td style="text-align:left;font-weight: bold;background-color: White !important;">
 _____________________
 </td>
-<td style="text-align:left;width: 1cm; font-weight: bold;background-color: White !important;">
-_____________________
-</td>
-<td style="text-align:left;width: 1; font-weight: bold;background-color: White !important;">
-_________________________
-</td>
 <td style="text-align:left;font-weight: bold;background-color: White !important;">
 _____________________
 </td>
@@ -771,17 +712,14 @@ _____________________
 </td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 Patient room
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 4
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 2
-</td>
-<td style="text-align:left;width: 1; background-color: lightskyblue !important;">
-NR
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 70-75/21-24
@@ -792,22 +730,16 @@ NR
 <td style="text-align:left;background-color: lightskyblue !important;">
 8/14
 </td>
-<td style="text-align:left;background-color: lightskyblue !important;">
-Yes
-</td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 Patient toilet room
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 10
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 NR
-</td>
-<td style="text-align:left;width: 1; background-color: lightskyblue !important;">
-Negative
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 NR
@@ -818,22 +750,16 @@ NR
 <td style="text-align:left;background-color: lightskyblue !important;">
 8/NR
 </td>
-<td style="text-align:left;background-color: lightskyblue !important;">
-No
-</td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 Newborn nursery
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 6
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 2
-</td>
-<td style="text-align:left;width: 1; background-color: lightskyblue !important;">
-NR
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 72-78/22-26
@@ -844,22 +770,16 @@ NR
 <td style="text-align:left;background-color: lightskyblue !important;">
 8/14
 </td>
-<td style="text-align:left;background-color: lightskyblue !important;">
-Yes
-</td>
 </tr>
 <tr>
-<td style="text-align:left;font-weight: bold;border-right:1px solid;background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 Continued care nursery
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 6
 </td>
-<td style="text-align:left;width: 1cm; background-color: lightskyblue !important;">
+<td style="text-align:left;background-color: lightskyblue !important;">
 2
-</td>
-<td style="text-align:left;width: 1; background-color: lightskyblue !important;">
-NR
 </td>
 <td style="text-align:left;background-color: lightskyblue !important;">
 NA
@@ -870,15 +790,11 @@ NA
 <td style="text-align:left;background-color: lightskyblue !important;">
 8/14
 </td>
-<td style="text-align:left;background-color: lightskyblue !important;">
-Yes
-</td>
 </tr>
 </tbody>
 </table>
-</div>
-<pre class="r"><code>  #kbl() %&gt;%
-  #kable_paper(full_width = F) %&gt;%
+<pre class="r"><code>#%&gt;%
+ # scroll_box(width = &quot;900px&quot;)
   #column_spec(2, color = spec_color(mtcars$mpg[1:8]),
   #            link = &quot;https://haozhu233.github.io/kableExtra/&quot;) %&gt;%
   #column_spec(6, color = &quot;white&quot;,
@@ -980,10 +896,6 @@ Yes
 <p><img src="images/hospital-p.PNG" /></p>
 <p><br></p>
 </div>
-</div>
-<div id="market-competitors" class="section level2">
-<h2><strong>Market Competitors</strong></h2>
-<p><br></p>
 </div>
 <div id="panasonic-solutions" class="section level2">
 <h2><strong>Panasonic Solutions</strong></h2>
@@ -1193,7 +1105,12 @@ Yes
 <h3>Nanoe™ Technology</h3>
 <p>Please see a brief overview of the most recent Nanoe™ Technology</p>
 <iframe src="https://www.youtube.com/embed/MO7arSRgvuI" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+<p><br></p>
 </div>
+</div>
+<div id="market-competitors" class="section level2">
+<h2><strong>Market Competitors</strong></h2>
+<p><br></p>
 </div>
 
 

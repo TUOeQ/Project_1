@@ -2,14 +2,10 @@ name: "Yay internet!"
 output_dir: "."
 navbar:
   right:
-    - text: "Project"
+    - text: "Expanded Market Research"
       href: https://tuoeq.github.io/Project_1/Index.html
     - text: "Panasonic Indoor Air Quality(IAQ) Divison"
       href: https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/
-    - text: "Plots"
-      href: https://tuoeq.github.io/bl2789.github.io/dashboard.html
-    - icon: fa-envelope fa-lg
-      href: mailto:<bl2789@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/TUOeQ/
      

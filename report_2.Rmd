@@ -76,16 +76,6 @@ Meeting the ventilation requirements for ASHRAE Standard 62.2 will not always pr
 
 ### Residential Energy Code
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-colorize <- function(x, color) {
-  if (knitr::is_latex_output()) {
-    sprintf("\\textcolor{%s}{%s}", color, x)
-  } else if (knitr::is_html_output()) {
-    sprintf("<span style='color: %s;'>%s</span>", color, 
-      x)
-  } else x
-}
-```
 
 [![](./images/REC.jpg ""){width=95%}](https://www.wbdg.org/resources/energy-codes-and-standards) 
 

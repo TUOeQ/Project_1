@@ -76,7 +76,7 @@ Meeting the ventilation requirements for ASHRAE Standard 62.2 will not always pr
 
 ### Residential Energy Code
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 colorize <- function(x, color) {
   if (knitr::is_latex_output()) {
     sprintf("\\textcolor{%s}{%s}", color, x)
@@ -89,12 +89,12 @@ colorize <- function(x, color) {
 
 [![](./images/REC.jpg ""){width=95%}](https://www.wbdg.org/resources/energy-codes-and-standards) 
 
-* `r colorize("Meets or Exceeds 2018 (2 states)", "lightblue")`
-* `r colorize("Meets or Exceeds 2015 (17 states)", "black")`
-* `r colorize("Meets or Exceeds 2012 (8 states)", "darkblue")`
-* `r colorize("Meets or Exceeds 2009 (16 states)", "blue")`
-* `r colorize("No states code or Procedes 2006 (12 states)", "grey")`
-* `r colorize("AZ/CO:Home rule states with significant adoption (2 out of 12 states)", "grey")`
+* r colorize("Meets or Exceeds 2018 (2 states)", "lightblue")
+* r colorize("Meets or Exceeds 2015 (17 states)", "black")
+* r colorize("Meets or Exceeds 2012 (8 states)", "darkblue")
+* r colorize("Meets or Exceeds 2009 (16 states)", "blue")
+* r colorize("No states code or Procedes 2006 (12 states)", "grey")
+* r colorize("AZ/CO:Home rule states with significant adoption (2 out of 12 states)", "grey")
 
 <br>
 

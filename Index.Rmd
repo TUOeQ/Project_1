@@ -27,14 +27,11 @@ html_document:
 <i>**Project Report**</i>: Contains a detailed report for market analysis led by IAQ .
 
 * 1. [Potential Markets](report_1.html)
-* 2. [Market Applications](report_2.html)
-  * 2.a  [Market Competitors](report_2.html#Market_Competitors)
-  * 2.b  [Panasonic Solutions](report_2.html#Panasonic_Solutions)
+* 2. [Market Applications](report_3.html)
+  * 2.a  [Market Competitors](report_3.html#Market_Competitors)
+  * 2.b  [Panasonic Solutions](report_3.html#Panasonic_Solutions)
 * 3.
 
-<i>**Interactive Map**</i>: Contains an interactive map showing demographic information.
-
-<i>**Github repo & Data source**</i>: Click the icons at the right top corner to see the data source and our github repo.
 
 </br>
 
@@ -52,16 +49,6 @@ html_document:
 ## Motivations
 
 Our primary focus for ventilation solutions has been in residential and multifamily / hotel construction. In this project, we have set out to better understand additional sub segments of the construction industry. Our aim is to help our business to know what the market opportunities are for each sub-segments.
-
-
-
-</br>
-
-### Data
-
-xxxxx 
-
-**Link to the data source**: [data](https://catalog.data.gov/dataset/accidental-drug-related-deaths-january-2012-sept-2015)
 
 </br>
 

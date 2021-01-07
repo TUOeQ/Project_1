@@ -166,11 +166,13 @@ treatments
 
 #### Hotel Rooms
 
-There are 54,200+ hotel properties in the United States, filling over 5 million guestrooms. There are more than 1.1 billion guests nights annually in the United States, highlighting a constant growing industry trends and increasing investments in guest experiences with spurs community growth.The most recent market growth can be viewed at [AHLA](https://www.ahla.com/sites/default/files/State%20Hotel%20Closures%20chart.pdf)
 
-Moreover, Large corporation such as Four Seasons has launched ["Lead With Care"](https://press.fourseasons.com/news-releases/2020/lead-with-care-program/)  Program. Guests will see many of the enhanced procedures and behind-the-scenes measures that will also take place through employee training, additional food handling protocols, and enhancements to ventilation systems and other back-of-the-house operations.
+According to the American Hotel & Lodging Association (AHLA),there is a 2.0% increase in supply in 2019 representing approximately 104,000 new hotel rooms; new supply growth resulting from new hotels is projected to increase by 1.4% by year-end 2020, and then to moderate to 1.3% in 2021 and 2022, per STR. Prior to the onset of COVID-19, STR had initially projected new supply to grow by 2.0% in 2020; the revised forecast for 2020 suggests that a number of hotel developments will not reach completion this year.
 
-[![Get more info](./images/hotel.PNG "Hotel trends "){width=95%}](https://www.ahla.com/dreams)
+As of July 2020, 217,000 new hotel rooms were under construction across the country, reflecting hotels likely to open in the next 18 months. Additionally, at the same time, 260,000 rooms were in the final planning stages and expected to begin construction within the next twelve months. Similar to the last recession of 2008/09, lower revenue, NOI, and estimated values may result in some projects being placed on hold until revenues levels once again support the feasibility of development.
+
+
+[![Get more info](./images/hotel.jpg "Hotel trends "){width=95%}](https://www.ahla.com/dreams)
 
 <br>
 

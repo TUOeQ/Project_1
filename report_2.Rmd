@@ -59,20 +59,6 @@ Developed in partnership with Facility Guidelines Institute (FGI) and American S
 
 <br>
 
-### When ASHRAE Standard is Not Enough
-
-Is ASHRAE Standard 62.2/170 current best practice for ventilation? 
-
-In a word, no. The standard that national experts could agree upon that sets a minimum standard for ventilation — not best practice, which would further customize ventilation rates based on factors such as number of occupants in a dwelling and strength of pollutant sources.
-
-Meeting the ventilation requirements for ASHRAE Standard 62.2 will not always provide enough ventilation for a home. In these circumstances, ventilation rates need to be increased beyond the Standard.
-
-* The Standard does not address high-polluting events such as painting, cleaning, smoking, or construction projects.
-* The Standard does not address the use of unvented combustion space heaters such as unvented decorative gas appliances and kerosene heaters, which are not allowed in California.
-* The Standard assumes one person per bedroom, with two people in the master bedroom. Higher numbers of occupants will increase ventilation needs.
-* Occupants with health issues such as asthma and allergies may benefit from increased ventilation and/or filtration.
-
-<br>
 
 ### Residential Energy Code
 

@@ -343,7 +343,7 @@ Hybrid type,Dehumidifying capacity = 12L/day
 
 nanoe-G will even deactivate bacteria and viruses that are trapped in the filter and remove up to 99% of PM2.5. It automatically operates as an air supply when the air conditioner is turned off. 
 
-[![](./images/aircurtain.png)](https://www.panasonic.com/middleeast/en/consumer/air-solutions/residential-air-conditioners.html)
+[![](./images/aircurtain1.png)](https://www.panasonic.com/middleeast/en/consumer/air-solutions/residential-air-conditioners.html)
 <br>
 
 

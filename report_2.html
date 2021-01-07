@@ -458,6 +458,14 @@ div.tocify {
 <div id="residential-energy-code" class="section level3">
 <h3>Residential Energy Code</h3>
 <p><a href="https://www.wbdg.org/resources/energy-codes-and-standards"><img src="images/REC.jpg" style="width:95.0%" /></a></p>
+<pre class="r"><code>colorize &lt;- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf(&quot;\\textcolor{%s}{%s}&quot;, color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf(&quot;&lt;span style=&#39;color: %s;&#39;&gt;%s&lt;/span&gt;&quot;, color, 
+      x)
+  } else x
+}</code></pre>
 <ul>
 <li>r colorize(“Meets or Exceeds 2018 (2 states)”, “lightblue”)</li>
 <li>r colorize(“Meets or Exceeds 2015 (17 states)”, “black”)</li>

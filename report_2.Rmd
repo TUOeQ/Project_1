@@ -79,6 +79,19 @@ Meeting the ventilation requirements for ASHRAE Standard 62.2 will not always pr
 
 [![](./images/REC.jpg ""){width=95%}](https://www.wbdg.org/resources/energy-codes-and-standards) 
 
+```{r}
+
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+
+```
+
 * r colorize("Meets or Exceeds 2018 (2 states)", "lightblue")
 * r colorize("Meets or Exceeds 2015 (17 states)", "black")
 * r colorize("Meets or Exceeds 2012 (8 states)", "darkblue")

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Bingkun Luo" />
+
+
+<title>Conclusion</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://tuoeq.github.io/Project_1/Index.html">Expanded Market Research</a>
+</li>
+<li>
+  <a href="https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/">Panasonic Indoor Air Quality(IAQ) Divison</a>
+</li>
+<li>
+  <a href="mailto:&lt;bl2789@cumc.columbia.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/TUOeQ/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Conclusion</h1>
+<h4 class="author">Bingkun Luo</h4>
+
+</div>
+
+
+<p><strong><a href="https://www.statista.com/statistics/414960/global-market-for-commercial-and-residential-hvac-systems/">The global heating, ventilation, and air conditioning (HVAC) market is projected to reach about 367.5 billion U.S. dollars by 2030, based on a compound annual growth rate (CAGR) of 3.9 percent between 2020 and 2030</a> </strong></p>
+<p><br></p>
+<div id="panasonic-ventilation-system" class="section level2">
+<h2>3 Panasonic ventilation system</h2>
+<ul>
+<li><p>Positive pressure fresh air system with dehumidification: The filtered air (mainly to filter PM2.5) is sent into the room through a fan, and a positive pressure is formed in the room, and the turbid indoor air is discharged to the outside. This air supply method can ensure that the filtered air is sent into the room and ensure the cleanliness of the air. However, this air supply method cannot form a directional airflow, which takes a long time to completely replace it, and the direction of indoor air circulation is also more complicated, so this fresh air method has a poor replacement of indoor air. At the same time, water vapor is extracted preventing the formation of mold and harmful gases.</p></li>
+<li><p>Negative pressure fresh air system: The turbid air in the room is drawn out by a fan, and negative pressure is formed in the room. The feature of this system is that it can form a clear and clean directional airflow and effectively replace indoor and outdoor air. The disadvantage is that the negative pressure fresh air system has poor air filtration performance. Also, the indoor temperature will inevitably be lost.</p></li>
+<li><p>The two-way fresh air ventilator (Full heat exchanger). This system is basically perfect in terms of air supply. There is air in and out, to achieve directional airflow while filtering, and heat exchange technology can also reduce indoor air temperature It is a good choice in the fresh air system, but it is not very convenient to use this system in the home. During the heat exchange process, condensation will inevitably occur, breeding molds, and affecting air quality. In addition, the air supply pipes and fans need mindful long-term maintenance. Otherwise, secondary pollution will be more serious in 2-5 years.</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="main-findings-for-ashrae-standard-62.2" class="section level2">
+<h2>Main findings for ASHRAE Standard 62.2</h2>
+<p><br></p>
+<div id="positive-pressure-fresh-air-system" class="section level3">
+<h3>Positive pressure fresh air system</h3>
+<p>Classrooms/dormitories with uncomplicated structure and moderate size-choose the positive pressure type. The positive pressure type can fully filter the air and send it into the room, but on the one hand, it lacks heat exchange function, which is easy to cause temperature loss. On the other hand, it lacks pipe guidance. The air circulation efficiency and effect are reduced compared to the two-way heat exchange type. The advantage is that it is easy to install and has a low impact on the indoor space.</p>
+<p><br></p>
+</div>
+<div id="full-heat-exchanger" class="section level3">
+<h3>Full heat exchanger</h3>
+<p>The Multifamily structure is relatively complex, with a medium or large area and a moderate floor height—choose the two-way flow heat exchange type. In fact, basically any building, except for the old houses with very low floors, I recommend the two-way flow heat exchange type. It balances many elements of filtration + heat retention + indoor purification efficiency, which can be described as the most scientific principle of fresh air system. The total heat exchange type performs temperature and humidity exchange without generating condensed water, and now there are antibacterial heat exchange cores available, so heat exchange is completely reliable. But the trouble is that laying pipes is more laborious, so newly decorated houses are more suitable for two-way flow heat exchange</p>
+</div>
+<div id="stimulus-for-renovation" class="section level3">
+<h3>Stimulus for renovation</h3>
+<p>The renovated hotel is the target for the wall-mounted products. Although annual growth at 1.4% for hotels is hit hard by pandemic, the overall market should be focus on the rebuild and upgrades. We acknowledge that the renovated hotel is not suitable nor easy to install pipes or install top-mounted machines. No matter the positive pressure type or the two-way flow heat exchange type, the installation is extremely difficult, and the wall-mounted type is built for this type of renovation.</p>
+</div>
+</div>
+<div id="main-findings-for-ashrae-standard-170" class="section level2">
+<h2>Main findings for ASHRAE Standard 170</h2>
+<p><br></p>
+<div id="functionility-for-condensed-space" class="section level3">
+<h3>Functionility for condensed space</h3>
+<p>In the expanded market research, the absent commercial markets are identified including major recreational facilities., working offices, and study areas. Based on the research results, a negative pressure ventilation system is the most efficient and economical solution for the prevention of transmitting the air-borne virus in small and dense spaces. No matter the positive pressure type or the negative pressure type, either choice would be suitable depending on the expert’s suggestion.</p>
+<p>With the most concerned, Eldercare, daycare center and the hospital would the projects in urgent need of renovation with priorities, meanwhile those facilities need to be functioning continuously. Most of the facilities have complied with standard ASHRAE 170-2013/2017.</p>
+<p>With average market growth rate for care centers around 2.4-2.9% CAGR and for hospital 5.376% CAGR. It would be critical to developing the outreach for care centers whose growth rates are below the global average.</p>
+<p>In conclusion, I suggest the add-on unit would be a considerable solution to provide next-level clean air solution, such as <strong>wall-mounted ventilators with HEPA</strong>. In addition, customer should be aware that the air outlet should be designed upward otherwise may cause dust problem for sensitive patients</p>
+<p><br></p>
+</div>
+<div id="negative-pressure-ventilation-and-possible-suggestion" class="section level3">
+<h3>Negative Pressure Ventilation and possible suggestion</h3>
+<p><img src="images/weather.jpg" style="width:95.0%" /></p>
+<p><br></p>
+<p>Combined our products with the United States climate zone, it would not be reasonable to apply negative pressure ventilation to all of the public infrastructure. The high-end positive pressure fresh air system can realize the intelligent heating function, which can heat the outdoor air to a comfortable temperature in the cold winter.</p>
+<p>Therefore, the negative pressure fresh air system is generally only suitable for users in southern part of United States, typically zone 2,3,5 who have urgently need mechanical forced exhaust.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

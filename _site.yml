@@ -4,6 +4,10 @@ navbar:
   right:
     - text: "Expanded Market Research"
       href: https://tuoeq.github.io/Project_1/Index.html
+    - text: "Potential Markets"
+      href: https://tuoeq.github.io/Project_1/report_1.html
+    - text: "Conclusion"
+      href: https://tuoeq.github.io/Project_1/final_report.html
     - text: "Panasonic Indoor Air Quality(IAQ) Divison"
       href: https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/
     - icon: fa-envelope fa-lg

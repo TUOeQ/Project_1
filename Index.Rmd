@@ -26,11 +26,11 @@ html_document:
 
 <i>**Project Report**</i>: Contains a detailed report for market analysis led by IAQ .
 
-* 1. [Potential Markets](report_1.html)
-* 2. [Market Applications](report_2.html)
+1. [Potential Markets](report_1.html)
+2. [Market Applications](report_2.html)
   * 2.a  [Market Competitors](report_2.html#Market_Competitors)
   * 2.b  [Panasonic Solutions](report_2.html#Panasonic_Solutions)
-* 3.
+3. [Conclusion](final_report.html)
 
 
 </br>

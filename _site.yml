@@ -6,6 +6,8 @@ navbar:
       href: https://tuoeq.github.io/Project_1/Index.html
     - text: "Potential Markets"
       href: https://tuoeq.github.io/Project_1/report_1.html
+    - text: "Market Applications"
+      href: https://tuoeq.github.io/Project_1/report_2.html
     - text: "Conclusion"
       href: https://tuoeq.github.io/Project_1/final_report.html
     - text: "Panasonic Indoor Air Quality(IAQ) Divison"

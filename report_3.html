@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Bingkun Luo" />
+
+
+<title>Market Competitors</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://tuoeq.github.io/Project_1/Index.html">Expanded Market Research</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/report_1.html">Potential Markets</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/report_2.html">Market Applications</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/final_report.html">Conclusion</a>
+</li>
+<li>
+  <a href="https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/">Panasonic Indoor Air Quality(IAQ) Divison</a>
+</li>
+<li>
+  <a href="mailto:&lt;bl2789@cumc.columbia.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/TUOeQ/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Market Competitors</h1>
+<h4 class="author">Bingkun Luo</h4>
+
+</div>
+
+
+<div id="market-competitors" class="section level2">
+<h2><strong>Market Competitors</strong></h2>
+<p><br></p>
+<p><a href="https://www.broan-nutone.com/en-us"><img src="images/broan_logo.PNG" alt="Alt text" /></a></p>
+<div id="broan-nutone" class="section level3 tabset tabset-pills">
+<h3>Broan Nutone</h3>
+<p>Here is an overview of the product lines Broan actively promoted.</p>
+<ul>
+<li><p>Bath &amp; Exhaust Ventilation Fans</p>
+<ul>
+<li><strong>Bluetooth Fans</strong></li>
+<li>Decorative &amp; Recessed Fans</li>
+<li>Fans w/ Lights</li>
+<li>Fans w/ Heaters</li>
+<li>Humidity &amp; Motion Sensing Fans</li>
+<li>High Capacity &amp; Commercial Fans</li>
+<li>Controls</li>
+</ul></li>
+<li><p>Range Hoods</p>
+<ul>
+<li>Under-Cabinet</li>
+<li>Wall-Mount Chimney</li>
+<li><strong>Wall-Mount Canopy</strong></li>
+<li>Island</li>
+<li><strong>Built-In / Power Pack</strong></li>
+<li><strong>Downdraft</strong></li>
+<li><strong>Outdoor</strong></li>
+</ul></li>
+<li><p>Fresh Air Systems</p></li>
+<li><p>Specialty Ventilation &amp; Heating</p>
+<ul>
+<li>Heaters</li>
+<li><strong>Attic Ventilation</strong></li>
+<li>In-Line Fans</li>
+<li>Utility Fans &amp; Through-Wall Fans</li>
+<li><strong>Central Vacuum Systems</strong></li>
+</ul></li>
+<li><p><strong>Mosquito Repellency</strong></p></li>
+</ul>
+<p><br></p>
+<div id="heating-ventilation-and-air-conditioning-hvac" class="section level4 tabset">
+<h4>Heating, Ventilation and Air Conditioning (HVAC)</h4>
+<p><br></p>
+<div id="exhaust-fan-air-supply" class="section level5">
+<h5>Exhaust Fan &amp; Air Supply</h5>
+<p>Panasonic offers basically the same range of products in the bathroom ventilation, comparing with Broan. The only product gap highlights in the entertaining experience.</p>
+<p>The bluetooth fans from Broan are featured in entertaining the bathing experience with the <a href="https://www.broan-nutone.com/en-us/chromacomfort">ChromaComfort™ fan</a> combines colorful LED lighting options and <a href="https://www.broan-nutone.com/en-us/sensonic">Broan® Sensonic™</a> exhaust vent fan with a build-in speaker.</p>
+<p><a href="https://www.broan-nutone.com/en-us/bath-exhaust-ventilation-fans"><img src="images/broan1.PNG" alt="Alt text" /></a> <a href="https://www.broan-nutone.com/en-us/bath-exhaust-ventilation-fans"><img src="images/broan2.PNG" alt="Alt text" /></a></p>
+<p><br></p>
+</div>
+<div id="range-hoods" class="section level5">
+<h5>Range Hoods</h5>
+<p>Panasonic range hood products are not as diverse as Broan. They are more traditionally designed and focus on the indoor aspect.</p>
+<p>Whereas Broan has advantages in diverse design in the <a href="https://www.broan-nutone.com/en-us/product/rangehoods/rmip33">build-in and island range hood,500-1500 CFM</a>, it is one of the leading company in building <a href="https://www.broan-nutone.com/en-us/range-hoods/downdraft">downdrift range hoods,500 CFM</a> which compatible with both island and traditional cooktop.</p>
+<p><a href="https://www.broan-nutone.com/en-us/range-hoods"><img src="images/broan3.PNG" alt="Alt text" style="width:33.0%" /></a> <a href="https://www.broan-nutone.com/en-us/range-hoods"><img src="images/broan4.PNG" alt="Alt text" style="width:31.0%" /></a> <a href="https://www.broan-nutone.com/en-us/range-hoods"><img src="images/broan5.PNG" alt="Alt text" style="width:33.0%" /></a></p>
+<p><br></p>
+</div>
+<div id="fresh-air-systems" class="section level5">
+<h5>Fresh Air Systems</h5>
+<p>BROAN AI SERIES</p>
+<p>Fresh Air Systems driven by Virtuo Air Technology</p>
+<p>Broan turned our classic fresh air ventilation line into a single and versatile platform: the AI Series. A platform specifically designed and improved to make your life easier and more profitable, in addition to offering superior air quality.</p>
+<ul>
+<li>Superior air filtration: MERV 8-13</li>
+<li>Premium ECM motors with built-In smart technology</li>
+<li>Ultra-quiet operating environment and 60% energy savings</li>
+<li>Versatile Installation Options</li>
+</ul>
+<p><a href="https://www.broan-nutone.com/en-us/ai-series"><img src="images/broan6.PNG" alt="Alt text" /></a></p>
+<p><br></p>
+</div>
+<div id="heating-fans" class="section level5">
+<h5>Heating Fans</h5>
+<p>Broan features spot heating as one of their speacialty and it introduced <a href="https://www.broan-nutone.com/en-us/specialty-ventilation-heating">Attic ventilation system</a> to prevent heat and moisture build-up, which could extend roof life by preventing rot, premature aging and shingle distortion.</p>
+<p>Worth noting that Panasonic has ventilaition fan with similar function. Although <a href="https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/ventilation-fans/whispervaluer-dctm-fan-condensation-sensor">WhisperValue® DC™ Fan, Condensation Sensor</a> was advertised for bathroom, it could be a potential multi-purpose solution.</p>
+<p><br></p>
+</div>
+</div>
+<div id="hepa-filters" class="section level4">
+<h4>HEPA filters</h4>
+<p>Panasonic’s global HEPA filter has obvious advantages over Broan’s listed catalog. Broan provided two series of <a href="https://www.broan-nutone.com/en-us/search?q=HEPA">whole-house solution ventilation fans</a> with CFM rate range in 100-250 CFM.</p>
+<ul>
+<li><a href="https://www.broan-nutone.com/en-us/product/freshairsystems/ervh100s">Advanced Series Energy Recovery Ventilator</a>, 100-104 CFM</li>
+<li><a href="https://www.broan-nutone.com/en-us/product/freshairsystems/hrv200te">HE Series High Efficiency Heat Recovery Ventilator</a>, 210-250 CFM</li>
+</ul>
+<p>However, for Panasonic North America, the choice of<a href="https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/energy-recovery-ventilators/intelli-balancetm-100-balanced-air-50-100cfm">high-efficiency ventilator</a> is limited and with a relatively low CFM rate at 50 to 100.</p>
+<iframe src="https://www.youtube.com/embed/Ra1yP_IiXdg" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+<p><br></p>
+</div>
+<div id="special-designed-tools-for-customer" class="section level4">
+<h4>Special Designed tools for customer</h4>
+<p>Another interesting finding for the Broan is that they have provided some inspiring tools for customers to try out and learn more about their needs for ventilation.</p>
+<ul>
+<li><a href="https://tools.broan-nutone.com/whms">CodeKey Specifier Tool</a></li>
+<li><a href="http://tools.broan.com/muatemplate.aspx">Range Hood Make-Up Air Damper Specifier</a></li>
+<li><a href="https://tools.broan-nutone.com/duct-length/">Allowable Duct Length Calculator</a></li>
+<li><a href="https://tools.broan-nutone.com/attic-vents/">Attic Ventilation Estimating Tool</a></li>
+</ul>
+<p><a href=""><img src="images/broan7.PNG" alt="Alt text" style="width:66.0%" /></a> <a href=""><img src="images/broan8.PNG" alt="Alt text" style="width:33.0%" /></a></p>
+<p><br></p>
+<p>Reference:<em><a href="https://www.broan-nutone.com/en-us" class="uri">https://www.broan-nutone.com/en-us</a></em></p>
+<p><br></p>
+</div>
+</div>
+<div id="section" class="section level3">
+<h3></h3>
+<p><a href="https://www.deltabreez.com/"><img src="images/delta_logo.PNG" alt="Alt text" /></a></p>
+</div>
+<div id="delta-breeze" class="section level3 tabset tabset-pills">
+<h3>Delta Breeze</h3>
+<p>Here is an overview of Delta’s product lines.</p>
+<ul>
+<li><p>Bath &amp; Exhaust Ventilation Fans</p>
+<ul>
+<li><strong>Bluetooth Fans</strong></li>
+<li>Fans w/ Lights</li>
+<li>Fans w/ Heaters</li>
+<li>Humidity &amp; Motion Sensing Fans</li>
+<li>High Capacity Fans</li>
+</ul></li>
+</ul>
+<p>Delta promotes mostly bathroom ventilation. Its lack of HEPA product choices and control panel is less attractive compared to Broan. However, their products highlight the demands for ASHRAE 62.2 &amp; <a href="https://www.deltabreez.com/energyefficient.php">ENERGY STAR® Most Efficient 2021</a> and focusing on the low-rise multifamily and single housing.</p>
+<div id="heating-ventilation-and-air-conditioning-hvac-1" class="section level4 tabset">
+<h4>Heating, Ventilation and Air Conditioning (HVAC)</h4>
+<p><a href="https://www.deltabreez.com/"><img src="images/delta1.png" alt="Alt text" /></a></p>
+<p><br></p>
+<div id="high-tier-solutions" class="section level5">
+<h5>High-Tier Solutions</h5>
+<p><a href="https://www.deltabreez.com/ASHRAEHighTier.php">High-Tier Solutions</a> have targeted housing from less than 1500 up to 6000 square feet(140-560 square meter).</p>
+<ul>
+<li><p>Breez Smart: Engineered to run continuously for a minimum 70,000 hours. Motion-sensing, humidity-sensing, and dual-speed options available with user-adjustable continuous low speed.</p></li>
+<li><p>Breez Signature: Adding innovative brushless DC motor design to <em>Breeze Elite</em> with indicator light to show fan is on.</p></li>
+</ul>
+<p><a href="https://www.deltabreez.com/breezsmart.php"><img src="images/delta6.PNG" alt="Alt text" /></a> <a href="https://www.deltabreez.com/signature.php"><img src="images/delta7.PNG" alt="Alt text" /></a></p>
+<p><br></p>
+</div>
+<div id="competitive-solutions" class="section level5">
+<h5>Competitive Solutions</h5>
+<p><a href="https://www.deltabreez.com/ASHRAECompetitive.php">Competitive Solutions</a></p>
+<ul>
+<li><p>Breeze Slim: Super low profile &amp; Super low energy consumption.</p></li>
+<li><p>Breez GreenBuilder: Built-in lighting with humidity sensor or motion sensor in a power efficient, quiet system</p></li>
+<li><p>Breez Signature: Adding innovative brushless DC motor design to <em>Breeze Elite</em> with indicator light to show fan is on.</p></li>
+</ul>
+<p><a href="https://www.deltabreez.com/slim.php"><img src="images/delta2.PNG" alt="Alt text" /></a></p>
+<p><a href="https://www.deltabreez.com/greenbuilder.php"><img src="images/delta3.PNG" alt="Alt text" style="width:50.0%" /></a><a href="https://www.deltabreez.com/signature.php"><img src="images/delta4.PNG" alt="Alt text" style="width:50.0%" /></a></p>
+</div>
+<div id="other-solutions" class="section level5">
+<h5>Other Solutions</h5>
+<p>Other than the most popular lines such as Breez Slim/GreenBuilder, there are versatile alternative products could be compared at <a href="https://www.deltabreez.com/ChooseAFan.php">Delta</a>.</p>
+<p><a href=""><img src="images/delta8.PNG" alt="Alt text" /></a></p>
+<p>There are considerable amount products have been implemented with humidity and motion modules and the product flexibility could be considered as an advantage.</p>
+<ul>
+<li><p>Breeze integrity: Enables to enjoy music or real-time news, compatible with LED light</p></li>
+<li><p>Breeze Elite: Bath fans with single/dual speed, humidity sensor or motion sensor</p></li>
+<li><p>Breez Recessed: Brushless DC motor lasts 70,000 hours for extended reliability.</p></li>
+<li><p>Breez Radiance: Energy saving heater module equipped with thermal cut off fuse with built-in thermostat for consistent temperature.</p></li>
+<li><p>Breez Professional: Powerful airflow extraction for heavier applications but with quiet operation, featuring 6" diameter metal duct adapter while normalone is 4".</p></li>
+<li><p>Breez Wall(Mexico only): Low noise, low power consumption with two models on market,CFM56/165</p></li>
+</ul>
+</div>
+</div>
+<div id="dc-motor-technology" class="section level4">
+<h4>DC Motor Technology</h4>
+<p><a href="https://www.deltabreez.com/dcmotor-tech.php"><img src="images/delta5.PNG" alt="Alt text" /></a></p>
+<ul>
+<li><p>Reliability</p>
+<ul>
+<li>Delta’s brushless DC motor fans are engineered to outlast popular AC motor models by as much as 70 percent, reducing the need for replacement.</li>
+</ul></li>
+<li><p>Less noise</p>
+<ul>
+<li>Delta’s brushless DC motor fans are precision engineered for low sound, down to less than 0.3 Sones, the lowest sound rating of any exhaust fan.</li>
+</ul></li>
+<li><p>Less power consumption</p>
+<ul>
+<li>Delta’s brushless DC motor fans use up to 74% less power than popular AC motor exhaust fans.</li>
+</ul></li>
+<li><p>Efficiency</p>
+<ul>
+<li>Delta brushless DC motor fans are among the most efficient ventilation fans available, exceeding ENERGY STAR requirements for efficiency by as much as 367%.</li>
+</ul></li>
+</ul>
+<p><strong>Note: All Delta Breez ventilation fans are precision engineered to run continuously for a minimum 70,000 hours.</strong></p>
+<p>Reference:<a href="https://www.deltabreez.com/index.php" class="uri">https://www.deltabreez.com/index.php</a></p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

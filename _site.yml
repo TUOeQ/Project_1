@@ -8,9 +8,11 @@ navbar:
       href: https://tuoeq.github.io/Project_1/report_1.html
     - text: "Market Applications"
       href: https://tuoeq.github.io/Project_1/report_2.html
+    - text: "Market Competitors"
+      href: https://tuoeq.github.io/Project_1/report_3.html
     - text: "Conclusion"
       href: https://tuoeq.github.io/Project_1/final_report.html
-    - text: "Panasonic Indoor Air Quality(IAQ) Divison"
+    - text: "Panasonic IAQ Divison"
       href: https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/
     - icon: fa-envelope fa-lg
       href: mailto:<bl2789@cumc.columbia.edu>

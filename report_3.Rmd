@@ -8,13 +8,17 @@ output:
       toc_float: true
 ---
 
-## **Market Competitors**
+
+
+
+## **Regional/Commericial Market Competitors** {.tabset}
 
 <br>
 
-[![Alt text](./images/broan_logo.PNG "")](https://www.broan-nutone.com/en-us)
 
 ### Broan Nutone {.tabset .tabset-pills}
+
+[![Alt text](./images/broan_logo.PNG "")](https://www.broan-nutone.com/en-us)
 
 Here is an overview of the product lines Broan actively promoted.
 
@@ -149,11 +153,24 @@ Reference:*https://www.broan-nutone.com/en-us*
 
 <br>
 
-### 
+### Airking {.tabset .tabset-pills}
 
-[![Alt text](./images/delta_logo.PNG "")](https://www.deltabreez.com/)
+[![Alt text](./images/airking_logo.PNG ""){width=30%}](https://www.airkinglimited.com/)
+
+<br>
+
+
+### Venmar {.tabset .tabset-pills}
+
+[![Alt text](./images/venmar_logo.PNG ""){width=30%}](https://www.venmar.ca/home.html)
+
+<br>
+
+## **Global/Multifamily Housing Market Competitors** {.tabset}
 
 ### Delta Breeze {.tabset .tabset-pills}
+
+[![Alt text](./images/delta_logo.PNG "")](https://www.deltabreez.com/)
 
 Here is an overview of Delta's product lines.
 
@@ -265,5 +282,8 @@ Low noise, low power consumption with two models on market,CFM56/165
 
 Reference:https://www.deltabreez.com/index.php
 
+<br>
 
+### Renewaire {.tabset .tabset-pills}
 
+[![Alt text](./images/renewaire_logo.PNG ""){width=30%}](https://www.renewaire.com/)

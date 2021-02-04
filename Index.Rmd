@@ -26,16 +26,15 @@ html_document:
 
 <i>**Project Report**</i>: Contains a detailed report for market analysis led by IAQ .
 
-1. [Potential Markets](report_1.html)
-2. [Market Applications](report_2.html)
-  * 2.a  [Market Competitors](report_2.html#Market_Competitors)
-  * 2.b  [Panasonic Solutions](report_2.html#Panasonic_Solutions)
-3. [Conclusion](final_report.html)
+1.  [Potential Markets](report_1.html)
+2.  [Market Applications](report_2.html)
+    * 2.a  [ASHRAE Standards](report_2.html#What_is_ASHRAE)
+    * 2.b  [Panasonic Solutions](report_2.html#Panasonic_Solutions)
+3.  [Market Competitors](report_3.html)
+4.  [Conclusion](final_report.html)
 
 
 </br>
-
-
 
 ```{r echo=FALSE}
 #library("htmltools")
@@ -43,8 +42,6 @@ html_document:
 #embed_url("https://www.youtube.com/watch?v=7tEiZqX-DDY")
 ```
 
-
-</br>
 
 ## Motivations
 

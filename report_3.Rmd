@@ -130,8 +130,6 @@ embed_url("https://www.youtube.com/watch?v=Ra1yP_IiXdg&feature=emb_title")
 
 
 
-
-
 <br>
 
 
@@ -157,7 +155,104 @@ Reference:*https://www.broan-nutone.com/en-us*
 
 [![Alt text](./images/airking_logo.PNG ""){width=30%}](https://www.airkinglimited.com/)
 
+Here is an overview of the product lines Airking actively promoted.
+
+* Exhaust fans
+
+  * ENERGY STAR® Exhaust Fans
+  * ENERGY STAR® Exhaust Fans with Light
+  * Exhaust Fans
+  * Exhaust Fans with Light
+  * Combination Heaters
+  * Exhaust Fan Accessories
+ 
+* Fresh air
+
+* Range hoods
+
+  * ENERGY STAR® Certified Range Hoods
+  * Liners and Power Packs
+  * Under Cabinet Range Hoods
+  * Range Hood Accessories
+
+* Air circulating fans
+
+  * Industrial Grade Fans
+  * Commercial Grade Fans
+ 
+* Other product
+
+  * **Furnace Mounted Humidifiers**
+
+
+[![Alt text](./images/airking_intro.PNG "")](https://www.airkinglimited.com)
+
+
 <br>
+
+#### Heating, Ventilation and Air Conditioning (HVAC)  {.tabset}
+
+
+<br>
+
+##### Exhaust Fan 
+
+Panasonic offers basically the same range of products in the bathroom ventilation, comparing with Broan. The only product gap highlights in the entertaining experience.
+
+The bluetooth fans from Broan are featured in entertaining the bathing experience with the [ChromaComfort™ fan](https://www.broan-nutone.com/en-us/chromacomfort) combines colorful LED lighting options and [Broan® Sensonic™](https://www.broan-nutone.com/en-us/sensonic) exhaust vent fan with a build-in speaker.
+
+ [![Alt text](./images/broan1.PNG "")](https://www.broan-nutone.com/en-us/bath-exhaust-ventilation-fans)
+ [![Alt text](./images/broan2.PNG "")](https://www.broan-nutone.com/en-us/bath-exhaust-ventilation-fans)
+
+<br>
+
+##### Range Hoods
+
+Panasonic range hood products are not as diverse as Broan. They are more traditionally designed and focus on the indoor aspect. 
+
+Whereas Broan has advantages in diverse design in the [build-in and island range hood,500-1500 CFM ](https://www.broan-nutone.com/en-us/product/rangehoods/rmip33), it is one of the leading company in building [downdrift range hoods,500 CFM](https://www.broan-nutone.com/en-us/range-hoods/downdraft) which compatible with both island and traditional cooktop.
+
+ [![Alt text](./images/broan3.PNG ""){width=33%}](https://www.broan-nutone.com/en-us/range-hoods) [![Alt text](./images/broan4.PNG ""){width=31%}](https://www.broan-nutone.com/en-us/range-hoods) [![Alt text](./images/broan5.PNG ""){width=33%}](https://www.broan-nutone.com/en-us/range-hoods)
+
+<br>
+
+##### Fresh Air 
+
+
+
+[![Alt text](./images/broan6.PNG "")](https://www.broan-nutone.com/en-us/ai-series)
+
+<br>
+
+
+##### Heating Fans
+
+Air King combination heater exhaust fans target for bathrooms needing supplemental heat and ventilation but with limited choices.
+
+[![Alt text](./images/airking_2.PNG "")](https://www.airkinglimited.com/product-category/combo-heater/)
+
+
+
+<br>
+
+
+#### HEPA filters
+
+Airking has listed serveral MERV air filters on their website.Those can be easily added to the QFAM, FAS, MQFAM or MFAS units to filter out unwanted pollutants from entering the dwelling and the model MERV16(QFAMD) is unique among those from other competitors.
+
+[![Alt text](./images/airking_1.PNG "")](https://www.airkinglimited.com/product/fresh-air-filters/)
+
+#### Furnace Mounted Humidifiers
+
+Air King’s  Furnace Mounted Humidifiers maximize the comfort level by maintaining the proper humidification and improving the Indoor Air Quality.
+
+The products enable the whole house humidification but cannot be remotely controlled.
+
+```{r echo=FALSE}
+library("htmltools")
+library("vembedr")
+embed_url("https://www.youtube.com/watch?v=LUdwBIwP-i4&feature=emb_logo&ab_channel=AirKingVentilation")
+```
 
 
 ### Venmar {.tabset .tabset-pills}

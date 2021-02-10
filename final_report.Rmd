@@ -20,7 +20,7 @@ output:
 * Negative pressure fresh air system: The turbid air in the room is drawn out by a fan, and negative pressure is formed in the room. The feature of this system is that it can form a clear and clean directional airflow and effectively replace indoor and outdoor air. The disadvantage is that the negative pressure fresh air system has poor air filtration performance. Also, the indoor temperature will inevitably be lost. 
 
 
-* The two-way fresh air ventilator (Full heat exchanger). This system is basically perfect in terms of air supply. There is air in and out, to achieve directional airflow while filtering, and heat exchange technology can also reduce indoor air temperature It is a good choice in the fresh air system, but it is not very convenient to use this system in the home. During the heat exchange process, condensation will inevitably occur, breeding molds, and affecting air quality. In addition, the air supply pipes and fans need mindful long-term maintenance. Otherwise, secondary pollution will be more serious in 2-5 years.
+* Balanced Ventilation is overall the best ventilation strategy any residential or commercial environment can have. The ideal process for this occurs with an ERV or HRV. This method allows for heat exchange without air exchange. The conclusion is that energy is saved by the transfer of heat or cooling; at the same time, providing fresh air while exhausting stale air. This method is becoming more popular as homes achieve air tightness.
 
 
 <br>
@@ -39,12 +39,14 @@ Classrooms/dormitories with uncomplicated structure and moderate size-choose the
 
 The Multifamily structure is relatively complex, with a medium or large area and a moderate floor height—choose the two-way flow heat exchange type. In fact, basically any building, except for the old houses with very low floors, I recommend the two-way flow heat exchange type. It balances many elements of filtration + heat retention + indoor purification efficiency, which can be described as the most scientific principle of fresh air system. The total heat exchange type performs temperature and humidity exchange without generating condensed water, and now there are antibacterial heat exchange cores available, so heat exchange is completely reliable. But the trouble is that laying pipes is more laborious, so newly decorated houses are more suitable for two-way flow heat exchange
 
+<br>
+
 ### Stimulus for renovation
 
 The renovated hotel is the target for the wall-mounted products. Although annual growth at 1.4% for hotels is hit hard by pandemic, the overall market should be focus on the rebuild and upgrades. We acknowledge that the renovated hotel is not suitable nor easy to install pipes or install top-mounted machines. No matter the positive pressure type or the two-way flow heat exchange type, the installation is extremely difficult, and the wall-mounted type is built for this type of renovation.
 
 
-
+<br>
 
 
 ## Main findings for ASHRAE Standard 170

@@ -14,7 +14,7 @@ html_document:
 
 **As the World is identifying the Health risks associated with viruses like COVID, there is a big opportunity to bring existing Panasonic products to the North America Market.  The NanoX and Ziano technologies have substantial market opportunities in the following markets - Elderly Care Facilities, Doctors Offices, Dentist Offices, Individual Hospital Rooms, College Dormatories, School Classrooms, etc.  These are areas outside our current range of expertise and we need to gather a lot of information to assess the market opportunities.**  
 
-**The Goal of the project will be to establish sales opportunities in these areas and understand the willingness to pay for the technologies.**
+**The goal of the project is to better understand these markets.**
 
 <img src="./images/Profile_1.PNG" style="width:100%">
 
@@ -57,16 +57,12 @@ Our primary focus for ventilation solutions has been in residential and multifam
 
 </br>
 
-## Main findings and conclusions
+## Main findings and discussions
 
-
+The global pandemic has focused the attention of Engineers, Architects, Builders and occupants on IAQ. This topic had been gaining traction over the year but this has moved the needle more than ever. Guidelines continue to pour out from the CDC on ventilation recommendations which will inevitably add to more business in the years to come. Ventilation strategies had been relatively stagnant, now top of mind for change
 
 </br>
 
-## Discussion
-
-
-<br>
 
 ## Infographics
 

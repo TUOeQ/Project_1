@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Bingkun Luo" />
+
+
+<title>Market Applications</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://tuoeq.github.io/Project_1/Index.html">Expanded Market Research</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/report_1.html">Potential Markets</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/report_2.html">Market Applications</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/report_3.html">Market Competitors</a>
+</li>
+<li>
+  <a href="https://tuoeq.github.io/Project_1/final_report.html">Conclusion</a>
+</li>
+<li>
+  <a href="https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/">Panasonic IAQ Divison</a>
+</li>
+<li>
+  <a href="mailto:&lt;bl2789@cumc.columbia.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/TUOeQ/Project_1">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Market Applications</h1>
+<h4 class="author">Bingkun Luo</h4>
+<h4 class="date">2/11/2021</h4>
+
+</div>
+
+
+<div id="ventilation-and-coronavirus-covid-19" class="section level2">
+<h2>Ventilation and Coronavirus (COVID-19)</h2>
+<p><strong>An important approach to lowering the concentrations of indoor air pollutants or contaminants including any viruses that may be in the air is to increase ventilation – the amount of outdoor air coming indoors. Ensuring proper ventilation with outside air can help reduce the concentration of airborne contaminants, including viruses, indoors. </strong></p>
+<p><strong>The ventilation rate should be based on the number of people that occupy an indoor space (and a few other factors), people should give special consideration to increased ventilation when occupancy increases and for areas with high-traffic.</strong></p>
+<p><strong>Improving ventilation also benefits indoor air quality by reducing exposure to products used for cleaning and disinfecting potentially contaminated surfaces.</strong></p>
+<p><strong>When used along with other best practices recommended by CDC and others, increasing ventilation can be part of a plan to protect people indoors.</strong></p>
+<ul>
+<li><p>Elderly Care Facilities, Day Care Centers</p></li>
+<li><p>Hotel Rooms</p></li>
+<li><p>College Dormitories, School Classrooms</p></li>
+<li><p>Multifamily Housing</p></li>
+<li><p>Doctor Office, Dentist Clinic</p></li>
+<li><p>Hospital Rooms</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="what-is-ashrae" class="section level2">
+<h2><em>What is ASHRAE?</em></h2>
+<p><a href="https://www.ashrae.org/">ASHRAE</a> stands for the American Society of Heating, Refrigerating and Air-Conditioning Engineers, which is the technical body that develops and maintains ventilation standards for the United States. Ventilation codes and energy efficiency programs throughout the U.S. are based on ASHRAE standards.</p>
+<p>Since most of our discussion would be based on the ASHRAE standards, here is a brief overview of the most popular subsegment principles in ASHRAE.</p>
+<p><br></p>
+<div id="what-is-ashrae-standard-62.2" class="section level3">
+<h3>What is ASHRAE Standard 62.2?</h3>
+<p>Formed in 1996, the ASHRAE 62.2 committee developed and maintains a residential ventilation standard for buildings three stories and less which is titled Ventilation and Acceptable Indoor Air Quality in Low-Rise Residential Buildings. It is reviewed and revised every three years. The first version of Standard 62.2 was published in 2003, the second in 2007, and the most current version is ANSI/ASHRAE Standard 62.2-2010. (ANSI stands for the American National Standards Institute. ANSI certification of a standard means that a specific consensus process was used to develop and maintain the standard and is required for adoption of a standard into codes.)</p>
+<p>ASHRAE Standard 62.2 is the ventilation standard that applies to low-rise residential buildings of three stories or less in the U.S. ASHRAE Standard 62.1 applies to all other buildings.</p>
+<p><br></p>
+</div>
+<div id="what-is-ashrae-standard-170" class="section level3">
+<h3>What is ASHRAE Standard 170?</h3>
+<p>Developed in partnership with Facility Guidelines Institute (FGI) and American Society of Health Care Engineering (ASHE), ASHRAE Standard-170 has been providing key guidance for ventilation requirements for health care industry facilities since 2008. Use Standard 170-2017 alongside HVAC Design Manual for Hospitals and Clinics for comprehensive design guidance on hospitals, nursing and outpatient facilities.</p>
+<p><br></p>
+</div>
+<div id="when-ashrae-standard-is-not-enough" class="section level3">
+<h3>When ASHRAE Standard is Not Enough</h3>
+<p>Is ASHRAE Standard 62.2/170 current best practice for ventilation?</p>
+<p>In a word, no. The standard that national experts could agree upon that sets a minimum standard for ventilation — not best practice, which would further customize ventilation rates based on factors such as number of occupants in a dwelling and strength of pollutant sources.</p>
+<p>Meeting the ventilation requirements for ASHRAE Standard 62.2 will not always provide enough ventilation for a home. In these circumstances, ventilation rates need to be increased beyond the Standard.</p>
+<ul>
+<li>The Standard does not address high-polluting events such as painting, cleaning, smoking, or construction projects.</li>
+<li>The Standard does not address the use of unvented combustion space heaters such as unvented decorative gas appliances and kerosene heaters, which are not allowed in California.</li>
+<li>The Standard assumes one person per bedroom, with two people in the master bedroom. Higher numbers of occupants will increase ventilation needs.</li>
+<li>Occupants with health issues such as asthma and allergies may benefit from increased ventilation and/or filtration.</li>
+</ul>
+<p><br></p>
+</div>
+<div id="residential-energy-code" class="section level3">
+<h3>Residential Energy Code</h3>
+<p><a href="https://www.wbdg.org/resources/energy-codes-and-standards"><img src="images/REC.jpg" style="width:95.0%" /></a></p>
+<ul>
+<li><span style="color: lightblue;">Meets or Exceeds 2018 (2 states)</span></li>
+<li><span style="color: black;">Meets or Exceeds 2015 (17 states)</span></li>
+<li><span style="color: darkblue;">Meets or Exceeds 2012 (8 states)</span></li>
+<li><span style="color: blue;">Meets or Exceeds 2009 (16 states)</span></li>
+<li><span style="color: grey;">No states code or Procedes 2006 (12 states)</span></li>
+<li><span style="color: grey;">AZ/CO:Home rule states with significant adoption (2 out of 12 states)</span></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+<div id="current-ventilation-principles" class="section level2">
+<h2><strong>Current Ventilation Principles</strong></h2>
+<pre class="r"><code>library(tidyverse)
+library(kableExtra)
+PRC = readxl::read_excel(&quot;PRC.xlsx&quot;)
+knitr::kable(PRC[1:14,], caption = &quot;Ventilation Principles&quot;)%&gt;%
+  kable_styling(bootstrap_options = &quot;striped&quot;, full_width = F,font_size = 12)%&gt;%
+  kable_material(c(&quot;striped&quot;, &quot;hover&quot;),full_width = FALSE)%&gt;%
+  row_spec(10, bold = T,background = &quot;White&quot;)%&gt;%
+  row_spec(11:14, bold = F, background = &quot;lightskyblue&quot;)%&gt;%
+  row_spec(1:3, bold = F, background = &quot;lightyellow&quot;)%&gt;%
+  row_spec(5:6, bold = F, background = &quot;lightpink&quot;)%&gt;%
+  row_spec(8:9, bold = F, background = &quot;lightgreen&quot;)</code></pre>
+<table class="table table-striped lightable-material lightable-striped lightable-hover" style='font-size: 12px; width: auto !important; margin-left: auto; margin-right: auto; font-family: "Source Sans Pro", helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+Ventilation Principles
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Function of Space
+</th>
+<th style="text-align:left;">
+Min total ach
+</th>
+<th style="text-align:left;">
+Min outdoor ach
+</th>
+<th style="text-align:left;">
+Temp control F/C
+</th>
+<th style="text-align:left;">
+Moisture control(k),%
+</th>
+<th style="text-align:left;">
+Min Filter Efficiency(ab)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;background-color: lightyellow !important;">
+Elderly Care Facilities
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+7/NR
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightyellow !important;">
+Nursing Unit
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+12
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+70-75/21-24
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+MAX 60/NR
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+13/NR
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightyellow !important;">
+Day Care Centers
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+4
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightyellow !important;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hotel Rooms
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+1-2
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightpink !important;">
+College Dormitories
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+1-2
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightpink !important;">
+School Classrooms
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+5-6
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightpink !important;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Multifamily Housing
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+0.35-1
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+<td style="text-align:left;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightgreen !important;">
+Doctor Office
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+12
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+—
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightgreen !important;">
+Dentist Clinic
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+6
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+70-75/21-24
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+MAX 60
+</td>
+<td style="text-align:left;background-color: lightgreen !important;">
+7/14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+Hospital Rooms
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+<td style="text-align:left;font-weight: bold;background-color: White !important;">
+_____________________
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Patient room
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+4
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+70-75/21-24
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Patient toilet room
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+10
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NR
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/NR
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Newborn nursery
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+6
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+72-78/22-26
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;background-color: lightskyblue !important;">
+Continued care nursery
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+6
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+2
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+NA
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+—
+</td>
+<td style="text-align:left;background-color: lightskyblue !important;">
+8/14
+</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>#%&gt;%
+ # scroll_box(width = &quot;900px&quot;)
+  #column_spec(2, color = spec_color(mtcars$mpg[1:8]),
+  #            link = &quot;https://haozhu233.github.io/kableExtra/&quot;) %&gt;%
+  #column_spec(6, color = &quot;white&quot;,
+   #           background = spec_color(mtcars$drat[1:8], end = 0.7),
+    #          popover = paste(&quot;am:&quot;, mtcars$am[1:8]))
+
+#devtools::install_github(&quot;haozhu233/kableExtra&quot;)</code></pre>
+<p><a href="https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20guidelines/standards%20addenda/170-2017/170_2017_p_20200302.pdf" class="uri">https://www.ashrae.org/file%20library/technical%20resources/standards%20and%20guidelines/standards%20addenda/170-2017/170_2017_p_20200302.pdf</a></p>
+<p><a href="http://sspc170.ashraepcs.org/pdf/170-2008(with_a,b,d,e,f,g)_edits.2.pdf" class="uri">http://sspc170.ashraepcs.org/pdf/170-2008(with_a,b,d,e,f,g)_edits.2.pdf</a></p>
+<p><a href="https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/" class="uri">https://smartairfilters.com/en/blog/ventilation-rates-office-home-school-virus/</a></p>
+<p><em>Note: NR = no requirement</em></p>
+<p><br></p>
+<div id="elderly-care-facilities" class="section level3">
+<h3>Elderly Care Facilities</h3>
+<p><a href="https://app.leg.wa.gov/wac/default.aspx?cite=388-97-4040&amp;pdf=true">The nursing home</a> must ensure following:</p>
+<ul>
+<li><p>Ventilation of all rooms is designed to prevent objectionable odors, condensation, and direct drafts on the residents;</p></li>
+<li><p>All habitable space is mechanically ventilated including:</p>
+<ul>
+<li>Air supply and air exhaust systems;</li>
+<li>Installation of air-handling duct systems according to the requirements of the International Mechanical Code and chapter 51-52 WAC;</li>
+<li>Installation of supply registers and return air grilles at least three inches above the floor;</li>
+<li>Installation of exhaust grilles on or near the ceiling</li>
+<li>Outdoor air intakes located a minimum of twenty-five feet from the exhaust from any ventilating system</li>
+</ul></li>
+</ul>
+<p>The nursing home must locate the bottom of outdoor air intakes serving central systems a minimum of three feet above adjoining grade level or, if installed through the roof, three feet above the highest adjoining roof level.</p>
+<p><img src="images/elder-p.PNG" /></p>
+<p><br></p>
+</div>
+<div id="day-care-centers" class="section level3">
+<h3>Day Care Centers</h3>
+<p>According to <a href="https://www.wbdg.org/FFC/GSA/chilcare.pdf">U.S. General Services Administration</a>, the day care center’s ventilation design should follow following instructions:</p>
+<p>Design ventilation systems to allow zero exposure of non-smokers to environmental tobacco smoke (ETS) even if smoking is limited to outdoor areas, as described in LEED Version 2.0. Design ventilation systems to achieve an air-change effectiveness of minimum 0.9 per ASHRAE 129- 1997 and as described in LEED Version 2.0. Locate air return over diaper and toilet areas</p>
+<p><a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62.1-2016/62_1_2016_s_20190726.pdf"><img src="images/day-p.PNG" /></a></p>
+<p><br></p>
+<pre class="r"><code>#popupGraph
+#popupGraph(
+ # &#39;./images/hotel.PNG&#39;,
+  #width = 300,
+  #height = 300)
+
+
+#Senior living
+#https://www.nafahq.org/wp-content/uploads/Moeller.pdf
+
+
+#daycare
+#https://nrckids.org/cfoc/database/5.2.1.1#:~:text=For%20child%20care%2C%20ANSI%2FASHRAE,Environmental%20Conditions%20for%20Human%20Occupancy.</code></pre>
+</div>
+<div id="hotel-rooms" class="section level3">
+<h3>Hotel Rooms</h3>
+<p>For hotel/motel guestrooms and high-rise residential spaces. The sum of the operable open areas must total at least 5 percent of the floor area of each space that is naturally ventilated. The openings must also be readily accessible to the occupants of the space at all times.</p>
+<p>Airflow through the openings must come directly from the outdoors; air may not flow through any intermediate spaces such as other occupied spaces, unconditioned spaces, corridors, or atriums. High windows or operable skylights need to have a control mechanism accessible from the floor.</p>
+<p><a href="https://energycodeace.com/site/custom/public/reference-ace-2013/index.html#!Documents/43ventilationrequirements.htm"><img src="images/hotel-p.png" /></a></p>
+<p><br></p>
+</div>
+<div id="college-dormitories" class="section level3">
+<h3>College Dormitories</h3>
+<p>One thing that College dorms differ from hotel would be that during summer vacations schools are intermittently occupied. It is important to consider hot or humid climates and mechanically cooled the college dormitories and military barracks that are unoccupied for long periods.</p>
+<p><a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62.1-2016/62_1_2016_s_20190726.pdf"><img src="images/dorm-p.PNG" style="width:70.0%" /></a></p>
+<p><br></p>
+</div>
+<div id="school-classrooms" class="section level3">
+<h3>School Classrooms</h3>
+<p>The ventilation system in classrooms such that air from the science rooms are not recirculated into non-science areas.</p>
+<p>In chemical storage rooms, the ventilation system shall exhaust the air to the outside, and shall not be recirculated back into space. There is no minimum ventilation rate called out.</p>
+<p>An exhaust fan controlled by the Instructor shall be provided in all rooms where hazardous or vaporous chemicals are to be used or stored. The exhaust fan shall be of sufficient size to exhaust the total volume of the room within 15 minutes.</p>
+<p>Referring back to the minimum ventilation rate given by ANSI/ASHRAE 62.1.</p>
+<p><a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62.1-2016/62_1_2016_s_20190726.pdf"><img src="images/class-p.jpg" /></a></p>
+<p><br></p>
+</div>
+<div id="multifamily-housing" class="section level3">
+<h3>Multifamily Housing</h3>
+<p>Research has shown that <a href="https://homes.lbl.gov/ventilate-right/upgrading-multifamily-buildings">multifamily units</a> have less infiltration of outside air but mostly the air leakage through common walls and ceilings brings in air from the neighbors. Thus to provide adequate whole-building ventilation, multifamily units often need higher levels of mechanical ventilation to compensate for less infiltration.</p>
+<p>Section 8 in Addendum j to ASHRAE 62.2-2010 covers multifamily units, which includes higher required airflows for whole-building ventilation, plus air-sealing requirements between units in multifamily buildings.</p>
+<p><img src="images/apart-p.PNG" /></p>
+<p>Additionally, in recent ASHRAE Standard 62.2-2016 requires a vented kitchen range hood with a minimum intermittent exhaust flow of 100 cfm or local kitchen area intermittent ventilation of 5 ach. Bathroom exhaust is also required at a minimum intermittent rate of 50 cfm or a continuous rate of 20 cfm.</p>
+<p>What’s more the choice of supplemental dehumidification is made by climate location according to <a href="https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/67581.pdf">US department of energy</a>. It is the only viable option in hot-humid and mixed-humid climates. No air conditioning systems currently exist that have sufficient dehumidification capability for multifamily units ventilated at ASHRAE Standard 62.2-2016 rates. Separate systems are required.</p>
+<p><br></p>
+</div>
+<div id="doctor-office" class="section level3">
+<h3>Doctor Office</h3>
+<p>There yet not clear ventilation stanards listed out for doctor’s office but it could be referred from most of the hospital settings</p>
+<p><img src="images/hospital-p.PNG" /></p>
+<p><br></p>
+</div>
+<div id="dentist-clinic" class="section level3">
+<h3>Dentist Clinic</h3>
+<p>Ventilation in the dental office can include placing a high-speed extraoral evacuation system close to the source of contaminants (patient’s mouth) and additionally increasing air flows in mechanical ventilation systems (e.g. hoods, HVAC systems).</p>
+<p>Air conditioning of a building or a room controls the purity, humidity and temperature of the indoor air, and it is essential in those buildings with clean zones and clean rooms.</p>
+<p><a href="https://www.health.ny.gov/facilities/cons/docs/3-14-0.pdf"><img src="images/dental-p.PNG" /></a></p>
+<p><br></p>
+</div>
+<div id="hospital-rooms" class="section level3">
+<h3>Hospital Rooms</h3>
+<p><strong>Negative pressure rooms</strong> :Diagnostic or therapeutic endoscopic procedures involving the airway (i.e., bronchoscopies) increase the risk for air contamination with M. tuberculosis in patients with known or undiagnosed tuberculosis, a disease spread by the airborne route. No change was made in the new AIA Guidelines. Bronchoscopy rooms must be maintained at negative air pressure to protect the worker and the environment.</p>
+<p>After all, consistency with the medical program requirements, e.g., pharmacy, anesthesia gas storage, etc., established on evidence-based clinical research and principles of asepsis.</p>
+<p><img src="images/hospital-p.PNG" /></p>
+<p><br></p>
+</div>
+</div>
+<div id="panasonic-solutions" class="section level2">
+<h2><strong>Panasonic Solutions</strong></h2>
+<div id="heating-ventilation-and-air-conditioning-hvac" class="section level3">
+<h3>Heating, Ventilation and Air Conditioning (HVAC)</h3>
+<p><br></p>
+<div id="asia" class="section level4">
+<h4>Asia</h4>
+<p>Including products from Great China, Japan, Malaysia</p>
+<p><br></p>
+<div id="dehumidification" class="section level5">
+<h5>Dehumidification</h5>
+<p>1.<a href="https://iaq.panasonic.cn/productdetail/75">FV-50NCD1C / FV-50NC1C</a></p>
+<p><img src="images/AD.png" style="width:30.0%" /></p>
+<p><strong>Product Label</strong>:</p>
+<p>Intelligent control, IAQ visual, Nano X Sterilization, DC motor</p>
+<ul>
+<li><span class="math inline">\(500m^{3}/h\)</span> Clean Air Delivery Rate(CADR)</li>
+<li>Smart control is simpler</li>
+<li>Rapid dehumidification and large air volume</li>
+</ul>
+<p><img src="https://media.giphy.com/media/W2vLQxClrW26MMmKUQ/giphy.gif" style="width:50.0%" /><img src="https://media.giphy.com/media/fcXMTULNzsgKu1l1Fz/giphy.gif" style="width:50.0%" /></p>
+<p>2.<a href="https://www.plshk.panasonic.hk/product/f-yhc12x">F-YHC12X</a></p>
+<p><img src="images/AD2.png" style="width:20.0%" /></p>
+<p><strong>Product Label</strong>:</p>
+<p>Hybrid type,Dehumidifying capacity = 12L/day</p>
+<ul>
+<li>Hybrid technology provides efficient dehumidification year-round</li>
+<li>Intelligent humidity control maintains a pleasant humidity</li>
+<li>2-way air outlet at front and back to suit different purposes of dehumidification</li>
+<li>3D louver enhances clothes drying efficiency</li>
+<li>Anti-bacteria and super alleru-buster filter inhitbit bacteria and allergens effectively</li>
+</ul>
+<p><br></p>
+</div>
+<div id="supply-air" class="section level5">
+<h5>Supply Air</h5>
+<ul>
+<li><p>Most of the devices are direct current motor, with high performance ‘Twin Flow Fan’ employed for powerful Airflow and high static pressure</p></li>
+<li><p>Slim and compact design allow installation at narrow ceiling space</p></li>
+<li><p>Newly designed casing with taper scroll minimizes turbulence inside the casing</p></li>
+<li><p>Noise absorption material adopted for low noise operation</p></li>
+<li><p>Able to install upside down for different location of inspection opening</p></li>
+</ul>
+<p><a href="https://www.plshk.panasonic.hk/category/Cabinet-Fan"><img src="images/airs-1.PNG" /></a> <a href="https://www.plshk.panasonic.hk/category/Cabinet-Fan"><img src="images/airs-2.PNG" /></a> <a href="https://www.plshk.panasonic.hk/category/Cabinet-Fan"><img src="images/airs-3.PNG" /></a></p>
+<p><br></p>
+</div>
+</div>
+<div id="middle-east" class="section level4">
+<h4>Middle East</h4>
+<p><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/residential-air-conditioners-learn/features-explanation/unique-air-purifying-system--nanoe-g.html"><img src="images/MEair.PNG" /></a></p>
+<div id="air-conditionair-curtains" class="section level5">
+<h5>Air Condition(air curtains)</h5>
+<p>nanoe-G will even deactivate bacteria and viruses that are trapped in the filter and remove up to 99% of PM2.5. It automatically operates as an air supply when the air conditioner is turned off.</p>
+<p><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/residential-air-conditioners.html"><img src="images/aircurtain1.png" /></a> <br></p>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="high-efficiency-particulate-air-hepa" class="section level3">
+<h3>High Efficiency Particulate Air (HEPA)</h3>
+<p><br></p>
+<div id="asia-1" class="section level4">
+<h4>Asia</h4>
+<p>Including products from Great China, Japan, Malaysia</p>
+<p><br></p>
+<div id="air-purifiers" class="section level5">
+<h5>Air Purifiers</h5>
+<ol style="list-style-type: decimal">
+<li><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds90c.specs.html">F-PDS90C</a></li>
+</ol>
+<ul>
+<li>4-fold gradient purification, multi-directional filtration of air</li>
+<li>AUK professional certification to reduce 7 major allergens</li>
+<li>Equipped with dust sensor and air pollution indicator display</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-vjl55c2.specs.html">F-VJL55C2</a></li>
+</ol>
+<ul>
+<li>ASEPTIC FEELING-clean bacteria technology</li>
+<li>High-efficiency composite filter, filter out 10 kinds of bacteria, reduce 7 major allergens</li>
+<li>Fog-free humidification technology to prevent bacterial growth</li>
+</ul>
+<p><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds90c.html"><img src="images/F-PDS90C.PNG" title="F-PDS90C,￥3,999" alt="Alt text" style="width:29.6%" /></a> <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-vjl55c2.html"><img src="images/F-VJL55C2.PNG" title="F-VJL55C2,￥4,499" alt="Alt text" style="width:31.0%" /></a> <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds130c.html"><img src="images/F-PDS130C-1.PNG" title="F-PDS130C,￥6,999" alt="Alt text" style="width:35.0%" /></a></p>
+<p>3.<a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pds130c.specs.html">F-PDS130C</a></p>
+<ul>
+<li><span class="math inline">\(710m^{3}/h\)</span> Clean Air Delivery Rate(CADR)</li>
+<li>3 airflow modes, precise purification</li>
+<li>99.99% space sterilization rate, nearly 100% peace of mind</li>
+</ul>
+</div>
+<div id="nanoe-technology-air-purifiers" class="section level5">
+<h5>Nanoe™ Technology-Air Purifiers</h5>
+<ol style="list-style-type: decimal">
+<li><a href="https://panasonic.jp/airrich/products/f_vxt90.html">F-VXT90</a></li>
+</ol>
+<ul>
+<li>Uing the “Mill Air” phone app to check the level of dust (pollen, house dust, PM2.5, peculiar smell)</li>
+<li>Function as humidifier as well</li>
+<li>Unique air flow and ion technology"</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-vjl75c.specs.html">F-VJL75C</a></li>
+</ol>
+<ul>
+<li>High efficiency nanofiber HEPA filter can filter 0.02μm particles</li>
+<li>Air disinfection technology</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pxp155c.specs.html">F-PXP155C</a></li>
+</ol>
+<ul>
+<li>The particulate matter is as high as CADR <span class="math inline">\(800m³/h\)</span></li>
+<li>Equipped with 3 sets of filters, all-round three-dimensional purification</li>
+<li>Certified by the British Allergy Association to effectively reduce 7 allergens</li>
+</ul>
+<p><a href="https://panasonic.jp/airrich/products/f_vxt90.html"><img src="images/F-VXT90.PNG" title="F-VXT90" alt="Alt text" style="width:35.0%" /></a> <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/empty-disinfecting-machine/f-113c8vx.html"><img src="images/F-VJL75C.PNG" title="F-VJL75C" alt="Alt text" style="width:29.0%" /></a> <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-pxp155c.html"><img src="images/F-PXP155C-1.PNG" title="F-PXP155C" alt="Alt text" style="width:30.0%" /></a></p>
+<p><br></p>
+</div>
+<div id="nanoe-technology--portable-air-purifier" class="section level5">
+<h5>Nanoe™ Technology- Portable Air Purifier</h5>
+<p><a href="https://panasonic.jp/nanoe_h/products/f_gmk01.html">F-GMK01</a></p>
+<ul>
+<li><p>Equipped with “8 hours automatic shutdown timer”</p></li>
+<li><p>Record the air volume when the car engine is stopped, and when the engine is restarted, the same air volume is generated again with “nanoe”.</p></li>
+</ul>
+<iframe src="https://www.youtube.com/embed/RJ59o3YLxBg" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+<p><a href="https://www.panasonic.com/my/consumer/air-solutions/air-purifier/f-gpt01akm.html">F-GPT01AKM</a></p>
+<ul>
+<li>Panasonic Unique nanoe™X Technology</li>
+<li>Inhibit Virus and Bacteria</li>
+<li>Deodorize Environment</li>
+<li>Hydrate Skin and Hair</li>
+<li>Portable &amp; Lightweight</li>
+</ul>
+<p>[<img src="images/port2.png" title="mal" alt="Get more info" style="width:95.0%" />]</p>
+<p><br></p>
+</div>
+<div id="hepa-composite-filter" class="section level5">
+<h5>HEPA Composite Filter</h5>
+<p>1.F-ZXSL40C</p>
+<ul>
+<li>Recommended renewal frequency: 2 years</li>
+<li>Compatible with F-VXL40C</li>
+</ul>
+<p>2.F-ZXJP90C</p>
+<ul>
+<li>Recommended renewal frequency: 10 years</li>
+<li>Compatible with <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier/f-vxj90c.html">F-VXJ90C</a></li>
+</ul>
+<p><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html"><img src="images/HEPA-F-1.PNG" title="F-ZXSL40C" alt="Alt text" style="width:35.0%" /></a> <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html"><img src="images/HEPA-F-2.PNG" title="F-ZXJP90C" alt="Alt text" style="width:35.0%" /></a></p>
+<p>3.F-ZXKP55C</p>
+<ul>
+<li>Recommended renewal frequency: 5 years</li>
+<li>Compatible with F-655FCV,F-5F5FCV,F-VK655C,F-VK5F5C</li>
+</ul>
+<p>4.F-ZXKP40C</p>
+<ul>
+<li>Recommended renewal frequency: 5 years</li>
+<li>Compatible with F-41C4VX,F-VXK40C</li>
+</ul>
+<p><a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html"><img src="images/HEPA-F-3.PNG" title="F-ZXKP55C" alt="Alt text" style="width:35.0%" /></a> <a href="https://consumer.panasonic.cn/product/home-living/air-purifier-dehumidifier/air-purifier-dehumidifier-accessories/f-zxsl40c.html"><img src="images/HEPA-F-4.PNG" title="F-ZXKP40C" alt="Alt text" style="width:35.0%" /></a></p>
+<p><br></p>
+</div>
+</div>
+<div id="middle-east-1" class="section level4">
+<h4>Middle East</h4>
+<p><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html" class="uri">https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers.html</a></p>
+<div id="air-purifiers-1" class="section level5">
+<h5>Air Purifiers</h5>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxk90m.specs.html">F-VXK90M</a></li>
+</ol>
+<ul>
+<li>Extra filter Protects against sandstorms</li>
+<li>Applicable Area <span class="math inline">\(66 m² (710 ft²)\)</span></li>
+<li>Humidifying Capacity <span class="math inline">\(830 mL/h\)</span></li>
+</ul>
+<p>[<img src="images/ME1.PNG" title="human detection" alt="Get more info" style="width:95.0%" />]</p>
+<ol start="2" style="list-style-type: decimal">
+<li><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-pxl45m.specs.html">F-PXL45M</a></li>
+</ol>
+<ul>
+<li>Allows multi-installation to save space
+<ul>
+<li>Can be mounted on wall</li>
+<li>Can be placed on the table or floor</li>
+</ul></li>
+<li>House Dust Catcher:Purifies with powerful suction near the floor where children play around</li>
+<li>Applicable Area <span class="math inline">\(33 m2 (355 ft²)\)</span></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxl95m.specs.html">F-VXL95M</a></li>
+</ol>
+<ul>
+<li>Applicable Area: <span class="math inline">\(71 m²\)</span></li>
+<li>Sandstorm Mode</li>
+<li>Anti-virus/Bacteria 99.9% H1N1,H5N1,MRSA</li>
+</ul>
+<p><a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxk90m.html"><img src="images/F-VXK90M.PNG" title="F-VXK90M" alt="Alt text" style="width:30.0%" /></a> <a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-pxl45m.html"><img src="images/F-PXL45M.PNG" title="F-PXL45M" alt="Alt text" style="width:37.0%" /></a> <a href="https://www.panasonic.com/middleeast/en/consumer/air-solutions/air-purifiers/f-vxl95m.html"><img src="images/F-VXL95M.PNG" title="F-VXL95M" alt="Alt text" style="width:30.0%" /></a></p>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="nanoe-technology" class="section level3">
+<h3>Nanoe™ Technology</h3>
+<p>Please see a brief overview of the most recent Nanoe™ Technology</p>
+<iframe src="https://www.youtube.com/embed/MO7arSRgvuI" width="420" height="315" frameborder="0" allowfullscreen=""></iframe>
+<p><br></p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -404,6 +404,3 @@ Reference:https://www.deltabreez.com/index.php
 
 <br>
 
-### Renewaire {.tabset .tabset-pills}
-
-[![Alt text](./images/renewaire_logo.PNG ""){width=30%}](https://www.renewaire.com/)

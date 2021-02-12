@@ -15,7 +15,7 @@ navbar:
     - text: "Panasonic IAQ Divison"
       href: https://na.panasonic.com/us/home-and-building-solutions/ventilation-indoor-air-quality/
     - icon: fa-envelope fa-lg
-      href: mailto:<bl2789@cumc.columbia.edu>
+      href: mailto:<Justin.Mahley@us.panasonic.com>
     - icon: fa-github fa-lg
       href: https://github.com/TUOeQ/Project_1   
 output:
